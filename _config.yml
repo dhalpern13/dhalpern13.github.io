@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "About"
+title                    : "Daniel Halpern"
 title_separator          : "-"
 name                     : &name "Daniel Halpern"
 description              : &description "Daniel Halpern's personal website"
