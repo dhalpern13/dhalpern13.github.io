@@ -1,7 +1,7 @@
 ---
 title: "Binary Max Nash Welfare"
 authors: 'Daniel Halpern, [Ariel Procaccia](http://procaccia.info), [Alex Psomas](https://www.alexpsomas.com), and [Nisarg Shah](http://www.cs.toronto.edu/~nisarg/index.html)'
-links: '[Working paper](/files/binary-mnw-working.pdf)'
+links: '[IJCAI Submission](/files/fair-division-with-binary-ijcai.pdf)'
 ---
 This paper is about the number 2. The number 3 is left for future work.
 
