@@ -1,6 +1,6 @@
 ---
 title: "Fair Division with Binary Valuations: One Rule to Rule Them All"
-authors: 'Daniel Halpern, [Ariel Procaccia](http://procaccia.info), [Alex Psomas](https://www.alexpsomas.com), and [Nisarg Shah](http://www.cs.toronto.edu/~nisarg/index.html)'
+authors: 'Daniel Halpern, [Ariel D. Procaccia](http://procaccia.info), [Alexandros Psomas](https://www.alexpsomas.com), and [Nisarg Shah](http://www.cs.toronto.edu/~nisarg/index.html)'
 links: '[IJCAI Submission](/files/fair-division-with-binary-ijcai.pdf)'
 ---
 This paper is about the number 2. The number 3 is left for future work.
