@@ -1,7 +1,7 @@
 ---
 title: "Resolving the Optimal Metric Distortion Conjecture"
 authors: '[Vasilis Gkatzelis](https://www.cs.drexel.edu/~gkatz/), Daniel Halpern, and [Nisarg Shah](http://www.cs.toronto.edu/~nisarg/index.html)'
-links: '[FOCS Submission](/files/optimal-metric-distortion.pdf)'
+links: '[Manuscript](/files/optimal-metric-distortion.pdf)'
 ---
 This paper is about the number 2. The number 3 is left for future work.
 
