@@ -82,12 +82,12 @@ analytics:
 author:
   name             : "Daniel Halpern"
   avatar           : "daniel_pic.JPG"
-  bio              : "Student at the University of Toronto"
+  bio              : "PhD student at Harvard University"
   location         : "Toronto, ON"
   employer         :
   pubmed           : 
   googlescholar    : "https://scholar.google.ca/citations?user=Q4HPgdsAAAAJ&hl=en"
-  email            : "daniel.halpern@mail.utoronto.ca"
+  email            : "dhalpern@g.harvard.edu"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
