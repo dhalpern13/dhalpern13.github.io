@@ -11,6 +11,8 @@ author_profile: true
 
 {% include base_path %}
 
+<ul>
 {% for post in site.data.publications reversed %}
   {% include archive-single-publication.html %}
 {% endfor %}
+</ul>
