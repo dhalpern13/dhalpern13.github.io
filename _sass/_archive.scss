@@ -3,7 +3,7 @@
    ========================================================================== */
 
 .archive {
-  margin-bottom: 2em;
+  margin-bottom: .5em;
 
   @include breakpoint($medium) {
     @include span(12 of 12);
@@ -42,7 +42,7 @@
 }
 
 .archive__item-title {
-  margin-bottom: 0.25em;
+  margin-bottom: 0em;
   font-family: $sans-serif-narrow;
 
   a + a {
@@ -62,6 +62,7 @@
 .archive__item-excerpt {
   margin-top: 0;
   font-size: $type-size-6;
+  margin-bottom: 0em;
 
   & + p {
     text-indent: 0;
