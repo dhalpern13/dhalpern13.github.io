@@ -5,10 +5,10 @@
 
 - title: "Resolving the Optimal Metric Distortion Conjecture"
   authors: '[Vasilis Gkatzelis](https://www.cs.drexel.edu/~gkatz/), Daniel Halpern, and [Nisarg Shah](http://www.cs.toronto.edu/~nisarg/index.html)'
-  citation: '[FOCS-20](https://focs2020.cs.duke.edu): Proc. of 61st Annual IEEE Symposium on Foundations of Computer Science, 2020. Forthcoming'
+  citation: '[FOCS-20](https://focs2020.cs.duke.edu): Proc. of 61st Annual IEEE Symposium on Foundations of Computer Science, 2020 (forthcoming)'
   link: /files/optimal-metric-distortion.pdf
 
 - title: "Fair Division with Binary Valuations: One Rule to Rule Them All"
   authors: 'Daniel Halpern, [Ariel D. Procaccia](http://procaccia.info), [Alexandros Psomas](https://www.alexpsomas.com), and [Nisarg Shah](http://www.cs.toronto.edu/~nisarg/index.html)'
   link: /files/binary-mnw.pdf
-  citation: "Working Paper"
+  citation: '[WINE-20](https://econcs.pku.edu.cn/wine2020/): Proc. 16th Conference on Web and Internet Economics, 2020 (forthcoming)'
