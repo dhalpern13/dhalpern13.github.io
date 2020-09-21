@@ -17,3 +17,8 @@
   authors: 'Daniel Halpern and [Nisarg Shah](http://www.cs.toronto.edu/~nisarg/index.html)'
   citation: 'Working Paper'
   link: /files/distortion-fair-division.pdf
+
+- title: "Aggregating Binary Judgments Ranked By Accuracy"
+  authors: 'Daniel Halpern, [Greg Kehne](https://www.linkedin.com/in/gregory-kehne-319003127/), [Dominik Peters](https://dominik-peters.de), [Ariel D. Procaccia](http://procaccia.info), [Nisarg Shah](http://www.cs.toronto.edu/~nisarg/index.html), and [Piotr Skowron](https://www.mimuw.edu.pl/~ps219737/)'
+  citation: 'Working Paper'
+  link: /files/ranked-binary-judgments.pdf
