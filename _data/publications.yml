@@ -13,12 +13,13 @@
   link: /files/binary-mnw.pdf
   citation: '[WINE-20](https://econcs.pku.edu.cn/wine2020/): Proc. 16th Conference on Web and Internet Economics, 2020. Forthcoming.'
 
+- title: "Aggregating Binary Judgments Ranked By Accuracy"
+  authors: 'Daniel Halpern, [Gregory Kehne](https://www.linkedin.com/in/gregory-kehne-319003127/), [Dominik Peters](https://dominik-peters.de), [Ariel D. Procaccia](http://procaccia.info), [Nisarg Shah](http://www.cs.toronto.edu/~nisarg/index.html), and [Piotr Skowron](https://www.mimuw.edu.pl/~ps219737/)'
+  citation: '[AAA-21](https://aaai.org/Conferences/AAAI-21/): Proc. of 35th AAAI Conference on Artificial Intelligence. Forthcoming.'
+  link: /files/ranked-binary-judgments.pdf
+
 - title: "Distortion in Fair Division"
   authors: 'Daniel Halpern and [Nisarg Shah](http://www.cs.toronto.edu/~nisarg/index.html)'
   citation: 'Working Paper'
   link: /files/distortion-fair-division.pdf
 
-- title: "Aggregating Binary Judgments Ranked By Accuracy"
-  authors: 'Daniel Halpern, [Gregory Kehne](https://www.linkedin.com/in/gregory-kehne-319003127/), [Dominik Peters](https://dominik-peters.de), [Ariel D. Procaccia](http://procaccia.info), [Nisarg Shah](http://www.cs.toronto.edu/~nisarg/index.html), and [Piotr Skowron](https://www.mimuw.edu.pl/~ps219737/)'
-  citation: 'Working Paper'
-  link: /files/ranked-binary-judgments.pdf
