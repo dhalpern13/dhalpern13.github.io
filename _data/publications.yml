@@ -1,25 +1,25 @@
 - title: "Fair Division with Subsidy"
   citation: '[SAGT-19](http://corelab.ntua.gr/sagt2019/): Proc. of 12th International Symposium on Algorithmic Game Theory, pp. 374-389, 2019.'
   authors: 'Daniel Halpern and [Nisarg Shah](http://www.cs.toronto.edu/~nisarg/index.html)'
-  link: /files/fair-division-subsidy-full.pdf
+  link: fair-division-subsidy-full.pdf
 
 - title: "Resolving the Optimal Metric Distortion Conjecture"
   authors: '[Vasilis Gkatzelis](https://www.cs.drexel.edu/~gkatz/), Daniel Halpern, and [Nisarg Shah](http://www.cs.toronto.edu/~nisarg/index.html)'
   citation: '[FOCS-20](https://focs2020.cs.duke.edu): Proc. of 61st Annual IEEE Symposium on Foundations of Computer Science, pp. 1427-1438, 2020.'
-  link: /files/optimal-metric-distortion.pdf
+  link: optimal-metric-distortion.pdf
 
 - title: "Fair Division with Binary Valuations: One Rule to Rule Them All"
   authors: 'Daniel Halpern, [Ariel D. Procaccia](http://procaccia.info), [Alexandros Psomas](https://www.alexpsomas.com), and [Nisarg Shah](http://www.cs.toronto.edu/~nisarg/index.html)'
-  link: /files/binary-mnw.pdf
+  link: binary-mnw.pdf
   citation: '[WINE-20](https://econcs.pku.edu.cn/wine2020/): Proc. 16th Conference on Web and Internet Economics, pp. 370-383, 2020.'
 
 - title: "Aggregating Binary Judgments Ranked By Accuracy"
   authors: 'Daniel Halpern, [Gregory Kehne](https://www.linkedin.com/in/gregory-kehne-319003127/), [Dominik Peters](https://dominik-peters.de), [Ariel D. Procaccia](http://procaccia.info), [Nisarg Shah](http://www.cs.toronto.edu/~nisarg/index.html), and [Piotr Skowron](https://www.mimuw.edu.pl/~ps219737/)'
   citation: '[AAA-21](https://aaai.org/Conferences/AAAI-21/): Proc. of 35th AAAI Conference on Artificial Intelligence. Forthcoming.'
-  link: /files/ranked-binary-judgments.pdf
+  link: ranked-binary-judgments.pdf
 
-- title: "Distortion in Fair Division"
+- title: "Fair and Efficient Resource ALlocation with Partial Information"
   authors: 'Daniel Halpern and [Nisarg Shah](http://www.cs.toronto.edu/~nisarg/index.html)'
   citation: 'Working Paper'
-  link: /files/distortion-fair-division.pdf
+  link: ordinal-fair-division.pdf
 
