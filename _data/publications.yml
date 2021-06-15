@@ -15,7 +15,7 @@
 
 - title: "Aggregating Binary Judgments Ranked By Accuracy"
   authors: 'Daniel Halpern, [Gregory Kehne](https://www.linkedin.com/in/gregory-kehne-319003127/), [Dominik Peters](https://dominik-peters.de), [Ariel D. Procaccia](http://procaccia.info), [Nisarg Shah](http://www.cs.toronto.edu/~nisarg/index.html), and [Piotr Skowron](https://www.mimuw.edu.pl/~ps219737/)'
-  citation: '[AAAI-21](https://aaai.org/Conferences/AAAI-21/): Proc. of 35th AAAI Conference on Artificial Intelligence, 2021. Forthcoming.'
+  citation: '[AAAI-21](https://aaai.org/Conferences/AAAI-21/): Proc. of 35th AAAI Conference on Artificial Intelligence, pp. 5456-5463, 2021.'
   link: ranked-binary-judgments.pdf
 
 - title: "Fair and Efficient Resource Allocation with Partial Information"
