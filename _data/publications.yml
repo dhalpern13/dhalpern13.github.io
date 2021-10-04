@@ -20,7 +20,7 @@
 
 - title: "Fair and Efficient Resource Allocation with Partial Information"
   authors: 'Daniel Halpern and [Nisarg Shah](http://www.cs.toronto.edu/~nisarg/index.html)'
-  citation: '[IJCAI-21](https://ijcai-21.org): Proc. of 30th International Joint Conference on Artificial Intelligence, 2021. Forthcoming.'
+  citation: '[IJCAI-21](https://ijcai-21.org): Proc. of 30th International Joint Conference on Artificial Intelligence, pp. 224-230, 2021.'
   link: distortion-fair-division.pdf
 
 - title: "Unbiased Information Packets"
