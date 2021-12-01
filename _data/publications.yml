@@ -23,15 +23,16 @@
   citation: '[IJCAI-21](https://ijcai-21.org): Proc. of 30th International Joint Conference on Artificial Intelligence, pp. 224-230, 2021.'
   link: distortion-fair-division.pdf
 
+- title: "How Many Representatives Do We Need? The Optimal Size of an Epistemic Congress"
+  authors: '[Manon Revel](https://manrev.github.io/manon/), [Tao Lin](https://tao-l.github.io), and Daniel Halpern'
+  citation: '[AAAI-22](https://aaai.org/Conferences/AAAI-22/): Proc. of 36th AAAI Conference on Artificial Intelligence, 2022. Forthcoming.'
+  link: optimal-congress.pdf
+
+
 - title: "Unbiased Information Packets"
   authors: 'Daniel Halpern and [Ariel D. Procaccia](http://procaccia.info)'
   citation: 'Working Paper'
   link: unbiased-information.pdf
-
-- title: "How Many Representatives Do We Need? The Optimal Size of an Epistemic Congress"
-  authors: '[Manon Revel](https://manrev.github.io/manon/), [Tao Lin](https://tao-l.github.io), and Daniel Halpern'
-  citation: 'Working Paper'
-  link: optimal-congress.pdf
 
 - title: "Can Buyers Reveal for a Better Deal?"
   authors: 'Daniel Halpern, [Gregory Kehne](https://gregorykehne.com), and [Jamie Tucker-Foltz](http://www.jamie.tuckerfoltz.com)'
