@@ -44,3 +44,9 @@
   citation: 'Working Paper'
   link: fluid-defense.pdf
 
+  - title: "Distortion in Voting with Top-t Preferences"
+  authors: '[Allan Borodin](http://www.cs.toronto.edu/~bor/), Daniel Halpern, [Mohamad Latifian](https://www.cs.toronto.edu/~latifian/), and [Nisarg Shah](http://www.cs.toronto.edu/~nisarg/index.html)'
+  citation: 'Working Paper'
+  link: distortion-top-t.pdf
+
+
