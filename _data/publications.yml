@@ -28,7 +28,6 @@
   citation: '[AAAI-22](https://aaai.org/Conferences/AAAI-22/): Proc. of 36th AAAI Conference on Artificial Intelligence, 2022. Forthcoming.'
   link: optimal-congress.pdf
 
-
 - title: "Unbiased Information Packets"
   authors: 'Daniel Halpern and [Ariel D. Procaccia](http://procaccia.info)'
   citation: 'Working Paper'
@@ -44,7 +43,7 @@
   citation: 'Working Paper'
   link: fluid-defense.pdf
 
-  - title: "Distortion in Voting with Top-t Preferences"
+- title: "Distortion in Voting with Top-t Preferences"
   authors: '[Allan Borodin](http://www.cs.toronto.edu/~bor/), Daniel Halpern, [Mohamad Latifian](https://www.cs.toronto.edu/~latifian/), and [Nisarg Shah](http://www.cs.toronto.edu/~nisarg/index.html)'
   citation: 'Working Paper'
   link: distortion-top-t.pdf
