@@ -53,7 +53,7 @@
   citation: 'Working Paper'
   link: liquid-in-practice.pdf
 
-  - title: "Dynamic Fair Division with Partial Information"
+- title: "Dynamic Fair Division with Partial Information"
   authors: 'Daniel Halpern, [Gerdus Benadè](http://www.gerdusbenade.com), and [Alexandros Psomas](https://www.alexpsomas.com)'
   citation: 'Working Paper'
   link: dynamic-fair-division.pdf
