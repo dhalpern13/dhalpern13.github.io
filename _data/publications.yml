@@ -57,12 +57,7 @@
   authors: 'Daniel Halpern, [Joseph Y. Halpern](https://www.cs.cornell.edu/home/halpern/), [Ali Jadbabaie](https://jadbabaie.mit.edu), [Elchanan Mossel](http://math.mit.edu/~elmos/), [Ariel D. Procaccia](http://procaccia.info), and [Manon Revel](https://manrev.github.io/manon/)'
   citation: 'Working Paper'
   link: liquid-defense.pdf
-
-- title: "Dynamic Fair Division with Partial Information"
-  authors: '[Gerdus Benadè](http://www.gerdusbenade.com), Daniel Halpern, and [Alexandros Psomas](https://www.alexpsomas.com)'
-  citation: 'Working Paper'
-  link: dynamic-fair-division.pdf
-
+  
 - title: "Representation with Incomplete Votes"
   authors:  'Daniel Halpern, [Ariel D. Procaccia](http://procaccia.info), [Gregory Kehne](https://gregorykehne.com), [Jamie Tucker-Foltz](http://www.jamie.tuckerfoltz.com), [Manuel Wültrich](https://ei.is.mpg.de/~mwuthrich)'
   citation: 'Working Paper'
