@@ -25,7 +25,7 @@
 
 - title: "How Many Representatives Do We Need? The Optimal Size of an Epistemic Congress"
   authors: '[Manon Revel](https://manrev.github.io/manon/), [Tao Lin](https://tao-l.github.io), and Daniel Halpern'
-  citation: '[AAAI-22](https://aaai.org/Conferences/AAAI-22/): Proc. of 36th AAAI Conference on Artificial Intelligence, 2022. Forthcoming.'
+  citation: '[AAAI-22](https://aaai.org/Conferences/AAAI-22/): Proc. of 36th AAAI Conference on Artificial Intelligence, pp. 9431-9438, 2022.'
   link: optimal-congress.pdf
 
 - title: "Can Buyers Reveal for a Better Deal?"
@@ -38,6 +38,16 @@
   citation: '[IJCAI-22](https://ijcai-22.org): Proc. of 31st International Joint Conference on Artificial Intelligence, 2022. Forthcoming'
   link: distortion-top-t.pdf
 
+- title: "Liquid Democracy in Practice: An Empirical Analysis of its Epistemic Performance"
+  authors: '[Manon Revel](https://manrev.github.io/manon/), Daniel Halpern, [Adam Berinsky](https://polisci.mit.edu/people/adam-berinsky), and [Ali Jadbabaie](https://jadbabaie.mit.edu)'
+  citation: '[EAAMO-22](https://eaamo.org): Accepted to 2nd ACM conference on Equity and Access in Algorithms, Mechanisms, and Optimization.'
+  link: liquid-in-practice.pdf
+
+- title: "Dynamic Fair Division with Partial Information"
+  authors: '[Gerdus Benadè](http://www.gerdusbenade.com), Daniel Halpern, and [Alexandros Psomas](https://www.alexpsomas.com)'
+  citation: '[NeurIPS-22](https://neurips.cc/Conferences/2022): Proc. of 36th Conference on Neural Information Processing Systems, 2022. Forthcoming.'
+  link: dynamic-fair-division.pdf
+
 - title: "Unbiased Information Packets"
   authors: 'Daniel Halpern and [Ariel D. Procaccia](http://procaccia.info)'
   citation: 'Working Paper'
@@ -47,11 +57,6 @@
   authors: 'Daniel Halpern, [Joseph Y. Halpern](https://www.cs.cornell.edu/home/halpern/), [Ali Jadbabaie](https://jadbabaie.mit.edu), [Elchanan Mossel](http://math.mit.edu/~elmos/), [Ariel D. Procaccia](http://procaccia.info), and [Manon Revel](https://manrev.github.io/manon/)'
   citation: 'Working Paper'
   link: liquid-defense.pdf
-
-- title: "Liquid Democracy in Practice: An Empirical Analysis of its Epistemic Performance"
-  authors: '[Manon Revel](https://manrev.github.io/manon/), Daniel Halpern, [Adam Berinsky](https://polisci.mit.edu/people/adam-berinsky), and [Ali Jadbabaie](https://jadbabaie.mit.edu)'
-  citation: 'Working Paper'
-  link: liquid-in-practice.pdf
 
 - title: "Dynamic Fair Division with Partial Information"
   authors: '[Gerdus Benadè](http://www.gerdusbenade.com), Daniel Halpern, and [Alexandros Psomas](https://www.alexpsomas.com)'
