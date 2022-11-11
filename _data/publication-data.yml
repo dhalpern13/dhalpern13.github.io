@@ -1,0 +1,247 @@
+coauthors:
+  nisarg:
+    short: 'N. Shah'
+    long: 'Nisarg Shah'
+    website: 'https://www.cs.toronto.edu/~nisarg'
+  vasilis:
+    short: 'V. Gkatzelis'
+    long: 'Vasilis Gkatzelis'
+    website: 'https://www.cs.drexel.edu/~gkatz/'
+  ariel:
+    short: 'A. D. Procaccia'
+    long: 'Ariel D. Procaccia'
+    website: 'http://procaccia.info'
+  alex:
+    short: 'A. Psomas'
+    long: 'Alexandros Psomas'
+    website: 'https://www.alexpsomas.com'
+  greg:
+    short: 'G. Kehne'
+    long: 'Gregory Kehne'
+    website: 'https://gregorykehne.com'
+  dominik:
+    short: 'D. Peters'
+    long: 'Dominik Peters'
+    website: 'https://dominik-peters.de'
+  piotr:
+    short: 'P. Skowron'
+    long: 'Piotr Skowron'
+    website: 'https://www.mimuw.edu.pl/~ps219737/'
+  manon:
+    short: 'M. Revel'
+    long: 'Manon Revel'
+    website: 'https://manrev.github.io/manon/'
+  tao:
+    short: 'T. Lin'
+    long: 'Tao Lin'
+    website: 'https://tao-l.github.io'
+  jamie:
+    short: 'J. Tucker-Foltz'
+    long: 'Jamie Tucker-Foltz'
+    website: 'http://www.jamie.tuckerfoltz.com'
+  dad:
+    short: 'J. Y. Halpern'
+    long: 'Joseph Y. Halpern'
+    website: 'https://www.cs.cornell.edu/home/halpern/'
+  ali:
+    short: 'A. Jadbabaie'
+    long: 'Ali Jadbabaie'
+    website: 'https://jadbabaie.mit.edu'
+  elchanan:
+    short: 'E. Mossel'
+    long: 'Elchanan Mossel'
+    website: 'https://math.mit.edu/~elmos/'
+  allan:
+    short: 'A. Borodin'
+    long: 'Allan Borodin'
+    website: 'https://www.cs.toronto.edu/~bor/'
+  mohamad:
+    short: 'M. Latifian'
+    long: 'Mohamad Latifian'
+    website: 'https://www.cs.toronto.edu/~latifian/'
+  bailey:
+    short: 'B. Flanigan'
+    long: 'Bailey Flanigan'
+    website: 'https://sites.google.com/andrew.cmu.edu/baileyflanigan/home'
+  adam:
+    short: 'A. Berinsky'
+    long: 'Adam Berinsky'
+    website: 'https://polisci.mit.edu/people/adam-berinsky'
+  gerdus:
+    short: 'G. Benadè'
+    long: 'Gerdus Benadè'
+    website: 'http://www.gerdusbenade.com'
+  manuel:
+    short: 'M. Wüthrich'
+    long: 'Manuel Wüthrich'
+    website: 'https://ei.is.mpg.de/~mwuthrich'
+
+papers:
+  -
+    title: 'Representation with Incomplete Votes'
+    authors: 
+      - 'me'
+      - 'greg'
+      - 'ariel'
+      - 'jamie'
+      - 'manuel'
+    link: 'representation-incomplete'
+    working: true
+  -
+    title: 'In Defense of Liquid Democracy'
+    authors: 
+      - 'me'
+      - 'dad'
+      - 'ali'
+      - 'elchanan'
+      - 'ariel'
+      - 'manon'
+    link: 'liquid-defense'
+    working: true
+  -
+    title: 'Smoothed Analysis of Social Choice Revisited'
+    authors: 
+      - 'bailey'
+      - 'me'
+      - 'alex'
+    link: 'smoothed-analysis'
+    working: true
+  -
+    title: 'Unbiased Information Packets'
+    authors: 
+      - 'me'
+      - 'ariel'
+    link: 'unbiased-information'
+    working: true
+  -
+    title: 'Dynamic Fair Division with Partial Information'
+    authors: 
+      - 'gerdus'
+      - 'me'
+      - 'alex'
+    link: 'dynamic-fair-division'
+    working: false
+    conference: 'NeurIPS'
+    citation: '36th Conference on Neural Information Processing Systems'
+    year: '2022'
+  -
+    title: 'Liquid Democracy in Practice: An Empirical Analysis of its Epistemic Performance'
+    authors: 
+      - 'manon'
+      - 'me'
+      - 'adam'
+      - 'ali'
+    link: 'liquid-in-practice'
+    working: false
+    conference: 'EAAMO'
+    citation: '2nd ACM conference on Equity and Access in Algorithms
+      - Mechanisms
+      - Optimization'
+    year: '2022'
+  -
+    title: 'Distortion in Voting with Top-t Preferences'
+    authors: 
+      - 'allan'
+      - 'me'
+      - 'mohamad'
+      - 'nisarg'
+    link: 'distortion-top-t'
+    working: false
+    conference: 'IJCAI'
+    citation: '31st International Joint Conference on Artificial Intelligence'
+    year: '2022'
+    starting-page: '116'
+    ending-page: '122'
+  -
+    title: 'Can Buyers Reveal for a Better Deal?'
+    authors: 
+      - 'me'
+      - 'greg'
+      - 'jamie'
+    link: 'buyers-reveal'
+    working: false
+    conference: 'IJCAI'
+    citation: '31st International Joint Conference on Artificial Intelligence'
+    year: '2022'
+    starting-page: '314'
+    ending-page: '320' 
+  -
+    title: 'How Many Representatives Do We Need? The Optimal Size of an Epistemic Congress'
+    authors: 
+      - 'manon'
+      - 'tao'
+      - 'me'
+    link: 'optimal-congress'
+    working: false
+    conference: 'AAAI'
+    citation: '36th AAAI Conference on Artificial Intelligence'
+    year: '2022'
+    starting-page: '9431'
+    ending-page: '9438' 
+  -
+    title: 'Fair and Efficient Resource Allocation with Partial Information'
+    authors: 
+      - 'me'
+      - 'nisarg'
+    link: 'distortion-fair-division'
+    working: false
+    conference: 'IJCAI'
+    citation: '30th International Joint Conference on Artificial Intelligence'
+    year: '2021'
+    starting-page: '224'
+    ending-page: '230' 
+  -
+    title: 'Aggregating Binary Judgments Ranked By Accuracy'
+    authors: 
+      - 'me'
+      - 'greg'
+      - 'dominik'
+      - 'ariel'
+      - 'nisarg'
+      - 'piotr'
+    link: 'ranked-binary-judgments'
+    working: false
+    conference: 'AAAI'
+    citation: '35th AAAI Conference on Artificial Intelligence'
+    year: '2021'
+    starting-page: '5456'
+    ending-page: '5463' 
+  -
+    title: 'Fair Division with Binary Valuations: One Rule to Rule Them All'
+    authors: 
+      - 'me'
+      - 'ariel'
+      - 'alex'
+      - 'nisarg'
+    link: 'binary-mnw'
+    working: false
+    conference: 'WINE'
+    citation: '16th Conference on Web and Internet Economics'
+    year: '2020'
+    starting-page: '370'
+    ending-page: '383'
+  -
+    title: 'Resolving the Optimal Metric Distortion Conjecture'
+    authors: 
+      - 'vasilis'
+      - 'me'
+      - 'nisarg'
+    link: 'optimal-metric-distortion'
+    working: false
+    conference: 'FOCS'
+    citation: '61st Annual IEEE Symposium on Foundations of Computer Science'
+    year: '2020'
+    starting-page: '1427'
+    ending-page: '1438'
+  -
+    title: 'Fair Division with Subsidy'
+    authors: 
+      - 'me'
+      - 'nisarg'
+    link: 'fair-division-subsidy-full'
+    working: false
+    conference: 'SAGT'
+    citation: '12th International Symposium on Algorithmic Game Theory'
+    year: '2019'
+    starting-page: '374'
+    ending-page: '389'

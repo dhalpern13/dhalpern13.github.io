@@ -12,7 +12,7 @@ author_profile: true
 {% include base_path %}
 
 <ul>
-{% for post in site.data.publications reversed %}
+{% for post in site.data.publications %}
   {% include archive-single-publication.html %}
 {% endfor %}
 </ul>

@@ -1,73 +1,70 @@
-- title: "Fair Division with Subsidy"
-  citation: '[SAGT-19](http://corelab.ntua.gr/sagt2019/): Proc. of 12th International Symposium on Algorithmic Game Theory, pp. 374-389, 2019.'
-  authors: 'Daniel Halpern and [Nisarg Shah](http://www.cs.toronto.edu/~nisarg/index.html)'
-  link: fair-division-subsidy-full.pdf
-
-- title: "Resolving the Optimal Metric Distortion Conjecture"
-  authors: '[Vasilis Gkatzelis](https://www.cs.drexel.edu/~gkatz/), Daniel Halpern, and [Nisarg Shah](http://www.cs.toronto.edu/~nisarg/index.html)'
-  citation: '[FOCS-20](https://focs2020.cs.duke.edu): Proc. of 61st Annual IEEE Symposium on Foundations of Computer Science, pp. 1427-1438, 2020.'
-  link: optimal-metric-distortion.pdf
-
-- title: "Fair Division with Binary Valuations: One Rule to Rule Them All"
-  authors: 'Daniel Halpern, [Ariel D. Procaccia](http://procaccia.info), [Alexandros Psomas](https://www.alexpsomas.com), and [Nisarg Shah](http://www.cs.toronto.edu/~nisarg/index.html)'
-  link: binary-mnw.pdf
-  citation: '[WINE-20](https://econcs.pku.edu.cn/wine2020/): Proc. of 16th Conference on Web and Internet Economics, pp. 370-383, 2020.'
-
-- title: "Aggregating Binary Judgments Ranked By Accuracy"
-  authors: 'Daniel Halpern, [Gregory Kehne](https://gregorykehne.com), [Dominik Peters](https://dominik-peters.de), [Ariel D. Procaccia](http://procaccia.info), [Nisarg Shah](http://www.cs.toronto.edu/~nisarg/index.html), and [Piotr Skowron](https://www.mimuw.edu.pl/~ps219737/)'
-  citation: '[AAAI-21](https://aaai.org/Conferences/AAAI-21/): Proc. of 35th AAAI Conference on Artificial Intelligence, pp. 5456-5463, 2021.'
-  link: ranked-binary-judgments.pdf
-
-- title: "Fair and Efficient Resource Allocation with Partial Information"
-  authors: 'Daniel Halpern and [Nisarg Shah](http://www.cs.toronto.edu/~nisarg/index.html)'
-  citation: '[IJCAI-21](https://ijcai-21.org): Proc. of 30th International Joint Conference on Artificial Intelligence, pp. 224-230, 2021.'
-  link: distortion-fair-division.pdf
-
-- title: "How Many Representatives Do We Need? The Optimal Size of an Epistemic Congress"
-  authors: '[Manon Revel](https://manrev.github.io/manon/), [Tao Lin](https://tao-l.github.io), and Daniel Halpern'
-  citation: '[AAAI-22](https://aaai.org/Conferences/AAAI-22/): Proc. of 36th AAAI Conference on Artificial Intelligence, pp. 9431-9438, 2022.'
-  link: optimal-congress.pdf
-
-- title: "Can Buyers Reveal for a Better Deal?"
-  authors: 'Daniel Halpern, [Gregory Kehne](https://gregorykehne.com), and [Jamie Tucker-Foltz](http://www.jamie.tuckerfoltz.com)'
-  citation: '[IJCAI-22](https://ijcai-22.org): Proc. of 31st International Joint Conference on Artificial Intelligence, 2022. Forthcoming'
-  link: buyers-reveal.pdf
-
-- title: "Distortion in Voting with Top-t Preferences"
-  authors: '[Allan Borodin](http://www.cs.toronto.edu/~bor/), Daniel Halpern, [Mohamad Latifian](https://www.cs.toronto.edu/~latifian/), and [Nisarg Shah](http://www.cs.toronto.edu/~nisarg/index.html)'
-  citation: '[IJCAI-22](https://ijcai-22.org): Proc. of 31st International Joint Conference on Artificial Intelligence, 2022. Forthcoming'
-  link: distortion-top-t.pdf
-
-- title: "Liquid Democracy in Practice: An Empirical Analysis of its Epistemic Performance"
-  authors: '[Manon Revel](https://manrev.github.io/manon/), Daniel Halpern, [Adam Berinsky](https://polisci.mit.edu/people/adam-berinsky), and [Ali Jadbabaie](https://jadbabaie.mit.edu)'
-  citation: '[EAAMO-22](https://eaamo.org): Proc. of 2nd ACM conference on Equity and Access in Algorithms, Mechanisms, and Optimization. Forthcoming.'
-  link: liquid-in-practice.pdf
-
-- title: "Dynamic Fair Division with Partial Information"
-  authors: '[Gerdus Benadè](http://www.gerdusbenade.com), Daniel Halpern, and [Alexandros Psomas](https://www.alexpsomas.com)'
-  citation: '[NeurIPS-22](https://neurips.cc/Conferences/2022): Proc. of 36th Conference on Neural Information Processing Systems, 2022. Forthcoming.'
-  link: dynamic-fair-division.pdf
-
-- title: "Unbiased Information Packets"
-  authors: 'Daniel Halpern and [Ariel D. Procaccia](http://procaccia.info)'
+-
+  title: 'Representation with Incomplete Votes'
   citation: 'Working Paper'
-  link: unbiased-information.pdf
-
-- title: "In Defense of Liquid Democracy"
-  authors: 'Daniel Halpern, [Joseph Y. Halpern](https://www.cs.cornell.edu/home/halpern/), [Ali Jadbabaie](https://jadbabaie.mit.edu), [Elchanan Mossel](http://math.mit.edu/~elmos/), [Ariel D. Procaccia](http://procaccia.info), and [Manon Revel](https://manrev.github.io/manon/)'
-  citation: 'Working Paper'
-  link: liquid-defense.pdf
-
-- title: "Smoothed Analysis of Social Choice Revisited"
-  authors: '[Baily Flanigan](https://sites.google.com/andrew.cmu.edu/baileyflanigan/home), Daniel Halpern, and [Alexandros Psomas](https://www.alexpsomas.com)'
-  citation: 'Working Paper'
-  link: smoothed-analysis.pdf
-  
-- title: "Representation with Incomplete Votes"
-  authors:  'Daniel Halpern, [Ariel D. Procaccia](http://procaccia.info), [Gregory Kehne](https://gregorykehne.com), [Jamie Tucker-Foltz](http://www.jamie.tuckerfoltz.com), [Manuel Wültrich](https://ei.is.mpg.de/~mwuthrich)'
-  citation: 'Working Paper'
+  authors: 'Daniel Halpern, [Gregory Kehne](https://gregorykehne.com), [Ariel D. Procaccia](http://procaccia.info), [Jamie Tucker-Foltz](http://www.jamie.tuckerfoltz.com), and [Manuel Wüthrich](https://ei.is.mpg.de/~mwuthrich)'
   link: 'representation-incomplete.pdf'
-
-
-
-  
+-
+  title: 'In Defense of Liquid Democracy'
+  citation: 'Working Paper'
+  authors: 'Daniel Halpern, [Joseph Y. Halpern](https://www.cs.cornell.edu/home/halpern/), [Ali Jadbabaie](https://jadbabaie.mit.edu), [Elchanan Mossel](https://math.mit.edu/~elmos/), [Ariel D. Procaccia](http://procaccia.info), and [Manon Revel](https://manrev.github.io/manon/)'
+  link: 'liquid-defense.pdf'
+-
+  title: 'Smoothed Analysis of Social Choice Revisited'
+  citation: 'Working Paper'
+  authors: '[Bailey Flanigan](https://sites.google.com/andrew.cmu.edu/baileyflanigan/home), Daniel Halpern, and [Alexandros Psomas](https://www.alexpsomas.com)'
+  link: 'smoothed-analysis.pdf'
+-
+  title: 'Unbiased Information Packets'
+  citation: 'Working Paper'
+  authors: 'Daniel Halpern and [Ariel D. Procaccia](http://procaccia.info)'
+  link: 'unbiased-information.pdf'
+-
+  title: 'Dynamic Fair Division with Partial Information'
+  citation: '*NeurIPS 2022*'
+  authors: '[Gerdus Benadè](http://www.gerdusbenade.com), Daniel Halpern, and [Alexandros Psomas](https://www.alexpsomas.com)'
+  link: 'dynamic-fair-division.pdf'
+-
+  title: 'Liquid Democracy in Practice: An Empirical Analysis of its Epistemic Performance'
+  citation: '*EAAMO 2022*'
+  authors: '[Manon Revel](https://manrev.github.io/manon/), Daniel Halpern, [Adam Berinsky](https://polisci.mit.edu/people/adam-berinsky), and [Ali Jadbabaie](https://jadbabaie.mit.edu)'
+  link: 'liquid-in-practice.pdf'
+-
+  title: 'Distortion in Voting with Top-t Preferences'
+  citation: '*IJCAI 2022*'
+  authors: '[Allan Borodin](https://www.cs.toronto.edu/~bor/), Daniel Halpern, [Mohamad Latifian](https://www.cs.toronto.edu/~latifian/), and [Nisarg Shah](https://www.cs.toronto.edu/~nisarg)'
+  link: 'distortion-top-t.pdf'
+-
+  title: 'Can Buyers Reveal for a Better Deal?'
+  citation: '*IJCAI 2022*'
+  authors: 'Daniel Halpern, [Gregory Kehne](https://gregorykehne.com), and [Jamie Tucker-Foltz](http://www.jamie.tuckerfoltz.com)'
+  link: 'buyers-reveal.pdf'
+-
+  title: 'How Many Representatives Do We Need? The Optimal Size of an Epistemic Congress'
+  citation: '*AAAI 2022*'
+  authors: '[Manon Revel](https://manrev.github.io/manon/), [Tao Lin](https://tao-l.github.io), and Daniel Halpern'
+  link: 'optimal-congress.pdf'
+-
+  title: 'Fair and Efficient Resource Allocation with Partial Information'
+  citation: '*IJCAI 2021*'
+  authors: 'Daniel Halpern and [Nisarg Shah](https://www.cs.toronto.edu/~nisarg)'
+  link: 'distortion-fair-division.pdf'
+-
+  title: 'Aggregating Binary Judgments Ranked By Accuracy'
+  citation: '*AAAI 2021*'
+  authors: 'Daniel Halpern, [Gregory Kehne](https://gregorykehne.com), [Dominik Peters](https://dominik-peters.de), [Ariel D. Procaccia](http://procaccia.info), [Nisarg Shah](https://www.cs.toronto.edu/~nisarg), and [Piotr Skowron](https://www.mimuw.edu.pl/~ps219737/)'
+  link: 'ranked-binary-judgments.pdf'
+-
+  title: 'Fair Division with Binary Valuations: One Rule to Rule Them All'
+  citation: '*WINE 2020*'
+  authors: 'Daniel Halpern, [Ariel D. Procaccia](http://procaccia.info), [Alexandros Psomas](https://www.alexpsomas.com), and [Nisarg Shah](https://www.cs.toronto.edu/~nisarg)'
+  link: 'binary-mnw.pdf'
+-
+  title: 'Resolving the Optimal Metric Distortion Conjecture'
+  citation: '*FOCS 2020*'
+  authors: '[Vasilis Gkatzelis](https://www.cs.drexel.edu/~gkatz/), Daniel Halpern, and [Nisarg Shah](https://www.cs.toronto.edu/~nisarg)'
+  link: 'optimal-metric-distortion.pdf'
+-
+  title: 'Fair Division with Subsidy'
+  citation: '*SAGT 2019*'
+  authors: 'Daniel Halpern and [Nisarg Shah](https://www.cs.toronto.edu/~nisarg)'
+  link: 'fair-division-subsidy-full.pdf'
