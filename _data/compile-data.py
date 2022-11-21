@@ -2,11 +2,17 @@ import yaml
 import os
 import sys
 
-DATA_FILE = 'publication-data.yml'
-WEBSITE_FILE = 'publications.yml'
-RESUME_DIRECTORY = '../files/Academic-Resume/'
-RESUME_PUBLICATIONS_FILE = 'publications.tex'
-RESUME_TEX_FILE = 'resume.tex'
+WEBSITE_DIR_PATH = '/Users/daniel/Documents/Website'
+
+DATA_DIR = os.path.join(WEBSITE_DIR_PATH, '_data')
+TEX_DIR = os.path.join(WEBSITE_DIR_PATH, 'files', 'Academic-Resume')
+print(DATA_DIR)
+
+DATA_FILE = os.path.join(DATA_DIR, 'publication-data.yml')
+print(DATA_FILE)
+WEBSITE_FILE = os.path.join(DATA_DIR, 'publications.yml')
+RESUME_PUBLICATIONS_FILE = os.path.join(TEX_DIR, 'publications.tex')
+RESUME_TEX_FILE = os.path.join(TEX_DIR, 'resume.tex')
 
 with open(DATA_FILE, 'r') as f:
 	all_data = yaml.safe_load(f)
@@ -45,11 +51,11 @@ def resume_citation(paper):
 	if 'conference' not in paper:
 		return 'Working Paper.'
 	else:
-		beginning_citation = f"\\textit{{In Proceedings of the {paper['citation']} (\\textbf{{{paper['conference']}}})}}."
+		beginning_citation = f"In \\textit{{Proceedings of the {paper['citation']} (\\textbf{{{paper['conference']}}})}},"
 		if 'starting-page' in paper:
-			return f"{beginning_citation} {paper['starting-page']}--{paper['ending-page']}."
+			return f"{beginning_citation} pp. {paper['starting-page']}--{paper['ending-page']}, {paper['year']}."
 		else:
-			return f'{beginning_citation} Forthcoming.'
+			return f"{beginning_citation} {paper['year']}. Forthcoming."
 
 
 with open(WEBSITE_FILE, 'w') as f:
@@ -59,11 +65,11 @@ with open(WEBSITE_FILE, 'w') as f:
 			  	f"  citation: '{website_citation(paper)}'\n"
 			  	f"  authors: '{author_list(paper['authors'], convert_website_author)}'\n"
 			  	f"  link: '{paper['link']}.pdf'\n")
-os.chdir(RESUME_DIRECTORY)
 
 with open(RESUME_PUBLICATIONS_FILE, 'w') as f:
 	for paper in papers:
 		f.write(f"\\item {author_list(paper['authors'], convert_resume_author)}. \\websitelink{{{paper['link']}}}{{{paper['title']}}}. {resume_citation(paper)}\n\n")
 
-if len(sys.argv) > 1:
+if len(sys.argv) == 1:
+	os.chdir(TEX_DIR)
 	os.system(f'pdflatex {RESUME_TEX_FILE}')

@@ -78,16 +78,6 @@ coauthors:
 
 papers:
   -
-    title: 'Representation with Incomplete Votes'
-    authors: 
-      - 'me'
-      - 'greg'
-      - 'ariel'
-      - 'jamie'
-      - 'manuel'
-    link: 'representation-incomplete'
-    working: true
-  -
     title: 'In Defense of Liquid Democracy'
     authors: 
       - 'me'
@@ -97,7 +87,6 @@ papers:
       - 'ariel'
       - 'manon'
     link: 'liquid-defense'
-    working: true
   -
     title: 'Smoothed Analysis of Social Choice Revisited'
     authors: 
@@ -105,14 +94,24 @@ papers:
       - 'me'
       - 'alex'
     link: 'smoothed-analysis'
-    working: true
   -
     title: 'Unbiased Information Packets'
     authors: 
       - 'me'
       - 'ariel'
     link: 'unbiased-information'
-    working: true
+  -
+    title: 'Representation with Incomplete Votes'
+    authors: 
+      - 'me'
+      - 'greg'
+      - 'ariel'
+      - 'jamie'
+      - 'manuel'
+    link: 'representation-incomplete'
+    citation: '37th AAAI Conference on Artificial Intelligence'
+    conference: 'AAAI'
+    year: '2023'
   -
     title: 'Dynamic Fair Division with Partial Information'
     authors: 
@@ -120,7 +119,6 @@ papers:
       - 'me'
       - 'alex'
     link: 'dynamic-fair-division'
-    working: false
     conference: 'NeurIPS'
     citation: '36th Conference on Neural Information Processing Systems'
     year: '2022'
@@ -132,11 +130,8 @@ papers:
       - 'adam'
       - 'ali'
     link: 'liquid-in-practice'
-    working: false
     conference: 'EAAMO'
-    citation: '2nd ACM conference on Equity and Access in Algorithms
-      - Mechanisms
-      - Optimization'
+    citation: '2nd ACM conference on Equity and Access in Algorithms, Mechanisms, Optimization'
     year: '2022'
   -
     title: 'Distortion in Voting with Top-t Preferences'
@@ -146,7 +141,6 @@ papers:
       - 'mohamad'
       - 'nisarg'
     link: 'distortion-top-t'
-    working: false
     conference: 'IJCAI'
     citation: '31st International Joint Conference on Artificial Intelligence'
     year: '2022'
@@ -159,7 +153,6 @@ papers:
       - 'greg'
       - 'jamie'
     link: 'buyers-reveal'
-    working: false
     conference: 'IJCAI'
     citation: '31st International Joint Conference on Artificial Intelligence'
     year: '2022'
@@ -172,7 +165,6 @@ papers:
       - 'tao'
       - 'me'
     link: 'optimal-congress'
-    working: false
     conference: 'AAAI'
     citation: '36th AAAI Conference on Artificial Intelligence'
     year: '2022'
@@ -184,7 +176,6 @@ papers:
       - 'me'
       - 'nisarg'
     link: 'distortion-fair-division'
-    working: false
     conference: 'IJCAI'
     citation: '30th International Joint Conference on Artificial Intelligence'
     year: '2021'
@@ -200,7 +191,6 @@ papers:
       - 'nisarg'
       - 'piotr'
     link: 'ranked-binary-judgments'
-    working: false
     conference: 'AAAI'
     citation: '35th AAAI Conference on Artificial Intelligence'
     year: '2021'
@@ -214,7 +204,6 @@ papers:
       - 'alex'
       - 'nisarg'
     link: 'binary-mnw'
-    working: false
     conference: 'WINE'
     citation: '16th Conference on Web and Internet Economics'
     year: '2020'
@@ -227,7 +216,6 @@ papers:
       - 'me'
       - 'nisarg'
     link: 'optimal-metric-distortion'
-    working: false
     conference: 'FOCS'
     citation: '61st Annual IEEE Symposium on Foundations of Computer Science'
     year: '2020'
@@ -239,7 +227,6 @@ papers:
       - 'me'
       - 'nisarg'
     link: 'fair-division-subsidy-full'
-    working: false
     conference: 'SAGT'
     citation: '12th International Symposium on Algorithmic Game Theory'
     year: '2019'

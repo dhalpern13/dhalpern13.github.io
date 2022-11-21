@@ -1,9 +1,4 @@
 -
-  title: 'Representation with Incomplete Votes'
-  citation: 'Working Paper'
-  authors: 'Daniel Halpern, [Gregory Kehne](https://gregorykehne.com), [Ariel D. Procaccia](http://procaccia.info), [Jamie Tucker-Foltz](http://www.jamie.tuckerfoltz.com), and [Manuel Wüthrich](https://ei.is.mpg.de/~mwuthrich)'
-  link: 'representation-incomplete.pdf'
--
   title: 'In Defense of Liquid Democracy'
   citation: 'Working Paper'
   authors: 'Daniel Halpern, [Joseph Y. Halpern](https://www.cs.cornell.edu/home/halpern/), [Ali Jadbabaie](https://jadbabaie.mit.edu), [Elchanan Mossel](https://math.mit.edu/~elmos/), [Ariel D. Procaccia](http://procaccia.info), and [Manon Revel](https://manrev.github.io/manon/)'
@@ -18,6 +13,11 @@
   citation: 'Working Paper'
   authors: 'Daniel Halpern and [Ariel D. Procaccia](http://procaccia.info)'
   link: 'unbiased-information.pdf'
+-
+  title: 'Representation with Incomplete Votes'
+  citation: '*AAAI 2023*'
+  authors: 'Daniel Halpern, [Gregory Kehne](https://gregorykehne.com), [Ariel D. Procaccia](http://procaccia.info), [Jamie Tucker-Foltz](http://www.jamie.tuckerfoltz.com), and [Manuel Wüthrich](https://ei.is.mpg.de/~mwuthrich)'
+  link: 'representation-incomplete.pdf'
 -
   title: 'Dynamic Fair Division with Partial Information'
   citation: '*NeurIPS 2022*'
