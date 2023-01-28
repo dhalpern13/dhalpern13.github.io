@@ -75,8 +75,29 @@ coauthors:
     short: 'M. Wüthrich'
     long: 'Manuel Wüthrich'
     website: 'https://ei.is.mpg.de/~mwuthrich'
+  itai:
+    short: 'I. Shapira'
+    long: 'Itai Shapira'
+    website: 'https://seas.harvard.edu/person/itai-shapira'
+  fabian:
+    short: 'F. Baumman'
+    long: 'Fabian Baumann'
+    website: 'https://www.mpib-berlin.mpg.de/staff/fabian-baumann'
+  iyad:
+    short: 'I. Rahwan'
+    long: 'Iyad Rahwan'
+    website: 'https://www.rahwan.me'
 
 papers:
+  - title: 'Optimal Engagement-Diversity Tradeoffs in Social Media'
+    authors:
+      - 'fabian'
+      - 'me'
+      - 'iyad'
+      - 'itai'
+      - 'ariel'
+      - 'manuel'
+    link: 'twitter'
   -
     title: 'In Defense of Liquid Democracy'
     authors: 
