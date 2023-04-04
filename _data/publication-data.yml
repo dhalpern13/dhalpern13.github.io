@@ -87,8 +87,20 @@ coauthors:
     short: 'I. Rahwan'
     long: 'Iyad Rahwan'
     website: 'https://www.rahwan.me'
+  paritosh:
+    short: 'P. Verma'
+    long: 'Paritosh Verma'
+    website: 'https://sites.google.com/view/paritoshverma/'
 
 papers:
+  - title: 'On the Existence of Envy-Free Allocations Beyond Additive Valuations'
+    authors:
+      - 'gerdus'
+      - 'me'
+      - 'alex'
+      - 'paritosh'
+    link: 'ef-beyond-additive'
+
   - title: 'Optimal Engagement-Diversity Tradeoffs in Social Media'
     authors:
       - 'fabian'
