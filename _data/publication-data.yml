@@ -110,16 +110,7 @@ papers:
       - 'ariel'
       - 'manuel'
     link: 'twitter'
-  -
-    title: 'In Defense of Liquid Democracy'
-    authors: 
-      - 'me'
-      - 'dad'
-      - 'ali'
-      - 'elchanan'
-      - 'ariel'
-      - 'manon'
-    link: 'liquid-defense'
+  
   -
     title: 'Smoothed Analysis of Social Choice Revisited'
     authors: 
@@ -133,6 +124,19 @@ papers:
       - 'me'
       - 'ariel'
     link: 'unbiased-information'
+  -
+    title: 'In Defense of Liquid Democracy'
+    authors: 
+      - 'me'
+      - 'dad'
+      - 'ali'
+      - 'elchanan'
+      - 'ariel'
+      - 'manon'
+    link: 'liquid-defense'
+    citation: '24th ACM Conference on Economics and Computation'
+    conference: 'EC'
+    year: '2023'
   -
     title: 'Representation with Incomplete Votes'
     authors: 
@@ -155,6 +159,8 @@ papers:
     conference: 'NeurIPS'
     citation: '36th Conference on Neural Information Processing Systems'
     year: '2022'
+    starting-page: '3703'
+    ending-page: '3715'
   -
     title: 'Liquid Democracy in Practice: An Empirical Analysis of its Epistemic Performance'
     authors: 

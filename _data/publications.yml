@@ -9,11 +9,6 @@
   authors: '[Fabian Baumann](https://www.mpib-berlin.mpg.de/staff/fabian-baumann), Daniel Halpern, [Iyad Rahwan](https://www.rahwan.me), [Itai Shapira](https://seas.harvard.edu/person/itai-shapira), [Ariel D. Procaccia](http://procaccia.info), and [Manuel Wüthrich](https://ei.is.mpg.de/~mwuthrich)'
   link: 'twitter.pdf'
 -
-  title: 'In Defense of Liquid Democracy'
-  citation: 'Working Paper'
-  authors: 'Daniel Halpern, [Joseph Y. Halpern](https://www.cs.cornell.edu/home/halpern/), [Ali Jadbabaie](https://jadbabaie.mit.edu), [Elchanan Mossel](https://math.mit.edu/~elmos/), [Ariel D. Procaccia](http://procaccia.info), and [Manon Revel](https://manrev.github.io/manon/)'
-  link: 'liquid-defense.pdf'
--
   title: 'Smoothed Analysis of Social Choice Revisited'
   citation: 'Working Paper'
   authors: '[Bailey Flanigan](https://sites.google.com/andrew.cmu.edu/baileyflanigan/home), Daniel Halpern, and [Alexandros Psomas](https://www.alexpsomas.com)'
@@ -23,6 +18,11 @@
   citation: 'Working Paper'
   authors: 'Daniel Halpern and [Ariel D. Procaccia](http://procaccia.info)'
   link: 'unbiased-information.pdf'
+-
+  title: 'In Defense of Liquid Democracy'
+  citation: '*EC 2023*'
+  authors: 'Daniel Halpern, [Joseph Y. Halpern](https://www.cs.cornell.edu/home/halpern/), [Ali Jadbabaie](https://jadbabaie.mit.edu), [Elchanan Mossel](https://math.mit.edu/~elmos/), [Ariel D. Procaccia](http://procaccia.info), and [Manon Revel](https://manrev.github.io/manon/)'
+  link: 'liquid-defense.pdf'
 -
   title: 'Representation with Incomplete Votes'
   citation: '*AAAI 2023*'
