@@ -91,8 +91,19 @@ coauthors:
     short: 'P. Verma'
     long: 'Paritosh Verma'
     website: 'https://sites.google.com/view/paritoshverma/'
+  rachel:
+    short: 'R. Li'
+    long: 'Rachel Li'
+    website: 'https://www.linkedin.com/in/rachelxli/'
 
 papers:
+  - title: 'Strategyproof Voting under Correlated Beliefs'
+    authors:
+      - 'me'
+      - 'rachel'
+      - 'ariel'
+    link: 'strategy-proof-beliefs'
+
   - title: 'On the Existence of Envy-Free Allocations Beyond Additive Valuations'
     authors:
       - 'gerdus'
