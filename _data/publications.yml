@@ -14,15 +14,15 @@
   authors: '[Fabian Baumann](https://www.mpib-berlin.mpg.de/staff/fabian-baumann), Daniel Halpern, [Iyad Rahwan](https://www.rahwan.me), [Itai Shapira](https://seas.harvard.edu/person/itai-shapira), [Ariel D. Procaccia](http://procaccia.info), and [Manuel Wüthrich](https://ei.is.mpg.de/~mwuthrich)'
   link: 'twitter.pdf'
 -
-  title: 'Smoothed Analysis of Social Choice Revisited'
-  citation: 'Working Paper'
-  authors: '[Bailey Flanigan](https://sites.google.com/andrew.cmu.edu/baileyflanigan/home), Daniel Halpern, and [Alexandros Psomas](https://www.alexpsomas.com)'
-  link: 'smoothed-analysis.pdf'
--
   title: 'Unbiased Information Packets'
   citation: 'Working Paper'
   authors: 'Daniel Halpern and [Ariel D. Procaccia](http://procaccia.info)'
   link: 'unbiased-information.pdf'
+-
+  title: 'Smoothed Analysis of Social Choice Revisited'
+  citation: '*WINE 2023*'
+  authors: '[Bailey Flanigan](https://sites.google.com/andrew.cmu.edu/baileyflanigan/home), Daniel Halpern, and [Alexandros Psomas](https://www.alexpsomas.com)'
+  link: 'smoothed-analysis.pdf'
 -
   title: 'In Defense of Liquid Democracy'
   citation: '*EC 2023*'

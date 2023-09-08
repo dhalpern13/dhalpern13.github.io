@@ -54,6 +54,10 @@ def resume_citation(paper):
 		beginning_citation = f"In \\textit{{Proceedings of the {paper['citation']} (\\textbf{{{paper['conference']}}})}},"
 		if 'starting-page' in paper:
 			return f"{beginning_citation} pp. {paper['starting-page']}--{paper['ending-page']}, {paper['year']}."
+		elif 'page' in paper:
+			return f"{beginning_citation} pp. {paper['page']}, {paper['year']}."
+		elif 'note' in paper:
+			return f"{beginning_citation} {paper['year']}.{paper['note']}"
 		else:
 			return f"{beginning_citation} {paper['year']}. Forthcoming."
 
@@ -72,4 +76,5 @@ with open(RESUME_PUBLICATIONS_FILE, 'w') as f:
 
 if len(sys.argv) == 1:
 	os.chdir(TEX_DIR)
+	os.system(f'pdflatex {RESUME_TEX_FILE}')
 	os.system(f'pdflatex {RESUME_TEX_FILE}')

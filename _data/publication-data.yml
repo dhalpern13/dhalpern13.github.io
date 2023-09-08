@@ -121,7 +121,12 @@ papers:
       - 'ariel'
       - 'manuel'
     link: 'twitter'
-  
+  -
+    title: 'Unbiased Information Packets'
+    authors: 
+      - 'me'
+      - 'ariel'
+    link: 'unbiased-information'
   -
     title: 'Smoothed Analysis of Social Choice Revisited'
     authors: 
@@ -129,12 +134,9 @@ papers:
       - 'me'
       - 'alex'
     link: 'smoothed-analysis'
-  -
-    title: 'Unbiased Information Packets'
-    authors: 
-      - 'me'
-      - 'ariel'
-    link: 'unbiased-information'
+    citation: '19th Conference on Web and Internet Economics'
+    conference: 'WINE'
+    year: '2023'
   -
     title: 'In Defense of Liquid Democracy'
     authors: 
@@ -148,6 +150,7 @@ papers:
     citation: '24th ACM Conference on Economics and Computation'
     conference: 'EC'
     year: '2023'
+    page: 852
   -
     title: 'Representation with Incomplete Votes'
     authors: 
@@ -160,6 +163,8 @@ papers:
     citation: '37th AAAI Conference on Artificial Intelligence'
     conference: 'AAAI'
     year: '2023'
+    starting-page: '5657'
+    ending-page: '5664'
   -
     title: 'Dynamic Fair Division with Partial Information'
     authors: 
@@ -183,6 +188,7 @@ papers:
     conference: 'EAAMO'
     citation: '2nd ACM conference on Equity and Access in Algorithms, Mechanisms, Optimization'
     year: '2022'
+    note: ''
   -
     title: 'Distortion in Voting with Top-t Preferences'
     authors: 
