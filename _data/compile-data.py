@@ -78,3 +78,4 @@ if len(sys.argv) == 1:
 	os.chdir(TEX_DIR)
 	os.system(f'pdflatex {RESUME_TEX_FILE}')
 	os.system(f'pdflatex {RESUME_TEX_FILE}')
+	os.system(f'pdflatex {RESUME_TEX_FILE}')

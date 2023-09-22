@@ -1,9 +1,4 @@
 -
-  title: 'Strategyproof Voting under Correlated Beliefs'
-  citation: 'Working Paper'
-  authors: 'Daniel Halpern, [Rachel Li](https://www.linkedin.com/in/rachelxli/), and [Ariel D. Procaccia](http://procaccia.info)'
-  link: 'strategy-proof-beliefs.pdf'
--
   title: 'On the Existence of Envy-Free Allocations Beyond Additive Valuations'
   citation: 'Working Paper'
   authors: '[Gerdus Benadè](http://www.gerdusbenade.com), Daniel Halpern, [Alexandros Psomas](https://www.alexpsomas.com), and [Paritosh Verma](https://sites.google.com/view/paritoshverma/)'
@@ -18,6 +13,11 @@
   citation: 'Working Paper'
   authors: 'Daniel Halpern and [Ariel D. Procaccia](http://procaccia.info)'
   link: 'unbiased-information.pdf'
+-
+  title: 'Strategyproof Voting under Correlated Beliefs'
+  citation: '*NeurIPS 2023*'
+  authors: 'Daniel Halpern, [Rachel Li](https://www.linkedin.com/in/rachelxli/), and [Ariel D. Procaccia](http://procaccia.info)'
+  link: 'strategy-proof-beliefs.pdf'
 -
   title: 'Smoothed Analysis of Social Choice Revisited'
   citation: '*WINE 2023*'

@@ -97,13 +97,6 @@ coauthors:
     website: 'https://www.linkedin.com/in/rachelxli/'
 
 papers:
-  - title: 'Strategyproof Voting under Correlated Beliefs'
-    authors:
-      - 'me'
-      - 'rachel'
-      - 'ariel'
-    link: 'strategy-proof-beliefs'
-
   - title: 'On the Existence of Envy-Free Allocations Beyond Additive Valuations'
     authors:
       - 'gerdus'
@@ -127,6 +120,15 @@ papers:
       - 'me'
       - 'ariel'
     link: 'unbiased-information'
+  - title: 'Strategyproof Voting under Correlated Beliefs'
+    authors:
+      - 'me'
+      - 'rachel'
+      - 'ariel'
+    link: 'strategy-proof-beliefs'
+    conference: 'NeurIPS'
+    citation: '37th Conference on Neural Information Processing Systems'
+    year: '2023'
   -
     title: 'Smoothed Analysis of Social Choice Revisited'
     authors: 
