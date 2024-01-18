@@ -95,8 +95,33 @@ coauthors:
     short: 'R. Li'
     long: 'Rachel Li'
     website: 'https://www.linkedin.com/in/rachelxli/'
+  warut:
+    short: 'W. Suksompong'
+    long: 'Warut Suksompong'
+    website: 'https://www.comp.nus.edu.sg/~warut/'
+  evi:
+    short: 'E. Micha'
+    long: 'Evi Micha'
+    website: 'https://www.cs.toronto.edu/~emicha/'
+  soroush:
+    short: 'S. Ebadian'
+    long: 'Soroush Ebadian'
+    website: 'https://ebadian.org'
 
 papers:
+  - title: 'Metric Distortion with Elicited Pairwise Comparisons'
+    authors:
+      - 'soroush'
+      - 'me'
+      - 'evi'
+    link: 'metric-distortion-with-queries'
+
+  - title: The Proportional Veto Principle for Approval Ballots
+    authors:
+      - 'me'
+      - 'ariel'
+      - 'warut'
+    link: 'flexible-voters'
   - title: 'On the Existence of Envy-Free Allocations Beyond Additive Valuations'
     authors:
       - 'gerdus'
