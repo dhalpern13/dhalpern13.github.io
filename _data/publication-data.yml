@@ -108,7 +108,7 @@ coauthors:
     long: 'Soroush Ebadian'
     website: 'https://ebadian.org'
 
-papers:
+working:
   - title: 'Metric Distortion with Elicited Pairwise Comparisons'
     authors:
       - 'soroush'
@@ -130,6 +130,7 @@ papers:
       - 'paritosh'
     link: 'ef-beyond-additive'
 
+papers:
   - title: 'Optimal Engagement-Diversity Tradeoffs in Social Media'
     authors:
       - 'fabian'
@@ -139,12 +140,10 @@ papers:
       - 'ariel'
       - 'manuel'
     link: 'twitter'
-  -
-    title: 'Unbiased Information Packets'
-    authors: 
-      - 'me'
-      - 'ariel'
-    link: 'unbiased-information'
+    conference: 'WWW'
+    citation: '33rd ACM Web Conference'
+    year: '2024'
+
   - title: 'Strategyproof Voting under Correlated Beliefs'
     authors:
       - 'me'
@@ -164,6 +163,8 @@ papers:
     citation: '19th Conference on Web and Internet Economics'
     conference: 'WINE'
     year: '2023'
+    starting-page: '290'
+    ending-page: '309'
   -
     title: 'In Defense of Liquid Democracy'
     authors: 
@@ -177,7 +178,7 @@ papers:
     citation: '24th ACM Conference on Economics and Computation'
     conference: 'EC'
     year: '2023'
-    page: 852
+    page: '852'
   -
     title: 'Representation with Incomplete Votes'
     authors: 
@@ -315,3 +316,10 @@ papers:
     year: '2019'
     starting-page: '374'
     ending-page: '389'
+
+unpublished:
+  - title: 'Unbiased Information Packets'
+    authors: 
+      - 'me'
+      - 'ariel'
+    link: 'unbiased-information'

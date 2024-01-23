@@ -10,15 +10,20 @@ print(DATA_DIR)
 
 DATA_FILE = os.path.join(DATA_DIR, 'publication-data.yml')
 print(DATA_FILE)
-WEBSITE_FILE = os.path.join(DATA_DIR, 'publications.yml')
+CONFERENCE_PAPER_FILE = os.path.join(DATA_DIR, 'publications.yml')
+WORKING_PAPER_FILE = os.path.join(DATA_DIR, 'working-papers.yml')
+UNPUBLISHED_PAPER_FILE = os.path.join(DATA_DIR, 'unpublished.yml')
 RESUME_PUBLICATIONS_FILE = os.path.join(TEX_DIR, 'publications.tex')
+RESUME_WORKING_FILE = os.path.join(TEX_DIR, 'working.tex')
 RESUME_TEX_FILE = os.path.join(TEX_DIR, 'resume.tex')
 
 with open(DATA_FILE, 'r') as f:
 	all_data = yaml.safe_load(f)
 
 coauthors = all_data['coauthors']
-papers = all_data['papers']
+conference = all_data['papers']
+working = all_data['working']
+unpublished = all_data['unpublished']
 
 def convert_website_author(author_string):
 	if author_string == 'me':
@@ -42,28 +47,22 @@ def author_list(author_list, convert_func):
 		return ', '.join(website_authors[:-1]) + ', and ' + website_authors[-1]
 
 def website_citation(paper):
-	if 'conference' not in paper:
-		return 'Working Paper'
-	else:
-		return f'*{paper["conference"]} {paper["year"]}*'
+	return f'*{paper["conference"]} {paper["year"]}*'
 
 def resume_citation(paper):
-	if 'conference' not in paper:
-		return 'Working Paper.'
+	beginning_citation = f"In \\textit{{Proceedings of the {paper['citation']} (\\textbf{{{paper['conference']}}})}},"
+	if 'starting-page' in paper:
+		return f"{beginning_citation} pp. {paper['starting-page']}--{paper['ending-page']}, {paper['year']}."
+	elif 'page' in paper:
+		return f"{beginning_citation} pp. {paper['page']}, {paper['year']}."
+	elif 'note' in paper:
+		return f"{beginning_citation} {paper['year']}.{paper['note']}"
 	else:
-		beginning_citation = f"In \\textit{{Proceedings of the {paper['citation']} (\\textbf{{{paper['conference']}}})}},"
-		if 'starting-page' in paper:
-			return f"{beginning_citation} pp. {paper['starting-page']}--{paper['ending-page']}, {paper['year']}."
-		elif 'page' in paper:
-			return f"{beginning_citation} pp. {paper['page']}, {paper['year']}."
-		elif 'note' in paper:
-			return f"{beginning_citation} {paper['year']}.{paper['note']}"
-		else:
-			return f"{beginning_citation} {paper['year']}. Forthcoming."
+		return f"{beginning_citation} {paper['year']}. Forthcoming."
 
 
-with open(WEBSITE_FILE, 'w') as f:
-	for paper in papers:
+with open(CONFERENCE_PAPER_FILE, 'w') as f:
+	for paper in conference:
 		f.write(f"-\n"
 			  	f"  title: '{paper['title']}'\n"
 			  	f"  citation: '{website_citation(paper)}'\n"
@@ -71,8 +70,28 @@ with open(WEBSITE_FILE, 'w') as f:
 			  	f"  link: '{paper['link']}.pdf'\n")
 
 with open(RESUME_PUBLICATIONS_FILE, 'w') as f:
-	for paper in papers:
+	for paper in conference:
 		f.write(f"\\item {author_list(paper['authors'], convert_resume_author)}. \\websitelink{{{paper['link']}}}{{{paper['title']}}}. {resume_citation(paper)}\n\n")
+
+with open(UNPUBLISHED_PAPER_FILE, 'w') as f:
+	for paper in unpublished:
+		f.write(f"-\n"
+				f"  title: '{paper['title']}'\n"
+	  			f"  authors: '{author_list(paper['authors'], convert_website_author)}'\n"
+	  			f"  link: '{paper['link']}.pdf'\n")
+
+with open(WORKING_PAPER_FILE, 'w') as f:
+	for paper in working:
+		f.write(f"-\n"
+				f"  title: '{paper['title']}'\n"
+	  			f"  authors: '{author_list(paper['authors'], convert_website_author)}'\n"
+	  			f"  link: '{paper['link']}.pdf'\n")
+
+with open(RESUME_WORKING_FILE, 'w') as f:
+	for paper in working:
+		f.write(f"\\item {author_list(paper['authors'], convert_resume_author)}. \\websitelink{{{paper['link']}}}{{{paper['title']}}}.\n\n")
+
+
 
 if len(sys.argv) == 1:
 	os.chdir(TEX_DIR)

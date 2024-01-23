@@ -11,8 +11,26 @@ author_profile: true
 
 {% include base_path %}
 
+---
+
+## Working Papers
+<ul>
+{% for post in site.data.working-papers %}
+  {% include archive-single-publication.html %}
+{% endfor %}
+</ul>
+
+## Conference Publications
 <ul>
 {% for post in site.data.publications %}
+  {% include archive-single-publication.html %}
+{% endfor %}
+</ul>
+
+## Unpublished Manuscripts
+
+<ul>
+{% for post in site.data.unpublished %}
   {% include archive-single-publication.html %}
 {% endfor %}
 </ul>
