@@ -21,7 +21,7 @@ with open(DATA_FILE, 'r') as f:
 	all_data = yaml.safe_load(f)
 
 coauthors = all_data['coauthors']
-conference = all_data['papers']
+conference = all_data['conference']
 working = all_data['working']
 unpublished = all_data['unpublished']
 

@@ -107,8 +107,19 @@ coauthors:
     short: 'S. Ebadian'
     long: 'Soroush Ebadian'
     website: 'https://ebadian.org'
+  safwan:
+    short: 'S. Hossain'
+    long: 'Safwan Hossain'
+    website: 'https://safwanhossain.github.io'
 
 working:
+  - title: 'Computing Voting Rules with Elicited Incomplete Votes'
+    authors:
+      - 'me'
+      - 'safwan'
+      - 'jamie'
+    link: 'social-choice-queries'
+
   - title: 'Metric Distortion with Elicited Pairwise Comparisons'
     authors:
       - 'soroush'
@@ -130,7 +141,7 @@ working:
       - 'paritosh'
     link: 'ef-beyond-additive'
 
-papers:
+conference:
   - title: 'Optimal Engagement-Diversity Tradeoffs in Social Media'
     authors:
       - 'fabian'

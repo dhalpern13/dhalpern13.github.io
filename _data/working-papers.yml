@@ -1,4 +1,8 @@
 -
+  title: 'Computing Voting Rules with Elicited Incomplete Votes'
+  authors: 'Daniel Halpern, [Safwan Hossain](https://safwanhossain.github.io), and [Jamie Tucker-Foltz](http://www.jamie.tuckerfoltz.com)'
+  link: 'social-choice-queries.pdf'
+-
   title: 'Metric Distortion with Elicited Pairwise Comparisons'
   authors: '[Soroush Ebadian](https://ebadian.org), Daniel Halpern, and [Evi Micha](https://www.cs.toronto.edu/~emicha/)'
   link: 'metric-distortion-with-queries.pdf'
