@@ -120,13 +120,6 @@ working:
       - 'jamie'
     link: 'social-choice-queries'
 
-  - title: 'Metric Distortion with Elicited Pairwise Comparisons'
-    authors:
-      - 'soroush'
-      - 'me'
-      - 'evi'
-    link: 'metric-distortion-with-queries'
-
   - title: The Proportional Veto Principle for Approval Ballots
     authors:
       - 'me'
@@ -142,6 +135,17 @@ working:
     link: 'ef-beyond-additive'
 
 conference:
+  - title: 'Metric Distortion with Elicited Pairwise Comparisons'
+    authors:
+      - 'soroush'
+      - 'me'
+      - 'evi'
+    link: 'metric-distortion-with-queries'
+    conference: 'IJCAI'
+    citation: '33rd International Joint Conference on Artificial Intelligence'
+    year: '2024'
+
+
   - title: 'Optimal Engagement-Diversity Tradeoffs in Social Media'
     authors:
       - 'fabian'
@@ -163,6 +167,8 @@ conference:
     link: 'strategy-proof-beliefs'
     conference: 'NeurIPS'
     citation: '37th Conference on Neural Information Processing Systems'
+    starting-page: '39744'
+    ending-page: '39754'
     year: '2023'
   -
     title: 'Smoothed Analysis of Social Choice Revisited'

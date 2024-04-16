@@ -63,29 +63,28 @@ def resume_citation(paper):
 
 with open(CONFERENCE_PAPER_FILE, 'w') as f:
 	for paper in conference:
-		f.write(f"-\n"
-			  	f"  title: '{paper['title']}'\n"
+		f.write(f"- title: '{paper['title']}'\n"
 			  	f"  citation: '{website_citation(paper)}'\n"
 			  	f"  authors: '{author_list(paper['authors'], convert_website_author)}'\n"
-			  	f"  link: '{paper['link']}.pdf'\n")
+			  	f"  link: '{paper['link']}.pdf'\n\n")
+
+
+with open(UNPUBLISHED_PAPER_FILE, 'w') as f:
+	for paper in unpublished:
+		f.write(f"- title: '{paper['title']}'\n"
+	  			f"  authors: '{author_list(paper['authors'], convert_website_author)}'\n"
+	  			f"  link: '{paper['link']}.pdf'\n\n")
+
+with open(WORKING_PAPER_FILE, 'w') as f:
+	for paper in working:
+		f.write(f"- title: '{paper['title']}'\n"
+	  			f"  authors: '{author_list(paper['authors'], convert_website_author)}'\n"
+	  			f"  link: '{paper['link']}.pdf'\n\n")
 
 with open(RESUME_PUBLICATIONS_FILE, 'w') as f:
 	for paper in conference:
 		f.write(f"\\item {author_list(paper['authors'], convert_resume_author)}. \\websitelink{{{paper['link']}}}{{{paper['title']}}}. {resume_citation(paper)}\n\n")
 
-with open(UNPUBLISHED_PAPER_FILE, 'w') as f:
-	for paper in unpublished:
-		f.write(f"-\n"
-				f"  title: '{paper['title']}'\n"
-	  			f"  authors: '{author_list(paper['authors'], convert_website_author)}'\n"
-	  			f"  link: '{paper['link']}.pdf'\n")
-
-with open(WORKING_PAPER_FILE, 'w') as f:
-	for paper in working:
-		f.write(f"-\n"
-				f"  title: '{paper['title']}'\n"
-	  			f"  authors: '{author_list(paper['authors'], convert_website_author)}'\n"
-	  			f"  link: '{paper['link']}.pdf'\n")
 
 with open(RESUME_WORKING_FILE, 'w') as f:
 	for paper in working:

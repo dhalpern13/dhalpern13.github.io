@@ -1,75 +1,80 @@
--
-  title: 'Optimal Engagement-Diversity Tradeoffs in Social Media'
+- title: 'Metric Distortion with Elicited Pairwise Comparisons'
+  citation: '*IJCAI 2024*'
+  authors: '[Soroush Ebadian](https://ebadian.org), Daniel Halpern, and [Evi Micha](https://www.cs.toronto.edu/~emicha/)'
+  link: 'metric-distortion-with-queries.pdf'
+
+- title: 'Optimal Engagement-Diversity Tradeoffs in Social Media'
   citation: '*WWW 2024*'
   authors: '[Fabian Baumann](https://www.mpib-berlin.mpg.de/staff/fabian-baumann), Daniel Halpern, [Iyad Rahwan](https://www.rahwan.me), [Itai Shapira](https://seas.harvard.edu/person/itai-shapira), [Ariel D. Procaccia](http://procaccia.info), and [Manuel Wüthrich](https://ei.is.mpg.de/~mwuthrich)'
   link: 'twitter.pdf'
--
-  title: 'Strategyproof Voting under Correlated Beliefs'
+
+- title: 'Strategyproof Voting under Correlated Beliefs'
   citation: '*NeurIPS 2023*'
   authors: 'Daniel Halpern, [Rachel Li](https://www.linkedin.com/in/rachelxli/), and [Ariel D. Procaccia](http://procaccia.info)'
   link: 'strategy-proof-beliefs.pdf'
--
-  title: 'Smoothed Analysis of Social Choice Revisited'
+
+- title: 'Smoothed Analysis of Social Choice Revisited'
   citation: '*WINE 2023*'
   authors: '[Bailey Flanigan](https://sites.google.com/andrew.cmu.edu/baileyflanigan/home), Daniel Halpern, and [Alexandros Psomas](https://www.alexpsomas.com)'
   link: 'smoothed-analysis.pdf'
--
-  title: 'In Defense of Liquid Democracy'
+
+- title: 'In Defense of Liquid Democracy'
   citation: '*EC 2023*'
   authors: 'Daniel Halpern, [Joseph Y. Halpern](https://www.cs.cornell.edu/home/halpern/), [Ali Jadbabaie](https://jadbabaie.mit.edu), [Elchanan Mossel](https://math.mit.edu/~elmos/), [Ariel D. Procaccia](http://procaccia.info), and [Manon Revel](https://manrev.github.io/manon/)'
   link: 'liquid-defense.pdf'
--
-  title: 'Representation with Incomplete Votes'
+
+- title: 'Representation with Incomplete Votes'
   citation: '*AAAI 2023*'
   authors: 'Daniel Halpern, [Gregory Kehne](https://gregorykehne.com), [Ariel D. Procaccia](http://procaccia.info), [Jamie Tucker-Foltz](http://www.jamie.tuckerfoltz.com), and [Manuel Wüthrich](https://ei.is.mpg.de/~mwuthrich)'
   link: 'representation-incomplete.pdf'
--
-  title: 'Dynamic Fair Division with Partial Information'
+
+- title: 'Dynamic Fair Division with Partial Information'
   citation: '*NeurIPS 2022*'
   authors: '[Gerdus Benadè](http://www.gerdusbenade.com), Daniel Halpern, and [Alexandros Psomas](https://www.alexpsomas.com)'
   link: 'dynamic-fair-division.pdf'
--
-  title: 'Liquid Democracy in Practice: An Empirical Analysis of its Epistemic Performance'
+
+- title: 'Liquid Democracy in Practice: An Empirical Analysis of its Epistemic Performance'
   citation: '*EAAMO 2022*'
   authors: '[Manon Revel](https://manrev.github.io/manon/), Daniel Halpern, [Adam Berinsky](https://polisci.mit.edu/people/adam-berinsky), and [Ali Jadbabaie](https://jadbabaie.mit.edu)'
   link: 'liquid-in-practice.pdf'
--
-  title: 'Distortion in Voting with Top-t Preferences'
+
+- title: 'Distortion in Voting with Top-t Preferences'
   citation: '*IJCAI 2022*'
   authors: '[Allan Borodin](https://www.cs.toronto.edu/~bor/), Daniel Halpern, [Mohamad Latifian](https://www.cs.toronto.edu/~latifian/), and [Nisarg Shah](https://www.cs.toronto.edu/~nisarg)'
   link: 'distortion-top-t.pdf'
--
-  title: 'Can Buyers Reveal for a Better Deal?'
+
+- title: 'Can Buyers Reveal for a Better Deal?'
   citation: '*IJCAI 2022*'
   authors: 'Daniel Halpern, [Gregory Kehne](https://gregorykehne.com), and [Jamie Tucker-Foltz](http://www.jamie.tuckerfoltz.com)'
   link: 'buyers-reveal.pdf'
--
-  title: 'How Many Representatives Do We Need? The Optimal Size of an Epistemic Congress'
+
+- title: 'How Many Representatives Do We Need? The Optimal Size of an Epistemic Congress'
   citation: '*AAAI 2022*'
   authors: '[Manon Revel](https://manrev.github.io/manon/), [Tao Lin](https://tao-l.github.io), and Daniel Halpern'
   link: 'optimal-congress.pdf'
--
-  title: 'Fair and Efficient Resource Allocation with Partial Information'
+
+- title: 'Fair and Efficient Resource Allocation with Partial Information'
   citation: '*IJCAI 2021*'
   authors: 'Daniel Halpern and [Nisarg Shah](https://www.cs.toronto.edu/~nisarg)'
   link: 'distortion-fair-division.pdf'
--
-  title: 'Aggregating Binary Judgments Ranked By Accuracy'
+
+- title: 'Aggregating Binary Judgments Ranked By Accuracy'
   citation: '*AAAI 2021*'
   authors: 'Daniel Halpern, [Gregory Kehne](https://gregorykehne.com), [Dominik Peters](https://dominik-peters.de), [Ariel D. Procaccia](http://procaccia.info), [Nisarg Shah](https://www.cs.toronto.edu/~nisarg), and [Piotr Skowron](https://www.mimuw.edu.pl/~ps219737/)'
   link: 'ranked-binary-judgments.pdf'
--
-  title: 'Fair Division with Binary Valuations: One Rule to Rule Them All'
+
+- title: 'Fair Division with Binary Valuations: One Rule to Rule Them All'
   citation: '*WINE 2020*'
   authors: 'Daniel Halpern, [Ariel D. Procaccia](http://procaccia.info), [Alexandros Psomas](https://www.alexpsomas.com), and [Nisarg Shah](https://www.cs.toronto.edu/~nisarg)'
   link: 'binary-mnw.pdf'
--
-  title: 'Resolving the Optimal Metric Distortion Conjecture'
+
+- title: 'Resolving the Optimal Metric Distortion Conjecture'
   citation: '*FOCS 2020*'
   authors: '[Vasilis Gkatzelis](https://www.cs.drexel.edu/~gkatz/), Daniel Halpern, and [Nisarg Shah](https://www.cs.toronto.edu/~nisarg)'
   link: 'optimal-metric-distortion.pdf'
--
-  title: 'Fair Division with Subsidy'
+
+- title: 'Fair Division with Subsidy'
   citation: '*SAGT 2019*'
   authors: 'Daniel Halpern and [Nisarg Shah](https://www.cs.toronto.edu/~nisarg)'
   link: 'fair-division-subsidy-full.pdf'
+
