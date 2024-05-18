@@ -113,12 +113,6 @@ coauthors:
     website: 'https://safwanhossain.github.io'
 
 working:
-  - title: 'Computing Voting Rules with Elicited Incomplete Votes'
-    authors:
-      - 'me'
-      - 'safwan'
-      - 'jamie'
-    link: 'social-choice-queries'
 
   - title: The Proportional Veto Principle for Approval Ballots
     authors:
@@ -126,6 +120,19 @@ working:
       - 'ariel'
       - 'warut'
     link: 'flexible-voters'
+
+
+conference:
+  - title: 'Computing Voting Rules with Elicited Incomplete Votes'
+    authors:
+      - 'me'
+      - 'safwan'
+      - 'jamie'
+    link: 'social-choice-queries'
+    conference: 'EC'
+    citation: '25th ACM Conference on Economics and Computation'
+    year: '2024'
+
   - title: 'On the Existence of Envy-Free Allocations Beyond Additive Valuations'
     authors:
       - 'gerdus'
@@ -133,8 +140,10 @@ working:
       - 'alex'
       - 'paritosh'
     link: 'ef-beyond-additive'
+    conference: 'EC'
+    citation: '25th ACM Conference on Economics and Computation'
+    year: '2024'
 
-conference:
   - title: 'Metric Distortion with Elicited Pairwise Comparisons'
     authors:
       - 'soroush'

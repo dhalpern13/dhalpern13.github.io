@@ -1,3 +1,13 @@
+- title: 'Computing Voting Rules with Elicited Incomplete Votes'
+  citation: '*EC 2024*'
+  authors: 'Daniel Halpern, [Safwan Hossain](https://safwanhossain.github.io), and [Jamie Tucker-Foltz](http://www.jamie.tuckerfoltz.com)'
+  link: 'social-choice-queries.pdf'
+
+- title: 'On the Existence of Envy-Free Allocations Beyond Additive Valuations'
+  citation: '*EC 2024*'
+  authors: '[Gerdus Benadè](http://www.gerdusbenade.com), Daniel Halpern, [Alexandros Psomas](https://www.alexpsomas.com), and [Paritosh Verma](https://sites.google.com/view/paritoshverma/)'
+  link: 'ef-beyond-additive.pdf'
+
 - title: 'Metric Distortion with Elicited Pairwise Comparisons'
   citation: '*IJCAI 2024*'
   authors: '[Soroush Ebadian](https://ebadian.org), Daniel Halpern, and [Evi Micha](https://www.cs.toronto.edu/~emicha/)'
