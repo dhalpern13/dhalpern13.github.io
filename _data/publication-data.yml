@@ -111,10 +111,49 @@ coauthors:
     short: 'S. Hossain'
     long: 'Safwan Hossain'
     website: 'https://safwanhossain.github.io'
+  luise:
+    short: 'L. Ge'
+    long: 'Luise Ge'
+    website: 'https://luisegehaijing.github.io'
+  eugene:
+    short: 'Y. Vorobeychik'
+    long: 'Yevgeniy Vorobeychik'
+    website: 'http://vorobeychik.com'
+  junlin:
+    short: 'J. Wu'
+    long: 'Junlin Wu'
+    website: 'https://jlwu002.github.io'
+  udi:
+    short: 'E. Shapiro'
+    long: 'Ehud Shaprio'
+    website: 'https://www.weizmann.ac.il/math/shapiro/home'
+  nimrod:
+    short: 'N. Talmon'
+    long: 'Nimrod Talmon'
+    website: 'https://sites.google.com/view/zutot/'
 
 working:
+  - title: 'Axioms for AI Alignment from Human Feedback'
+    authors:
+      - 'luise'
+      - 'me'
+      - 'evi'
+      - 'ariel'
+      - 'itai'
+      - 'eugene'
+      - 'junlin'
+    link: 'rlhf-social-choice'
 
-  - title: The Proportional Veto Principle for Approval Ballots
+  - title: 'Federated Assemblies'
+    authors:
+      - 'me'
+      - 'ariel'
+      - 'udi'
+      - 'nimrod'
+    link: 'federated-assemblies'
+
+
+  - title: 'The Proportional Veto Principle for Approval Ballots'
     authors:
       - 'me'
       - 'ariel'

@@ -1,3 +1,11 @@
+- title: 'Axioms for AI Alignment from Human Feedback'
+  authors: '[Luise Ge](https://luisegehaijing.github.io), Daniel Halpern, [Evi Micha](https://www.cs.toronto.edu/~emicha/), [Ariel D. Procaccia](http://procaccia.info), [Itai Shapira](https://seas.harvard.edu/person/itai-shapira), [Yevgeniy Vorobeychik](http://vorobeychik.com), and [Junlin Wu](https://jlwu002.github.io)'
+  link: 'rlhf-social-choice.pdf'
+
+- title: 'Federated Assemblies'
+  authors: 'Daniel Halpern, [Ariel D. Procaccia](http://procaccia.info), [Ehud Shaprio](https://www.weizmann.ac.il/math/shapiro/home), and [Nimrod Talmon](https://sites.google.com/view/zutot/)'
+  link: 'federated-assemblies.pdf'
+
 - title: 'The Proportional Veto Principle for Approval Ballots'
   authors: 'Daniel Halpern, [Ariel D. Procaccia](http://procaccia.info), and [Warut Suksompong](https://www.comp.nus.edu.sg/~warut/)'
   link: 'flexible-voters.pdf'
