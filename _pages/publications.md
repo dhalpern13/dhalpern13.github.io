@@ -20,6 +20,13 @@ author_profile: true
 {% endfor %}
 </ul>
 
+## Journal Publications
+<ul>
+{% for post in site.data.journal %}
+  {% include archive-single-publication.html %}
+{% endfor %}
+</ul>
+
 ## Conference Publications
 <ul>
 {% for post in site.data.publications %}

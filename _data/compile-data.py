@@ -13,9 +13,12 @@ print(DATA_FILE)
 CONFERENCE_PAPER_FILE = os.path.join(DATA_DIR, 'publications.yml')
 WORKING_PAPER_FILE = os.path.join(DATA_DIR, 'working-papers.yml')
 UNPUBLISHED_PAPER_FILE = os.path.join(DATA_DIR, 'unpublished.yml')
+JOURNAL_PAPER_FILE = os.path.join(DATA_DIR, 'journal.yml')
 RESUME_PUBLICATIONS_FILE = os.path.join(TEX_DIR, 'publications.tex')
 RESUME_WORKING_FILE = os.path.join(TEX_DIR, 'working.tex')
+RESUME_JOURNAL_FILE = os.path.join(TEX_DIR, 'journal.tex')
 RESUME_TEX_FILE = os.path.join(TEX_DIR, 'resume.tex')
+
 
 with open(DATA_FILE, 'r') as f:
 	all_data = yaml.safe_load(f)
@@ -24,6 +27,7 @@ coauthors = all_data['coauthors']
 conference = all_data['conference']
 working = all_data['working']
 unpublished = all_data['unpublished']
+journal = all_data['journal']
 
 def convert_website_author(author_string):
 	if author_string == 'me':
@@ -49,6 +53,9 @@ def author_list(author_list, convert_func):
 def website_citation(paper):
 	return f'*{paper["conference"]} {paper["year"]}*'
 
+def website_journal_citation(paper):
+	return f'*{paper["journal"]}*'
+
 def resume_citation(paper):
 	beginning_citation = f"In \\textit{{Proceedings of the {paper['citation']} (\\textbf{{{paper['conference']}}})}},"
 	if 'starting-page' in paper:
@@ -59,6 +66,14 @@ def resume_citation(paper):
 		return f"{beginning_citation} {paper['year']}.{paper['note']}"
 	else:
 		return f"{beginning_citation} {paper['year']}. Forthcoming."
+
+
+def journal_citation(paper):
+	beginning_citation = f"In \\textit{{{paper['journal']}}} (\\textbf{{{paper['journal-short']}}})"
+	if 'pub-data' in paper:
+		pass
+	else:
+		return f"{beginning_citation}. Forthcoming"
 
 
 with open(CONFERENCE_PAPER_FILE, 'w') as f:
@@ -77,9 +92,21 @@ with open(UNPUBLISHED_PAPER_FILE, 'w') as f:
 
 with open(WORKING_PAPER_FILE, 'w') as f:
 	for paper in working:
+		if 'note' in paper:
+			added_line = f"  citation: '{paper['note']}'\n\n"
+		else:
+			added_line = "\n"
 		f.write(f"- title: '{paper['title']}'\n"
 	  			f"  authors: '{author_list(paper['authors'], convert_website_author)}'\n"
-	  			f"  link: '{paper['link']}.pdf'\n\n")
+	  			f"  link: '{paper['link']}.pdf'\n" + added_line)
+
+with open(JOURNAL_PAPER_FILE, 'w') as f:
+	for paper in journal:
+		f.write(f"- title: '{paper['title']}'\n"
+				f"  authors: '{author_list(paper['authors'], convert_website_author)}'\n"
+				f"  citation: '{website_journal_citation(paper)}'\n"
+				f"  link: '{paper['link']}.pdf'\n\n")
+
 
 with open(RESUME_PUBLICATIONS_FILE, 'w') as f:
 	for paper in conference:
@@ -88,8 +115,15 @@ with open(RESUME_PUBLICATIONS_FILE, 'w') as f:
 
 with open(RESUME_WORKING_FILE, 'w') as f:
 	for paper in working:
-		f.write(f"\\item {author_list(paper['authors'], convert_resume_author)}. \\websitelink{{{paper['link']}}}{{{paper['title']}}}.\n\n")
+		if 'note' in paper:
+			note = f" \\textit{{{paper['note']}}}."
+		else:
+			note = ''
+		f.write(f"\\item {author_list(paper['authors'], convert_resume_author)}. \\websitelink{{{paper['link']}}}{{{paper['title']}}}.{note}\n\n")
 
+with open(RESUME_JOURNAL_FILE, 'w') as f:
+	for paper in journal:
+		f.write(f"\\item {author_list(paper['authors'], convert_resume_author)}. \\websitelink{{{paper['link']}}}{{{paper['title']}}}. {journal_citation(paper)}\n\n")
 
 
 if len(sys.argv) == 1:

@@ -160,6 +160,29 @@ working:
       - 'warut'
     link: 'flexible-voters'
 
+  # - title: 'Dynamic Fair Division with Partial Information'
+  #   authors: 
+  #     - 'gerdus'
+  #     - 'me'
+  #     - 'alex'
+  #   link: 'dynamic-fair-division'
+  #   note: 'Major revisions in Operations Research'
+
+journal:
+  - title: 'Truth Tracking in Liquid Democracy'
+    authors:
+      - 'adam'
+      - 'me'
+      - 'dad'
+      - 'ali'
+      - 'elchanan'
+      - 'ariel'
+      - 'manon'
+    link: 'ld-journal'
+    journal: 'Management Science'
+    journal-short: 'MS'
+
+
 
 conference:
   - title: 'Computing Voting Rules with Elicited Incomplete Votes'
