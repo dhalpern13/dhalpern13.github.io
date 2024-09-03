@@ -20,12 +20,21 @@ author_profile: true
 {% endfor %}
 </ul>
 
-## Journal Publications
+## Journal Articles
+**Published**
 <ul>
 {% for post in site.data.journal %}
   {% include archive-single-publication.html %}
 {% endfor %}
 </ul>
+**Under Submission**
+<ul>
+{% for post in site.data.journal-submissions %}
+  {% include archive-single-pub-no-link.html %}
+{% endfor %}
+</ul>
+
+
 
 ## Conference Publications
 <ul>

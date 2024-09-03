@@ -182,6 +182,16 @@ journal:
     journal: 'Management Science'
     journal-short: 'MS'
 
+journal_submission:
+  - title: 'Dynamic Fair Division with Partial Information'
+    authors: 
+      - 'gerdus'
+      - 'me'
+      - 'alex'
+    status: 'Under Major Revisions at'
+    journal: 'Operations Research'
+    journal-short: 'OR'
+
 
 
 conference:
@@ -215,6 +225,8 @@ conference:
     conference: 'IJCAI'
     citation: '33rd International Joint Conference on Artificial Intelligence'
     year: '2024'
+    starting-page: '2791'
+    ending-page: '2798'
 
 
   - title: 'Optimal Engagement-Diversity Tradeoffs in Social Media'
@@ -229,6 +241,8 @@ conference:
     conference: 'WWW'
     citation: '33rd ACM Web Conference'
     year: '2024'
+    starting-page: '288'
+    ending-page: '299'
 
   - title: 'Strategyproof Voting under Correlated Beliefs'
     authors:
