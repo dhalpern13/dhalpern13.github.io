@@ -188,7 +188,7 @@ journal_submission:
       - 'gerdus'
       - 'me'
       - 'alex'
-    status: 'Under Major Revisions at'
+    status: 'Under Major Revision at'
     journal: 'Operations Research'
     journal-short: 'OR'
 
