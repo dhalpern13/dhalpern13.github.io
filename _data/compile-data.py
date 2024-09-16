@@ -76,7 +76,7 @@ def journal_citation(paper):
 	if 'pub-data' in paper:
 		pass
 	else:
-		return f"{beginning_citation}. Forthcoming"
+		return f"{beginning_citation}. Forthcoming."
 
 
 
@@ -115,7 +115,8 @@ with open(JOURNAL_SUBMISSIONS_FILE, 'w') as f:
 	for paper in journal_submission:
 		f.write(f"- title: '{paper['title']}'\n"
 				f"  authors: '{author_list(paper['authors'], convert_website_author)}'\n"
-				f"  citation: '{paper['status']} *{paper['journal']}*'\n\n")
+				f"  citation: '{paper['status']} *{paper['journal']}*'\n"
+				f"  link: '{paper['link']}.pdf'\n\n")
 
 
 with open(RESUME_PUBLICATIONS_FILE, 'w') as f:
@@ -137,7 +138,7 @@ with open(RESUME_JOURNAL_FILE, 'w') as f:
 
 with open(RESUME_JOURNAL_SUBMISSION_FILE, 'w') as f:
 	for paper in journal_submission:
-		f.write(f"\\item {author_list(paper['authors'], convert_resume_author)}. \\textit{{{paper['title']}}}. {paper['status']} \\textit{{{paper['journal']}}} (\\textbf{{{paper['journal-short']}}}).\n\n")
+		f.write(f"\\item {author_list(paper['authors'], convert_resume_author)}. \\websitelink{{{paper['link']}}}{{{paper['title']}}}. {paper['status']} \\textit{{{paper['journal']}}} (\\textbf{{{paper['journal-short']}}}).\n\n")
 
 
 

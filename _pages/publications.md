@@ -30,7 +30,7 @@ author_profile: true
 **Under Submission**
 <ul>
 {% for post in site.data.journal-submissions %}
-  {% include archive-single-pub-no-link.html %}
+  {% include archive-single-publication.html %}
 {% endfor %}
 </ul>
 

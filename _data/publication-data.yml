@@ -191,6 +191,7 @@ journal_submission:
     status: 'Under Major Revision at'
     journal: 'Operations Research'
     journal-short: 'OR'
+    link: 'dynamic-fair-division-or'
 
 
 
