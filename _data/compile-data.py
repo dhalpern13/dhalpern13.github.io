@@ -54,21 +54,27 @@ def author_list(author_list, convert_func):
 		return ', '.join(website_authors[:-1]) + ', and ' + website_authors[-1]
 
 def website_citation(paper):
-	return f'*{paper["conference"]} {paper["year"]}*'
+	if 'special' in paper:
+		extra = f' -- {paper["special"]}'
+	else:
+		extra = ''
+	return f'*{paper["conference"]} {paper["year"]}*{extra}'
 
 def website_journal_citation(paper):
 	return f'*{paper["journal"]}*'
 
 def resume_citation(paper):
-	beginning_citation = f"In \\textit{{Proceedings of the {paper['citation']} (\\textbf{{{paper['conference']}}})}},"
+	reference = []
+	reference.append(f"In \\textit{{Proceedings of the {paper['citation']} (\\textbf{{{paper['conference']}}})}},")
 	if 'starting-page' in paper:
-		return f"{beginning_citation} pp. {paper['starting-page']}--{paper['ending-page']}, {paper['year']}."
+		reference.append(f"pp. {paper['starting-page']}--{paper['ending-page']}, {paper['year']}.")
 	elif 'page' in paper:
-		return f"{beginning_citation} pp. {paper['page']}, {paper['year']}."
-	elif 'note' in paper:
-		return f"{beginning_citation} {paper['year']}.{paper['note']}"
+		reference.append(f"pp. {paper['page']}, {paper['year']}.")
 	else:
-		return f"{beginning_citation} {paper['year']}. Forthcoming."
+		reference.append(f"{paper['year']}. Forthcoming.")
+	if 'special' in paper:
+		reference.append(f'\\textbf{{{paper["special"]}}}.')
+	return ' '.join(reference)
 
 
 def journal_citation(paper):

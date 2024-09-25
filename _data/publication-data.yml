@@ -133,17 +133,6 @@ coauthors:
     website: 'https://sites.google.com/view/zutot/'
 
 working:
-  - title: 'Axioms for AI Alignment from Human Feedback'
-    authors:
-      - 'luise'
-      - 'me'
-      - 'evi'
-      - 'ariel'
-      - 'itai'
-      - 'eugene'
-      - 'junlin'
-    link: 'rlhf-social-choice'
-
   - title: 'Federated Assemblies'
     authors:
       - 'me'
@@ -196,6 +185,21 @@ journal_submission:
 
 
 conference:
+  - title: 'Axioms for AI Alignment from Human Feedback'
+    authors:
+      - 'luise'
+      - 'me'
+      - 'evi'
+      - 'ariel'
+      - 'itai'
+      - 'eugene'
+      - 'junlin'
+    link: 'rlhf-social-choice'
+    conference: 'NeurIPS'
+    citation: '38th Conference on Neural Information Processing Systems'
+    year: '2024'
+    special: 'Spotlight Presentation'
+
   - title: 'Computing Voting Rules with Elicited Incomplete Votes'
     authors:
       - 'me'
@@ -319,7 +323,6 @@ conference:
     conference: 'EAAMO'
     citation: '2nd ACM conference on Equity and Access in Algorithms, Mechanisms, Optimization'
     year: '2022'
-    note: ''
   -
     title: 'Distortion in Voting with Top-t Preferences'
     authors: 
