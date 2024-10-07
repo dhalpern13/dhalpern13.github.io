@@ -1,7 +1,8 @@
 - title: 'Axioms for AI Alignment from Human Feedback'
-  citation: '*NeurIPS 2024* -- Spotlight Presentation'
+  citation: '*NeurIPS 2024*'
   authors: '[Luise Ge](https://luisegehaijing.github.io), Daniel Halpern, [Evi Micha](https://www.cs.toronto.edu/~emicha/), [Ariel D. Procaccia](http://procaccia.info), [Itai Shapira](https://seas.harvard.edu/person/itai-shapira), [Yevgeniy Vorobeychik](http://vorobeychik.com), and [Junlin Wu](https://jlwu002.github.io)'
   link: 'rlhf-social-choice.pdf'
+  special: '**Spotlight Presentation**'
 
 - title: 'Computing Voting Rules with Elicited Incomplete Votes'
   citation: '*EC 2024*'
@@ -87,6 +88,7 @@
   citation: '*FOCS 2020*'
   authors: '[Vasilis Gkatzelis](https://www.cs.drexel.edu/~gkatz/), Daniel Halpern, and [Nisarg Shah](https://www.cs.toronto.edu/~nisarg)'
   link: 'optimal-metric-distortion.pdf'
+  special: '**Invited to the EC 2021 plenary session: Highlights Beyond EC**'
 
 - title: 'Fair Division with Subsidy'
   citation: '*SAGT 2019*'

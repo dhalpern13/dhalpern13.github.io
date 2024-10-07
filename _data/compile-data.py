@@ -54,11 +54,7 @@ def author_list(author_list, convert_func):
 		return ', '.join(website_authors[:-1]) + ', and ' + website_authors[-1]
 
 def website_citation(paper):
-	if 'special' in paper:
-		extra = f' -- {paper["special"]}'
-	else:
-		extra = ''
-	return f'*{paper["conference"]} {paper["year"]}*{extra}'
+	return f'*{paper["conference"]} {paper["year"]}*'
 
 def website_journal_citation(paper):
 	return f'*{paper["journal"]}*'
@@ -91,7 +87,10 @@ with open(CONFERENCE_PAPER_FILE, 'w') as f:
 		f.write(f"- title: '{paper['title']}'\n"
 			  	f"  citation: '{website_citation(paper)}'\n"
 			  	f"  authors: '{author_list(paper['authors'], convert_website_author)}'\n"
-			  	f"  link: '{paper['link']}.pdf'\n\n")
+			  	f"  link: '{paper['link']}.pdf'\n")
+		if 'special' in paper:
+			f.write(f"  special: '**{paper['special']}**'\n")
+		f.write("\n")
 
 
 with open(UNPUBLISHED_PAPER_FILE, 'w') as f:
