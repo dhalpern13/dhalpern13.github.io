@@ -177,7 +177,7 @@ journal_submission:
       - 'gerdus'
       - 'me'
       - 'alex'
-    status: 'Under Major Revision at'
+    status: 'Under Minor Revision at'
     journal: 'Operations Research'
     journal-short: 'OR'
     link: 'dynamic-fair-division-or'
@@ -323,6 +323,7 @@ conference:
     conference: 'EAAMO'
     citation: '2nd ACM conference on Equity and Access in Algorithms, Mechanisms, Optimization'
     year: '2022'
+    no-forthcoming: True
   -
     title: 'Distortion in Voting with Top-t Preferences'
     authors: 

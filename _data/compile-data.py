@@ -66,6 +66,8 @@ def resume_citation(paper):
 		reference.append(f"pp. {paper['starting-page']}--{paper['ending-page']}, {paper['year']}.")
 	elif 'page' in paper:
 		reference.append(f"pp. {paper['page']}, {paper['year']}.")
+	elif 'no-forthcoming' in paper:
+		reference.append(f"{paper['year']}.")
 	else:
 		reference.append(f"{paper['year']}. Forthcoming.")
 	if 'special' in paper:
