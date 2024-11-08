@@ -62,16 +62,18 @@ def website_journal_citation(paper):
 def resume_citation(paper):
 	reference = []
 	reference.append(f"In \\textit{{Proceedings of the {paper['citation']} (\\textbf{{{paper['conference']}}})}},")
-	if 'starting-page' in paper:
-		reference.append(f"pp. {paper['starting-page']}--{paper['ending-page']}, {paper['year']}.")
-	elif 'page' in paper:
-		reference.append(f"pp. {paper['page']}, {paper['year']}.")
-	elif 'no-forthcoming' in paper:
-		reference.append(f"{paper['year']}.")
-	else:
-		reference.append(f"{paper['year']}. Forthcoming.")
+	# if 'starting-page' in paper:
+	# 	reference.append(f"pp. {paper['starting-page']}--{paper['ending-page']}, {paper['year']}.")
+	# elif 'page' in paper:
+	# 	reference.append(f"pp. {paper['page']}, {paper['year']}.")
+	# elif 'no-forthcoming' in paper:
+	# 	reference.append(f"{paper['year']}.")
+	# else:
+	# 	reference.append(f"{paper['year']}. Forthcoming.")
+
+	reference.append(f"{paper['year']}.")
 	if 'special' in paper:
-		reference.append(f'\\textbf{{{paper["special"]}}}.')
+		reference.append(f'\\\\$\\bigstar$ \\textbf{{{paper['special']}}}')
 	return ' '.join(reference)
 
 
@@ -91,7 +93,7 @@ with open(CONFERENCE_PAPER_FILE, 'w') as f:
 			  	f"  authors: '{author_list(paper['authors'], convert_website_author)}'\n"
 			  	f"  link: '{paper['link']}.pdf'\n")
 		if 'special' in paper:
-			f.write(f"  special: '**{paper['special']}**'\n")
+			f.write(f"  special: '**★ {paper['special']}**'\n")
 		f.write("\n")
 
 
