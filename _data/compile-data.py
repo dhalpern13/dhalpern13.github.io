@@ -130,7 +130,7 @@ with open(JOURNAL_SUBMISSIONS_FILE, 'w') as f:
 
 with open(RESUME_PUBLICATIONS_FILE, 'w') as f:
 	for paper in conference:
-		f.write(f"\\item {author_list(paper['authors'], convert_resume_author)}. \\websitelink{{{paper['link']}}}{{{paper['title']}}}. {resume_citation(paper)}\n\n")
+		f.write(f"\\item \\websitelink{{{paper['link']}}}{{{paper['title']}}}.\\\\  {author_list(paper['authors'], convert_resume_author)}. \\\\{resume_citation(paper)}\n\n")
 
 
 with open(RESUME_WORKING_FILE, 'w') as f:
@@ -143,11 +143,11 @@ with open(RESUME_WORKING_FILE, 'w') as f:
 
 with open(RESUME_JOURNAL_FILE, 'w') as f:
 	for paper in journal:
-		f.write(f"\\item {author_list(paper['authors'], convert_resume_author)}. \\websitelink{{{paper['link']}}}{{{paper['title']}}}. {journal_citation(paper)}\n\n")
+		f.write(f"\\item \\websitelink{{{paper['link']}}}{{{paper['title']}}}.\\\\{author_list(paper['authors'], convert_resume_author)}.\\\\{journal_citation(paper)}\n\n")
 
 with open(RESUME_JOURNAL_SUBMISSION_FILE, 'w') as f:
 	for paper in journal_submission:
-		f.write(f"\\item {author_list(paper['authors'], convert_resume_author)}. \\websitelink{{{paper['link']}}}{{{paper['title']}}}. {paper['status']} \\textit{{{paper['journal']}}} (\\textbf{{{paper['journal-short']}}}).\n\n")
+		f.write(f"\\item \\websitelink{{{paper['link']}}}{{{paper['title']}}}.\\\\ {author_list(paper['authors'], convert_resume_author)}.\\\\{paper['status']} \\textit{{{paper['journal']}}} (\\textbf{{{paper['journal-short']}}}).\n\n")
 
 
 
