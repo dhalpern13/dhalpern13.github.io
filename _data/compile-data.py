@@ -139,7 +139,7 @@ with open(RESUME_WORKING_FILE, 'w') as f:
 			note = f" \\textit{{{paper['note']}}}."
 		else:
 			note = ''
-		f.write(f"\\item {author_list(paper['authors'], convert_resume_author)}. \\websitelink{{{paper['link']}}}{{{paper['title']}}}.{note}\n\n")
+		f.write(f"\\item \\websitelink{{{paper['link']}}}{{{paper['title']}}}.\\\\ {author_list(paper['authors'], convert_resume_author)}. {note}\n\n")
 
 with open(RESUME_JOURNAL_FILE, 'w') as f:
 	for paper in journal:

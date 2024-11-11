@@ -21,15 +21,16 @@ author_profile: true
 </ul>
 
 ## Journal Articles
-**Published**
+<!-- **Under Submission** -->
 <ul>
-{% for post in site.data.journal %}
+{% for post in site.data.journal-submissions %}
   {% include archive-single-publication.html %}
 {% endfor %}
 </ul>
-**Under Submission**
+
+<!-- **Published** -->
 <ul>
-{% for post in site.data.journal-submissions %}
+{% for post in site.data.journal %}
   {% include archive-single-publication.html %}
 {% endfor %}
 </ul>
