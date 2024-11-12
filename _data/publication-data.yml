@@ -170,6 +170,7 @@ journal:
     link: 'ld-journal'
     journal: 'Management Science'
     journal-short: 'MS'
+    alphabetical: True
 
 journal_submission:
   - title: 'Dynamic Fair Division with Partial Information'
@@ -181,6 +182,7 @@ journal_submission:
     journal: 'Operations Research'
     journal-short: 'OR'
     link: 'dynamic-fair-division-or'
+    alphabetical: True
 
 
 
@@ -198,6 +200,7 @@ conference:
     conference: 'NeurIPS'
     citation: '38th Conference on Neural Information Processing Systems'
     year: '2024'
+    alphabetical: True
     special: 'Spotlight Presentation'
 
   - title: 'Computing Voting Rules with Elicited Incomplete Votes'
@@ -209,6 +212,7 @@ conference:
     conference: 'EC'
     citation: '25th ACM Conference on Economics and Computation'
     year: '2024'
+    alphabetical: True
 
   - title: 'On the Existence of Envy-Free Allocations Beyond Additive Valuations'
     authors:
@@ -220,6 +224,7 @@ conference:
     conference: 'EC'
     citation: '25th ACM Conference on Economics and Computation'
     year: '2024'
+    alphabetical: True
 
   - title: 'Metric Distortion with Elicited Pairwise Comparisons'
     authors:
@@ -230,6 +235,7 @@ conference:
     conference: 'IJCAI'
     citation: '33rd International Joint Conference on Artificial Intelligence'
     year: '2024'
+    alphabetical: True
     starting-page: '2791'
     ending-page: '2798'
 
@@ -246,6 +252,7 @@ conference:
     conference: 'WWW'
     citation: '33rd ACM Web Conference'
     year: '2024'
+    alphabetical: True
     starting-page: '288'
     ending-page: '299'
 
@@ -260,6 +267,7 @@ conference:
     starting-page: '39744'
     ending-page: '39754'
     year: '2023'
+    alphabetical: True
   -
     title: 'Smoothed Analysis of Social Choice Revisited'
     authors: 
@@ -270,6 +278,7 @@ conference:
     citation: '19th Conference on Web and Internet Economics'
     conference: 'WINE'
     year: '2023'
+    alphabetical: True
     starting-page: '290'
     ending-page: '309'
   -
@@ -285,6 +294,7 @@ conference:
     citation: '24th ACM Conference on Economics and Computation'
     conference: 'EC'
     year: '2023'
+    alphabetical: True
     page: '852'
   -
     title: 'Representation with Incomplete Votes'
@@ -298,6 +308,7 @@ conference:
     citation: '37th AAAI Conference on Artificial Intelligence'
     conference: 'AAAI'
     year: '2023'
+    alphabetical: True
     starting-page: '5657'
     ending-page: '5664'
   -
@@ -310,6 +321,7 @@ conference:
     conference: 'NeurIPS'
     citation: '36th Conference on Neural Information Processing Systems'
     year: '2022'
+    alphabetical: True
     starting-page: '3703'
     ending-page: '3715'
   -
@@ -335,6 +347,7 @@ conference:
     conference: 'IJCAI'
     citation: '31st International Joint Conference on Artificial Intelligence'
     year: '2022'
+    alphabetical: True
     starting-page: '116'
     ending-page: '122'
   -
@@ -347,6 +360,7 @@ conference:
     conference: 'IJCAI'
     citation: '31st International Joint Conference on Artificial Intelligence'
     year: '2022'
+    alphabetical: True
     starting-page: '314'
     ending-page: '320' 
   -
@@ -359,6 +373,7 @@ conference:
     conference: 'AAAI'
     citation: '36th AAAI Conference on Artificial Intelligence'
     year: '2022'
+    random: True
     starting-page: '9431'
     ending-page: '9438' 
   -
@@ -370,6 +385,7 @@ conference:
     conference: 'IJCAI'
     citation: '30th International Joint Conference on Artificial Intelligence'
     year: '2021'
+    alphabetical: True
     starting-page: '224'
     ending-page: '230' 
   -
@@ -385,6 +401,7 @@ conference:
     conference: 'AAAI'
     citation: '35th AAAI Conference on Artificial Intelligence'
     year: '2021'
+    alphabetical: True
     starting-page: '5456'
     ending-page: '5463' 
   -
@@ -398,6 +415,7 @@ conference:
     conference: 'WINE'
     citation: '16th Conference on Web and Internet Economics'
     year: '2020'
+    alphabetical: True
     starting-page: '370'
     ending-page: '383'
   -
@@ -410,6 +428,7 @@ conference:
     conference: 'FOCS'
     citation: '61st Annual IEEE Symposium on Foundations of Computer Science'
     year: '2020'
+    alphabetical: True
     starting-page: '1427'
     ending-page: '1438'
     special: 'Invited to the EC 2021 plenary session: Highlights Beyond EC'
@@ -422,6 +441,7 @@ conference:
     conference: 'SAGT'
     citation: '12th International Symposium on Algorithmic Game Theory'
     year: '2019'
+    alphabetical: True
     starting-page: '374'
     ending-page: '389'
 

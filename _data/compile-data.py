@@ -59,6 +59,15 @@ def website_citation(paper):
 def website_journal_citation(paper):
 	return f'*{paper["journal"]}*'
 
+def order_prefix(paper):
+	if 'alphabetical' in paper:
+		return '$(\\alpha)$ '
+	elif 'random' in paper:
+		return '$(r)$ '
+	else:
+		return ''
+
+
 def resume_citation(paper):
 	reference = []
 	reference.append(f"In \\textit{{Proceedings of the {paper['citation']} (\\textbf{{{paper['conference']}}})}},")
@@ -130,7 +139,7 @@ with open(JOURNAL_SUBMISSIONS_FILE, 'w') as f:
 
 with open(RESUME_PUBLICATIONS_FILE, 'w') as f:
 	for paper in conference:
-		f.write(f"\\item \\websitelink{{{paper['link']}}}{{{paper['title']}}}.\\\\  {author_list(paper['authors'], convert_resume_author)}. \\\\{resume_citation(paper)}\n\n")
+		f.write(f"\\item \\websitelink{{{paper['link']}}}{{{paper['title']}}}.\\\\{order_prefix(paper)}{author_list(paper['authors'], convert_resume_author)}. \\\\{resume_citation(paper)}\n\n")
 
 
 with open(RESUME_WORKING_FILE, 'w') as f:
@@ -139,15 +148,15 @@ with open(RESUME_WORKING_FILE, 'w') as f:
 			note = f" \\textit{{{paper['note']}}}."
 		else:
 			note = ''
-		f.write(f"\\item \\websitelink{{{paper['link']}}}{{{paper['title']}}}.\\\\ {author_list(paper['authors'], convert_resume_author)}. {note}\n\n")
+		f.write(f"\\item \\websitelink{{{paper['link']}}}{{{paper['title']}}}.\\\\{order_prefix(paper)}{author_list(paper['authors'], convert_resume_author)}. {note}\n\n")
 
 with open(RESUME_JOURNAL_FILE, 'w') as f:
 	for paper in journal:
-		f.write(f"\\item \\websitelink{{{paper['link']}}}{{{paper['title']}}}.\\\\{author_list(paper['authors'], convert_resume_author)}.\\\\{journal_citation(paper)}\n\n")
+		f.write(f"\\item \\websitelink{{{paper['link']}}}{{{paper['title']}}}.\\\\{order_prefix(paper)}{author_list(paper['authors'], convert_resume_author)}.\\\\{journal_citation(paper)}\n\n")
 
 with open(RESUME_JOURNAL_SUBMISSION_FILE, 'w') as f:
 	for paper in journal_submission:
-		f.write(f"\\item \\websitelink{{{paper['link']}}}{{{paper['title']}}}.\\\\ {author_list(paper['authors'], convert_resume_author)}.\\\\{paper['status']} \\textit{{{paper['journal']}}} (\\textbf{{{paper['journal-short']}}}).\n\n")
+		f.write(f"\\item \\websitelink{{{paper['link']}}}{{{paper['title']}}}.\\\\{order_prefix(paper)}{author_list(paper['authors'], convert_resume_author)}.\\\\{paper['status']} \\textit{{{paper['journal']}}} (\\textbf{{{paper['journal-short']}}}).\n\n")
 
 
 
