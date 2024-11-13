@@ -30,7 +30,7 @@ conference = all_data['conference']
 working = all_data['working']
 unpublished = all_data['unpublished']
 journal = all_data['journal']
-journal_submission = all_data['journal_submission']
+# journal_submission = all_data['journal_submission']
 
 def convert_website_author(author_string):
 	if author_string == 'me':
@@ -129,12 +129,12 @@ with open(JOURNAL_PAPER_FILE, 'w') as f:
 				f"  citation: '{website_journal_citation(paper)}'\n"
 				f"  link: '{paper['link']}.pdf'\n\n")
 
-with open(JOURNAL_SUBMISSIONS_FILE, 'w') as f:
-	for paper in journal_submission:
-		f.write(f"- title: '{paper['title']}'\n"
-				f"  authors: '{author_list(paper['authors'], convert_website_author)}'\n"
-				f"  citation: '{paper['status']} *{paper['journal']}*'\n"
-				f"  link: '{paper['link']}.pdf'\n\n")
+# with open(JOURNAL_SUBMISSIONS_FILE, 'w') as f:
+# 	for paper in journal_submission:
+# 		f.write(f"- title: '{paper['title']}'\n"
+# 				f"  authors: '{author_list(paper['authors'], convert_website_author)}'\n"
+# 				f"  citation: '{paper['status']} *{paper['journal']}*'\n"
+# 				f"  link: '{paper['link']}.pdf'\n\n")
 
 
 with open(RESUME_PUBLICATIONS_FILE, 'w') as f:
@@ -154,9 +154,9 @@ with open(RESUME_JOURNAL_FILE, 'w') as f:
 	for paper in journal:
 		f.write(f"\\item \\websitelink{{{paper['link']}}}{{{paper['title']}}}.\\\\{order_prefix(paper)}{author_list(paper['authors'], convert_resume_author)}.\\\\{journal_citation(paper)}\n\n")
 
-with open(RESUME_JOURNAL_SUBMISSION_FILE, 'w') as f:
-	for paper in journal_submission:
-		f.write(f"\\item \\websitelink{{{paper['link']}}}{{{paper['title']}}}.\\\\{order_prefix(paper)}{author_list(paper['authors'], convert_resume_author)}.\\\\{paper['status']} \\textit{{{paper['journal']}}} (\\textbf{{{paper['journal-short']}}}).\n\n")
+# with open(RESUME_JOURNAL_SUBMISSION_FILE, 'w') as f:
+# 	for paper in journal_submission:
+# 		f.write(f"\\item \\websitelink{{{paper['link']}}}{{{paper['title']}}}.\\\\{order_prefix(paper)}{author_list(paper['authors'], convert_resume_author)}.\\\\{paper['status']} \\textit{{{paper['journal']}}} (\\textbf{{{paper['journal-short']}}}).\n\n")
 
 
 

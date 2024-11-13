@@ -158,6 +158,16 @@ working:
   #   note: 'Major revisions in Operations Research'
 
 journal:
+  - title: 'Dynamic Fair Division with Partial Information'
+    authors: 
+      - 'gerdus'
+      - 'me'
+      - 'alex'
+    journal: 'Operations Research'
+    journal-short: 'OR'
+    link: 'dynamic-fair-division-or'
+    alphabetical: True
+    
   - title: 'Tracking Truth in Liquid Democracy'
     authors:
       - 'adam'
@@ -172,17 +182,9 @@ journal:
     journal-short: 'MS'
     alphabetical: True
 
-journal_submission:
-  - title: 'Dynamic Fair Division with Partial Information'
-    authors: 
-      - 'gerdus'
-      - 'me'
-      - 'alex'
-    status: 'Under Minor Revision at'
-    journal: 'Operations Research'
-    journal-short: 'OR'
-    link: 'dynamic-fair-division-or'
-    alphabetical: True
+  
+
+# journal_submission:
 
 
 

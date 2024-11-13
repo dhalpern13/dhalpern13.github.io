@@ -1,3 +1,8 @@
+- title: 'Dynamic Fair Division with Partial Information'
+  authors: '[Gerdus Benadè](http://www.gerdusbenade.com), Daniel Halpern, and [Alexandros Psomas](https://www.alexpsomas.com)'
+  citation: '*Operations Research*'
+  link: 'dynamic-fair-division-or.pdf'
+
 - title: 'Tracking Truth in Liquid Democracy'
   authors: '[Adam Berinsky](https://polisci.mit.edu/people/adam-berinsky), Daniel Halpern, [Joseph Y. Halpern](https://www.cs.cornell.edu/home/halpern/), [Ali Jadbabaie](https://jadbabaie.mit.edu), [Elchanan Mossel](https://math.mit.edu/~elmos/), [Ariel D. Procaccia](http://procaccia.info), and [Manon Revel](https://manrev.github.io/manon/)'
   citation: '*Management Science*'
