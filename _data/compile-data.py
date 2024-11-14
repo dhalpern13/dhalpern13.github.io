@@ -91,7 +91,7 @@ def resume_citation(paper):
 
 
 def journal_citation(paper):
-	beginning_citation = f"In \\textit{{{paper['journal']}}} (\\textbf{{{paper['journal-short']}}})"
+	beginning_citation = f"In \\textit{{{paper['journal']} (\\textbf{{{paper['journal-short']}}})}}"
 	if 'pub-data' in paper:
 		pass
 	else:
