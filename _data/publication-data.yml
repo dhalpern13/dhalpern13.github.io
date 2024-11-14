@@ -74,7 +74,7 @@ coauthors:
   manuel:
     short: 'M. Wüthrich'
     long: 'Manuel Wüthrich'
-    website: 'https://ei.is.mpg.de/~mwuthrich'
+    website: 'https://scholar.google.de/citations?user=7EWrVYIAAAAJ&hl=en'
   itai:
     short: 'I. Shapira'
     long: 'Itai Shapira'
@@ -203,7 +203,8 @@ conference:
     citation: '38th Conference on Neural Information Processing Systems'
     year: '2024'
     alphabetical: True
-    special: 'Spotlight Presentation'
+    special-latex: 'Spotlight presentation (2.1\% of submissions)'
+    special: 'Spotlight presentation (2.1% of submissions)'
 
   - title: 'Computing Voting Rules with Elicited Incomplete Votes'
     authors:

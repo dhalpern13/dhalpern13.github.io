@@ -2,7 +2,7 @@
   citation: '*NeurIPS 2024*'
   authors: '[Luise Ge](https://luisegehaijing.github.io), Daniel Halpern, [Evi Micha](https://www.cs.toronto.edu/~emicha/), [Ariel D. Procaccia](http://procaccia.info), [Itai Shapira](https://seas.harvard.edu/person/itai-shapira), [Yevgeniy Vorobeychik](http://vorobeychik.com), and [Junlin Wu](https://jlwu002.github.io)'
   link: 'rlhf-social-choice.pdf'
-  special: '**★ Spotlight Presentation**'
+  special: '**★ Spotlight presentation (2.1% of submissions)**'
 
 - title: 'Computing Voting Rules with Elicited Incomplete Votes'
   citation: '*EC 2024*'
@@ -21,7 +21,7 @@
 
 - title: 'Optimal Engagement-Diversity Tradeoffs in Social Media'
   citation: '*WWW 2024*'
-  authors: '[Fabian Baumann](https://www.mpib-berlin.mpg.de/staff/fabian-baumann), Daniel Halpern, [Iyad Rahwan](https://www.rahwan.me), [Itai Shapira](https://seas.harvard.edu/person/itai-shapira), [Ariel D. Procaccia](http://procaccia.info), and [Manuel Wüthrich](https://ei.is.mpg.de/~mwuthrich)'
+  authors: '[Fabian Baumann](https://www.mpib-berlin.mpg.de/staff/fabian-baumann), Daniel Halpern, [Iyad Rahwan](https://www.rahwan.me), [Itai Shapira](https://seas.harvard.edu/person/itai-shapira), [Ariel D. Procaccia](http://procaccia.info), and [Manuel Wüthrich](https://scholar.google.de/citations?user=7EWrVYIAAAAJ&hl=en)'
   link: 'twitter.pdf'
 
 - title: 'Strategyproof Voting under Correlated Beliefs'
@@ -41,7 +41,7 @@
 
 - title: 'Representation with Incomplete Votes'
   citation: '*AAAI 2023*'
-  authors: 'Daniel Halpern, [Gregory Kehne](https://gregorykehne.com), [Ariel D. Procaccia](http://procaccia.info), [Jamie Tucker-Foltz](http://www.jamie.tuckerfoltz.com), and [Manuel Wüthrich](https://ei.is.mpg.de/~mwuthrich)'
+  authors: 'Daniel Halpern, [Gregory Kehne](https://gregorykehne.com), [Ariel D. Procaccia](http://procaccia.info), [Jamie Tucker-Foltz](http://www.jamie.tuckerfoltz.com), and [Manuel Wüthrich](https://scholar.google.de/citations?user=7EWrVYIAAAAJ&hl=en)'
   link: 'representation-incomplete.pdf'
 
 - title: 'Dynamic Fair Division with Partial Information'

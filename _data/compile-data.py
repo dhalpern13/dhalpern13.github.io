@@ -82,7 +82,11 @@ def resume_citation(paper):
 
 	reference.append(f"{paper['year']}.")
 	if 'special' in paper:
-		reference.append(f'\\\\$\\bigstar$ \\textbf{{{paper['special']}}}')
+		if 'special-latex' in paper:
+			special = paper['special-latex']
+		else:
+			special = paper['special']
+		reference.append(f'\\\\$\\bigstar$ \\textbf{{{special}}}')
 	return ' '.join(reference)
 
 
