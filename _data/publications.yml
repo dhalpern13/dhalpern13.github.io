@@ -1,6 +1,11 @@
+- title: 'Federated Assemblies'
+  citation: '*AAAI 2025*'
+  authors: 'Daniel Halpern, [Ariel D. Procaccia](http://procaccia.info), [Ehud Shaprio](https://www.weizmann.ac.il/math/shapiro/home), and [Nimrod Talmon](https://sites.google.com/view/zutot/)'
+  link: 'federated-assemblies.pdf'
+
 - title: 'Axioms for AI Alignment from Human Feedback'
   citation: '*NeurIPS 2024*'
-  authors: '[Luise Ge](https://luisegehaijing.github.io), Daniel Halpern, [Evi Micha](https://www.cs.toronto.edu/~emicha/), [Ariel D. Procaccia](http://procaccia.info), [Itai Shapira](https://seas.harvard.edu/person/itai-shapira), [Yevgeniy Vorobeychik](http://vorobeychik.com), and [Junlin Wu](https://jlwu002.github.io)'
+  authors: '[Luise Ge](https://luisegehaijing.github.io), Daniel Halpern, [Evi Micha](https://evi-micha.github.io), [Ariel D. Procaccia](http://procaccia.info), [Itai Shapira](https://seas.harvard.edu/person/itai-shapira), [Yevgeniy Vorobeychik](http://vorobeychik.com), and [Junlin Wu](https://jlwu002.github.io)'
   link: 'rlhf-social-choice.pdf'
   special: '**★ Spotlight presentation (2.1% of submissions)**'
 
@@ -16,7 +21,7 @@
 
 - title: 'Metric Distortion with Elicited Pairwise Comparisons'
   citation: '*IJCAI 2024*'
-  authors: '[Soroush Ebadian](https://ebadian.org), Daniel Halpern, and [Evi Micha](https://www.cs.toronto.edu/~emicha/)'
+  authors: '[Soroush Ebadian](https://ebadian.org), Daniel Halpern, and [Evi Micha](https://evi-micha.github.io)'
   link: 'metric-distortion-with-queries.pdf'
 
 - title: 'Optimal Engagement-Diversity Tradeoffs in Social Media'
@@ -76,7 +81,7 @@
 
 - title: 'Aggregating Binary Judgments Ranked By Accuracy'
   citation: '*AAAI 2021*'
-  authors: 'Daniel Halpern, [Gregory Kehne](https://gregorykehne.com), [Dominik Peters](https://dominik-peters.de), [Ariel D. Procaccia](http://procaccia.info), [Nisarg Shah](https://www.cs.toronto.edu/~nisarg), and [Piotr Skowron](https://www.mimuw.edu.pl/~ps219737/)'
+  authors: 'Daniel Halpern, [Gregory Kehne](https://gregorykehne.com), [Dominik Peters](https://dominik-peters.de), [Ariel D. Procaccia](http://procaccia.info), [Nisarg Shah](https://www.cs.toronto.edu/~nisarg), and [Piotr Skowron](https://duch.mimuw.edu.pl/~ps219737/)'
   link: 'ranked-binary-judgments.pdf'
 
 - title: 'Fair Division with Binary Valuations: One Rule to Rule Them All'

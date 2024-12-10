@@ -26,7 +26,7 @@ coauthors:
   piotr:
     short: 'P. Skowron'
     long: 'Piotr Skowron'
-    website: 'https://www.mimuw.edu.pl/~ps219737/'
+    website: 'https://duch.mimuw.edu.pl/~ps219737/'
   manon:
     short: 'M. Revel'
     long: 'Manon Revel'
@@ -102,7 +102,7 @@ coauthors:
   evi:
     short: 'E. Micha'
     long: 'Evi Micha'
-    website: 'https://www.cs.toronto.edu/~emicha/'
+    website: 'https://evi-micha.github.io'
   soroush:
     short: 'S. Ebadian'
     long: 'Soroush Ebadian'
@@ -133,15 +133,6 @@ coauthors:
     website: 'https://sites.google.com/view/zutot/'
 
 working:
-  - title: 'Federated Assemblies'
-    authors:
-      - 'me'
-      - 'ariel'
-      - 'udi'
-      - 'nimrod'
-    link: 'federated-assemblies'
-
-
   - title: 'The Proportional Veto Principle for Approval Ballots'
     authors:
       - 'me'
@@ -189,6 +180,18 @@ journal:
 
 
 conference:
+  - title: 'Federated Assemblies'
+    authors:
+      - 'me'
+      - 'ariel'
+      - 'udi'
+      - 'nimrod'
+    link: 'federated-assemblies'
+    conference: 'AAAI'
+    year: '2025'
+    alphabetical: True
+    citation: '39th AAAI Conference on Artificial Intelligence'
+    
   - title: 'Axioms for AI Alignment from Human Feedback'
     authors:
       - 'luise'
