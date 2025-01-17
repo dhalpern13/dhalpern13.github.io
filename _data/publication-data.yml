@@ -191,6 +191,8 @@ conference:
     year: '2025'
     alphabetical: True
     citation: '39th AAAI Conference on Artificial Intelligence'
+    special-latex: 'Oral presentation (4.6\% of submissions)'
+    special: 'Oral presentation (4.6% of submissions)'
     
   - title: 'Axioms for AI Alignment from Human Feedback'
     authors:
