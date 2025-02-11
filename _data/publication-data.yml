@@ -131,22 +131,26 @@ coauthors:
     short: 'N. Talmon'
     long: 'Nimrod Talmon'
     website: 'https://sites.google.com/view/zutot/'
+  danielxie:
+    short: 'D. Xie'
+    long: 'Daniel Xie'
+    website: 'https://www.linkedin.com/in/danielyxie/'
 
 working:
+  - title: 'Online Envy Minimization and Multicolor Discrepancy: Equivalences and Separations'
+    authors:
+      - 'me'
+      - 'alex'
+      - 'paritosh'
+      - 'danielxie'
+    link: 'discrepancy-and-envy'
+
   - title: 'The Proportional Veto Principle for Approval Ballots'
     authors:
       - 'me'
       - 'ariel'
       - 'warut'
     link: 'flexible-voters'
-
-  # - title: 'Dynamic Fair Division with Partial Information'
-  #   authors: 
-  #     - 'gerdus'
-  #     - 'me'
-  #     - 'alex'
-  #   link: 'dynamic-fair-division'
-  #   note: 'Major revisions in Operations Research'
 
 journal:
   - title: 'Dynamic Fair Division with Partial Information'
