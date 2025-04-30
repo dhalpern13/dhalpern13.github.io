@@ -145,13 +145,6 @@ working:
       - 'danielxie'
     link: 'discrepancy-and-envy'
 
-  - title: 'The Proportional Veto Principle for Approval Ballots'
-    authors:
-      - 'me'
-      - 'ariel'
-      - 'warut'
-    link: 'flexible-voters'
-
 journal:
   - title: 'Dynamic Fair Division with Partial Information'
     authors: 
@@ -184,6 +177,17 @@ journal:
 
 
 conference:
+  - title: 'The Proportional Veto Principle for Approval Ballots'
+    authors:
+      - 'me'
+      - 'ariel'
+      - 'warut'
+    link: 'flexible-voters'
+    conference: 'IJCAI'
+    year: '2025'
+    alphabetical: True
+    citation: '34th International Joint Conference on Artificial Intelligence'
+
   - title: 'Federated Assemblies'
     authors:
       - 'me'
