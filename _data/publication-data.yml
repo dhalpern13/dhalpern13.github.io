@@ -136,14 +136,8 @@ coauthors:
     long: 'Daniel Xie'
     website: 'https://www.linkedin.com/in/danielyxie/'
 
-working:
-  - title: 'Online Envy Minimization and Multicolor Discrepancy: Equivalences and Separations'
-    authors:
-      - 'me'
-      - 'alex'
-      - 'paritosh'
-      - 'danielxie'
-    link: 'discrepancy-and-envy'
+working: []
+  
 
 journal:
   - title: 'Dynamic Fair Division with Partial Information'
@@ -177,6 +171,18 @@ journal:
 
 
 conference:
+  - title: 'Online Envy Minimization and Multicolor Discrepancy: Equivalences and Separations'
+    authors:
+      - 'me'
+      - 'alex'
+      - 'paritosh'
+      - 'danielxie'
+    link: 'discrepancy-and-envy'
+    conference: 'EC'
+    year: '2025'
+    alphabetical: True
+    citation: '26th ACM Conference on Economics and Computation'
+
   - title: 'The Proportional Veto Principle for Approval Ballots'
     authors:
       - 'me'
