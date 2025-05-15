@@ -136,7 +136,14 @@ coauthors:
     long: 'Daniel Xie'
     website: 'https://www.linkedin.com/in/danielyxie/'
 
-working: []
+working:
+  - title: 'Pairwise Calibrated Rewards for Pluralistic Alignment'
+    authors:
+      - 'me'
+      - 'evi'
+      - 'itai'
+      - 'ariel'
+    link: 'pairwise-calibration'
   
 
 journal:

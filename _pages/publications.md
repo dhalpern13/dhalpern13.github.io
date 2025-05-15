@@ -13,12 +13,12 @@ author_profile: true
 
 ---
 
-<!-- ## Working Papers
+## Working Papers
 <ul>
 {% for post in site.data.working-papers %}
   {% include archive-single-publication.html %}
 {% endfor %}
-</ul> -->
+</ul>
 
 ## Journal Articles
 <!-- **Under Submission** -->
