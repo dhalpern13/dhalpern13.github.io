@@ -1,0 +1,337 @@
+\documentclass{article}
+\usepackage{scimisc-cv}
+\usepackage[hidelinks]{hyperref}
+\usepackage{etoolbox}
+\usepackage{etaremune}
+\usepackage[utf8]{inputenc}
+
+\usepackage{xspace}
+\usepackage{amssymb}
+
+\title{Daniel Halpern's Resume}
+\author{Daniel Halpern}
+\date{\today}
+
+
+\providetoggle{uselinks}
+\settoggle{uselinks}{true}
+\newcommand{\link}[2]{\iftoggle{uselinks}{\href{#1}{#2}}{#2}\xspace}
+\newcommand{\websitelink}[2]{\link{https://daniel-halpern.com/files/#1.pdf}{#2}}
+
+\newcommand{\talk}[3]{\needspace{2\baselineskip}\textbf{#1} \hfill #2 \\\textit{#3}}
+
+
+
+%% These are custom commands defined in scimisc-cv.sty
+\cvname{Daniel Halpern}
+\cvpersonalinfo{
+\link{https://maps.app.goo.gl/Caq47K19kA2QxstXA}{300 Buchanan St, San Francisco, CA} \cvinfosep
+\link{tel:16072274045}{+1 (607) 227--4045} \cvinfosep
+\link{mailto:dhalpern@google.com}{dhalpern@google.com} \cvinfosep
+\link{https://daniel-halpern.com}{https://daniel-halpern.com}
+}
+\setlength{\parskip}{0.2em} % Adjusts space between each talk
+
+
+\begin{document}
+
+% \maketitle %% This is LaTeX's default title constructed from \title,\author,\date
+
+    \makecvtitle %% This is a custom command constructing the CV title from \cvname, \cvpersonalinfo
+
+    \section{Professional Appointments}
+
+    \cvsubsection{Google Research}[Mountain View, CA][Research Scientist][Jul. 2025--]
+
+
+    \section{Education}
+
+    \cvsubsection{Harvard University}[Cambridge, MA][Ph.D. in Computer Science][Aug. 2020--Jun. 2025]
+\begin{itemize}
+    \item Advisor: \link{http://procaccia.info}{Ariel D. Procaccia}
+\end{itemize}
+
+    \cvsubsection{University of Toronto}[Toronto, ON][B.Sc. in Computer Science with High Distinction][Sep. 2016--Jun. 2020]
+
+    
+%    \emph{Undergraduate awards and honors:} University of Toronto Computer Science Undergraduate Research Award (2020), Harold Willet Stewart Memorial Scholarship (2020), Anna And Alex Beverly Memorial Fellowship (2020), Samuel Beatty In Course Scholarship (2019), C. L. Burton Scholarship For Mathematics and Physical Sciences (2019), Dr. James A. \& Connie P. Dickson Scholarship in Science \& Mathematics (2018), Alan Milne McCombie Scholarship (2017), University of Toronto President's Scholars of Excellence Program (2016)
+    
+	
+
+    \section{Conference Publications}
+    {\footnotesize($\alpha$): alphabetical author order, ($r$): random author order}
+    
+    \begin{etaremune}
+    	[itemsep=0.2ex,
+    	leftmargin=4.8ex]
+    	\renewcommand{\labelenumi}{C\theenumi.}
+        \input{publications}
+    \end{etaremune}
+
+    \section{Journal Articles}
+    
+    \renewcommand{\labelenumi}{J\theenumi.}
+    {\footnotesize($\alpha$): alphabetical author order}
+    
+%   \subsection{Under Submission}
+%    \vspace{-.3em}
+%    \begin{etaremune}
+%    [itemsep=0.2ex,
+%       leftmargin=4.8ex]
+%        \input{journal-submission}
+%    \end{etaremune}
+%    
+%   
+%   \subsection{Published}
+%   \vspace{-.3em}
+    
+    \begin{etaremune}
+    [itemsep=0.2ex,
+        leftmargin=4.8ex]
+        \input{journal}
+    \end{etaremune}
+    
+    
+    
+    % \section{Working Papers}
+    % \begin{etaremune}
+    % 	[itemsep=0.2ex,
+    % 	leftmargin=4.8ex]
+    % 	\renewcommand{\labelenumi}{W\theenumi.}
+    %     \input{working}
+    % \end{etaremune}
+
+     \section{Selected Honors and  Awards}
+    \begin{itemize}
+     \setlength\itemsep{.4ex}
+        \item \textsl{Siebel Scholarship} \hfill 2024
+        \item \textsl{NSF Graduate Research Fellowship}\hfill 2021
+%       \item \textsl{Selected for the 9th Heidelberg Laureate Forum} \hfill 2022
+        \item \textsl{University of Toronto Computer Science Undergraduate Research Award} \hfill 2020
+%%        \$6000 award for undergraduate summer research
+        \item \textsl{Harold Willet Stewart Memorial Scholarship} \hfill 2020
+%%        \$2080 graduating year award
+        \item \textsl{Anna And Alex Beverly Memorial Fellowship} \hfill 2020
+%%        \$1000 graduating year award
+        \item \textsl{Samuel Beatty In Course Scholarship} \hfill 2019
+%%        \$1500 given for academic achievement
+        \item \textsl{C. L. Burton Scholarship For Mathematics and Physical Sciences} \hfill 2019
+%%        \$500 given for academic achievement
+        \item \textsl{Dr. James A. \& Connie P. Dickson Scholarship in Science \& Mathematics} \hfill 2018
+%%        \$500 given for academic achievement
+        \item \textsl{Alan Milne McCombie Scholarship} \hfill 2017
+%%        \$250 given for academic achievement
+        \item \textsl{University of Toronto President's Scholars of Excellence Program} \hfill 2016
+%%        \$10,000 incoming student scholarship
+    \end{itemize}
+%    
+    
+
+    
+    \section{Teaching Experience}
+    \cvsubsection{GEC Academy}[Online][Teaching Fellow][Summer 2024]
+    \begin{itemize}
+    	\item Mathematics for Economics
+    \end{itemize}
+    \cvsubsection{Harvard University}[Cambridge, MA][Teaching Fellow][Spring 2022]
+    \begin{itemize}
+        \item Optimized Democracy (CS238)
+    \end{itemize}
+    
+    \cvsubsection{University of Toronto}[Toronto, ON][Undergraduate Teaching Assistant][Spring 2020]
+    \begin{itemize}
+        \item Data Structures and Analysis (CSC263)
+        \item Algorithm Design, Analysis \& Complexity (CSC373)
+    \end{itemize}
+    
+    \needspace{4\baselineskip}
+    \section{Service}
+    \begin{enumerate}[align=left]
+    	\item[\textbf{PC Member}:] AAAI ('23, '24, '25), IJCAI ('23, '24), SAGT ('23), NeurIPS ('24)
+    	\item[\textbf{Journal Reviewer}:] ARTINT ('21, '22, '24, '25), JAAMAS ('21, '21, '21, '22), MOR ('22, '23), MSS ('21, '22, '23), TEAC ('25)
+    	\item[\textbf{Subreviewer}:] AAMAS ('25), EAAMO ('22), SAGT ('21), SODA ('24), STOC ('25)
+    \end{enumerate}
+    
+%    \cvsubsection{Computing Voting Rules with Elicited Incomplete Votes}
+%    \begin{itemize}
+%    	\item Carnegie Mellon University Formal Epistemology Lecture Series \hfill September, 2024
+%    	\item Oxford Algorithmic Game Theory Seminar \hfill June, 2024	
+%    \end{itemize}
+%
+%    \cvsubsection{Representation with Incomplete Votes}
+%    \begin{itemize}
+%    	\item INFORMS Annual Meeting \hfill October, 2023
+%    	\item Bellairs Workshop on Multi-Agent Systems \hfill March, 2023
+%    	\item COMSOC Video Seminar \hfill February, 2023
+%    \end{itemize}
+%    \cvsubsection{In Defense of Liquid Democracy}
+%    \begin{itemize}
+%    	\item HalpernFest: A workshop honoring and celebrating
+%Joe Halpern at Cornell University \hfill June, 2023
+%    	\item LAMSADE Mini-Workshop on Cooperative Games, Social Choice, and Fair Division \hfill September, 2022
+%    \end{itemize}
+%    
+%    \cvsubsection{Fair and Efficient Resource Allocation with Partial Information}
+%    \begin{itemize}
+%    	\item Drexel Theory Seminar \hfill May, 2021
+%    \end{itemize}
+%    
+%    \cvsubsection{Resolving the Optimal Metric Distortion Conjecture}
+%    \begin{itemize}
+%    	\item MSRI/SLMath Social Choice Seminar \hfill November, 2023
+%    	\item Highlights Beyond EC \hfill July, 2021
+%    	\item Cornell Theory Seminar \hfill November, 2020
+%    	\item Harvard EconCS Seminar \hfill September, 2020
+%    \end{itemize}
+
+
+    
+\section{Invited Talks}
+
+\talk{Social Choice and Welfare Seminar}{September, 2025}{A Social Choice Perspective on AI Alignment}
+
+\talk{National University of Singapore Workshop on Algorithmics of Fair Division and Social Choice}{December, 2024}{Aggregating Preferences with Limited Queries}
+
+\talk{Cornell Theory Seminar}{November, 2024}{Aggregating Preferences with Limited Queries}
+
+\talk{FOCS Workshop on Distortion in Social Choice}{October, 2024}{Optimal Randomized Utilitarian Distortion}
+
+\talk{INFORMS Annual Meeting}{October, 2024}{Tracking Truth with Liquid Democracy}
+
+\talk{University of Chicago Computer Science Colloquium}{October, 2024}{Aggregating Preferences with Limited Queries}
+
+\talk{Carnegie Mellon Formal Epistemology Lecture Series}{September, 2024}{Aggregating Preferences with Limited Queries}
+
+\talk{Oxford Algorithmic Game Theory Seminar}{June, 2024}{Computing Voting Rules with Elicited Incomplete Votes}
+
+\talk{MSRI/SLMath Social Choice Seminar}{November, 2023}{Resolving the Optimal Metric Distortion Conjecture}
+
+\talk{INFORMS Annual Meeting}{October, 2023}{Representation with Incomplete Votes}
+
+\talk{HalpernFest at Cornell University}{June, 2023}{In Defense of Liquid Democracy}
+
+\talk{McGill Bellairs Workshop on Multi-Agent Systems}{March, 2023}{Representation with Incomplete Votes}
+
+\talk{COMSOC Video Seminar}{February, 2023}{Representation with Incomplete Votes}
+
+\talk{LAMSADE Mini-Workshop on Cooperative Games, Social Choice, and Fair Division}{September, 2022}{In Defense of Liquid Democracy}
+
+\talk{Highlights Beyond EC}{July, 2021}{Resolving the Optimal Metric Distortion Conjecture}
+
+\talk{Drexel Theory Seminar}{May, 2021}{Fair and Efficient Resource Allocation with Partial Information}
+
+\talk{Cornell Theory Seminar}{November, 2020}{Resolving the Optimal Metric Distortion Conjecture}
+
+\talk{Harvard EconCS Seminar}{September, 2020}{Resolving the Optimal Metric Distortion Conjecture}
+
+%\textbf{FOCS Workshop on Distortion in Social Choice} \hfill October, 2024 \\
+%\textit{Optimal Randomized Utilitarian Distortion}
+%
+%\textbf{University of Chicago Computer Science Colloquium} \hfill October, 2024 \\
+%\textit{Aggregating Preferences with Limited Queries}
+%
+%\textbf{Carnegie Mellon Formal Epistemology Lecture Series} \hfill September, 2024 \\
+%\textit{Aggregating Preferences with Limited Queries}
+%
+%\textbf{Oxford Algorithmic Game Theory Seminar} \hfill June, 2024 \\
+%\textit{Computing Voting Rules with Elicited Incomplete Votes}
+%
+%\textbf{MSRI/SLMath Social Choice Seminar} \hfill November, 2023 \\
+%\textit{Resolving the Optimal Metric Distortion Conjecture}
+%
+%
+%\textbf{HalpernFest at Cornell University} \hfill June, 2023 \\
+%\textit{In Defense of Liquid Democracy}
+%
+%\textbf{McGill Bellairs Workshop on Multi-Agent Systems} \hfill March, 2023 \\
+%\textit{Representation with Incomplete Votes}
+%
+%\textbf{COMSOC Video Seminar} \hfill February, 2023 \\
+%\textit{Representation with Incomplete Votes}
+%
+%\textbf{LAMSADE Mini-Workshop on Cooperative Games, Social Choice, and Fair Division} \hfill September, 2022 \\
+%\textit{In Defense of Liquid Democracy}
+%
+%\textbf{Highlights Beyond EC} \hfill July, 2021 \\
+%\textit{Resolving the Optimal Metric Distortion Conjecture}
+%
+%\textbf{Drexel Theory Seminar} \hfill May, 2021 \\
+%\textit{Fair and Efficient Resource Allocation with Partial Information}
+%
+%\textbf{Cornell Theory Seminar} \hfill November, 2020 \\
+%\textit{Resolving the Optimal Metric Distortion Conjecture}
+%
+%\textbf{Harvard EconCS Seminar} \hfill September, 2020 \\
+%\textit{Resolving the Optimal Metric Distortion Conjecture}
+
+% \section{Work Experience}
+	
+%     \cvsubsection{Carnegie Mellon University}[Pittsburgh, PA][Research Intern][Jun. 2019--Aug. 2019]
+%     \begin{itemize}[noitemsep,nolistsep]
+%         \item Advisor: Ariel D. Procaccia
+%     \end{itemize}
+    
+    
+%     \cvsubsection{CryptoNumerics}[Toronto, ON][Software Developer][Apr. 2018--Jul. 2020]
+%     \begin{itemize}[noitemsep,nolistsep]
+%         \item Startup focused on machine learning and cryptography. 
+%     \end{itemize}
+    
+
+% \section{References}
+
+
+% \needspace{5\baselineskip}
+% \textbf{Ariel D. Procaccia} \\
+% Gordon McKay Professor of Computer Science \\
+% Harvard University \\
+% Science and Engineering Complex, Room 5.411\\
+% 150 Western Ave, Allston, MA 02134 \\
+% \texttt{arielpro@seas.harvard.edu}
+% \medbreak
+
+% \needspace{5\baselineskip}
+% \textbf{Nisarg Shah} \\
+% Associate Professor of Computer Science\\
+% University of Toronto \\
+% Sandford Fleming Building, Room 3312\\
+% 10 King's College Rd, Toronto, ON M5S 3G4 \\
+% \texttt{nisarg@cs.toronto.edu}
+% \medbreak
+
+
+% \needspace{5\baselineskip}
+% \textbf{Ali Jadbabaie} \\
+% JR East Professor of Engineering \\
+% Massachusetts Institute of Technology \\
+% Department of Civil and Environmental Engineering, Room 1-181\\
+% 77 Massachusetts Avenue, Cambridge, MA 02139 \\
+% \texttt{jadbabai@mit.edu}
+% \medbreak
+
+% \needspace{5\baselineskip}
+% \textbf{Alexandros Psomas} \\
+% Assistant Professor of Computer Science \\
+% Purdue University \\
+% Hall of Data Science and AI, Room 2144\\
+% 475 Stadium Mall Dr, West Lafayette, IN 47907 \\
+% \texttt{apsomas@cs.purdue.edu}
+% \medbreak
+
+% \needspace{5\baselineskip}
+% \textbf{Yevgeniy Vorobeychik} \\
+% Professor of Computer Science\\
+% Washington University in Saint Louis \\
+% McKelvey Hall, Room 3036\\
+% One Brookings Drive, St. Louis, MO 63130 \\
+% \texttt{yvorobeychik@wustl.edu}
+
+
+    \vfill
+\begin{center}
+    Last updated: \today
+\end{center}
+    
+
+
+\end{document}

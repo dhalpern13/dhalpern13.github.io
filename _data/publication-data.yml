@@ -136,14 +136,6 @@ coauthors:
     long: 'Daniel Xie'
     website: 'https://www.linkedin.com/in/danielyxie/'
 
-working:
-  - title: 'Pairwise Calibrated Rewards for Pluralistic Alignment'
-    authors:
-      - 'me'
-      - 'evi'
-      - 'itai'
-      - 'ariel'
-    link: 'pairwise-calibration'
   
 
 journal:
@@ -175,9 +167,22 @@ journal:
 
 # journal_submission:
 
+working: []
 
 
 conference:
+  - title: 'Pairwise Calibrated Rewards for Pluralistic Alignment'
+    authors:
+      - 'me'
+      - 'evi'
+      - 'itai'
+      - 'ariel'
+    link: 'pairwise-calibration'
+    conference: 'NeurIPS'
+    year: '2025'
+    alphabetical: True
+    citation: '39th Conference on Neural Information Processing Systems'
+
   - title: 'Online Envy Minimization and Multicolor Discrepancy: Equivalences and Separations'
     authors:
       - 'me'

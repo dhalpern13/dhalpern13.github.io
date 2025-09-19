@@ -1,3 +1,8 @@
+- title: 'Pairwise Calibrated Rewards for Pluralistic Alignment'
+  citation: '*NeurIPS 2025*'
+  authors: 'Daniel Halpern, [Evi Micha](https://evi-micha.github.io), [Itai Shapira](https://seas.harvard.edu/person/itai-shapira), and [Ariel D. Procaccia](http://procaccia.info)'
+  link: 'pairwise-calibration.pdf'
+
 - title: 'Online Envy Minimization and Multicolor Discrepancy: Equivalences and Separations'
   citation: '*EC 2025*'
   authors: 'Daniel Halpern, [Alexandros Psomas](https://www.alexpsomas.com), [Paritosh Verma](https://sites.google.com/view/paritoshverma/), and [Daniel Xie](https://www.linkedin.com/in/danielyxie/)'
