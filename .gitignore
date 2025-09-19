@@ -1,3 +1,8 @@
 _site/
 
 *.DS_Store
+
+files/Academic-Resume/resume.aux
+files/Academic-Resume/resume.log
+files/Academic-Resume/resume.out
+files/Academic-Resume/resume.syntex.gz
