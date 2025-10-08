@@ -139,6 +139,19 @@ coauthors:
   
 
 journal:
+  - title: 'Representation with Incomplete Votes'
+    authors: 
+      - 'me'
+      - 'greg'
+      - 'ariel'
+      - 'jamie'
+      - 'manuel'
+    link: 'representation-journal'
+    journal: 'Theory and Decision'
+    journal-short: 'Theory Decis'
+    year: '2025'
+    alphabetical: True
+
   - title: 'Dynamic Fair Division with Partial Information'
     authors: 
       - 'gerdus'
