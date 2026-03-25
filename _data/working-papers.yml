@@ -1,0 +1,16 @@
+- title: 'Linear Social Choice with Few Queries: A Moment-Based Approach'
+  authors: '[Luise Ge](https://luisegehaijing.github.io), Daniel Halpern, [Gregory Kehne](https://gregorykehne.com), and [Yevgeniy Vorobeychik](http://vorobeychik.com)'
+  link: 'linear-social-choice-queries.pdf'
+
+- title: 'Truthful Fair Division under Stochastic Valuations'
+  authors: 'Daniel Halpern, [Alexandros Psomas](https://www.alexpsomas.com), and [Shirley Zhang](https://shirleykzhang.github.io)'
+  link: 'ic-fair-division.pdf'
+
+- title: 'Fair Division Under Inaccurate Preferences'
+  authors: '[Trung Dang](https://kuroni.github.io), Daniel Halpern, [Anuran Makur](https://www.cs.purdue.edu/homes/amakur/), [Alexandros Psomas](https://www.alexpsomas.com), [Japneet Singh](https://japneet644.github.io), and [Paritosh Verma](https://sites.google.com/view/paritoshverma/)'
+  link: 'fair-division-inaccurate.pdf'
+
+- title: 'Robust AI Evaluation through Maximal Lotteries'
+  authors: '[Hadi Khalaf](https://hadikhalaf.com), [Serena Wang](https://serenalwang.com), Daniel Halpern, [Itai Shapira](https://seas.harvard.edu/person/itai-shapira), [Falvio P. Calmon](https://people.seas.harvard.edu/~flavio/), and [Ariel D. Procaccia](http://procaccia.info)'
+  link: 'robust-maximal-lotteries.pdf'
+

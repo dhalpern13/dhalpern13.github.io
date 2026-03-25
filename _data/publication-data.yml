@@ -135,6 +135,34 @@ coauthors:
     short: 'D. Xie'
     long: 'Daniel Xie'
     website: 'https://www.linkedin.com/in/danielyxie/'
+  shirley:
+    short: 'S. Zhang'
+    long: 'Shirley Zhang'
+    website: 'https://shirleykzhang.github.io'
+  trung:
+    short: 'T. Dang'
+    long: 'Trung Dang'
+    website: 'https://kuroni.github.io'
+  anuran:
+    short: 'A. Makur'
+    long: 'Anuran Makur'
+    website: 'https://www.cs.purdue.edu/homes/amakur/'
+  japneet:
+    short: 'J. Singh'
+    long: 'Japneet Singh'
+    website: 'https://japneet644.github.io'
+  serena:
+    short: 'S. Wang'
+    long: 'Serena Wang'
+    website: 'https://serenalwang.com'
+  flavio:
+    short: 'F. P. Calmon'
+    long: 'Falvio P. Calmon'
+    website: 'https://people.seas.harvard.edu/~flavio/'
+  hadi:
+    short: 'H. Khalaf'
+    long: 'Hadi Khalaf'
+    website: 'https://hadikhalaf.com'
 
   
 
@@ -180,8 +208,41 @@ journal:
 
 # journal_submission:
 
-working: []
-
+working:
+  - title: 'Linear Social Choice with Few Queries: A Moment-Based Approach'
+    authors:
+      - 'luise'
+      - 'me'
+      - 'greg'
+      - 'eugene'
+    link: 'linear-social-choice-queries'
+    alphabetical: True
+  - title: 'Truthful Fair Division under Stochastic Valuations'
+    authors:
+      - 'me'
+      - 'alex'
+      - 'shirley'
+    link: 'ic-fair-division'
+    alphabetical: True
+  - title: 'Fair Division Under Inaccurate Preferences'
+    authors:
+      - 'trung'
+      - 'me'
+      - 'anuran'
+      - 'alex'
+      - 'japneet'
+      - 'paritosh'
+    link: 'fair-division-inaccurate'
+    alphabetical: True
+  - title: 'Robust AI Evaluation through Maximal Lotteries'
+    authors:
+      - 'hadi'
+      - 'serena'
+      - 'me'
+      - 'itai'
+      - 'flavio'
+      - 'ariel'
+    link: 'robust-maximal-lotteries'
 
 conference:
   - title: 'Pairwise Calibrated Rewards for Pluralistic Alignment'
