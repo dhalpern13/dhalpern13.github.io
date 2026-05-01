@@ -1,25 +1,25 @@
 import yaml
 import os
 import sys
+from pathlib import Path
 
-WEBSITE_DIR_PATH = '/Users/daniel/Documents/Website'
+ROOT_DIR = Path(__file__).parent.absolute()
 
-DATA_DIR = os.path.join(WEBSITE_DIR_PATH, '_data')
-TEX_DIR = os.path.join(WEBSITE_DIR_PATH, 'files', 'Academic-Resume')
-print(DATA_DIR)
+DATA_DIR = ROOT_DIR / '_data'
+TEX_DIR = ROOT_DIR / 'files' / 'Academic-Resume'
 
-DATA_FILE = os.path.join(DATA_DIR, 'publication-data.yml')
-print(DATA_FILE)
-CONFERENCE_PAPER_FILE = os.path.join(DATA_DIR, 'publications.yml')
-WORKING_PAPER_FILE = os.path.join(DATA_DIR, 'working-papers.yml')
-UNPUBLISHED_PAPER_FILE = os.path.join(DATA_DIR, 'unpublished.yml')
-JOURNAL_PAPER_FILE = os.path.join(DATA_DIR, 'journal.yml')
-JOURNAL_SUBMISSIONS_FILE = os.path.join(DATA_DIR, 'journal-submissions.yml')
-RESUME_PUBLICATIONS_FILE = os.path.join(TEX_DIR, 'publications.tex')
-RESUME_WORKING_FILE = os.path.join(TEX_DIR, 'working.tex')
-RESUME_JOURNAL_FILE = os.path.join(TEX_DIR, 'journal.tex')
-RESUME_TEX_FILE = os.path.join(TEX_DIR, 'resume.tex')
-RESUME_JOURNAL_SUBMISSION_FILE = os.path.join(TEX_DIR, 'journal-submission.tex')
+DATA_FILE = DATA_DIR / 'publication-data.yml'
+CONFERENCE_PAPER_FILE = DATA_DIR / 'publications.yml'
+WORKING_PAPER_FILE = DATA_DIR / 'working-papers.yml'
+UNPUBLISHED_PAPER_FILE = DATA_DIR / 'unpublished.yml'
+JOURNAL_PAPER_FILE = DATA_DIR / 'journal.yml'
+JOURNAL_SUBMISSIONS_FILE = DATA_DIR / 'journal-submissions.yml'
+
+RESUME_PUBLICATIONS_FILE = TEX_DIR / 'publications.tex'
+RESUME_WORKING_FILE = TEX_DIR / 'working.tex'
+RESUME_JOURNAL_FILE = TEX_DIR / 'journal.tex'
+RESUME_TEX_FILE = TEX_DIR / 'resume.tex'
+RESUME_JOURNAL_SUBMISSION_FILE = TEX_DIR / 'journal-submission.tex'
 
 
 with open(DATA_FILE, 'r') as f:
@@ -71,14 +71,6 @@ def order_prefix(paper):
 def resume_citation(paper):
 	reference = []
 	reference.append(f"In \\textit{{Proceedings of the {paper['citation']} (\\textbf{{{paper['conference']}}})}},")
-	# if 'starting-page' in paper:
-	# 	reference.append(f"pp. {paper['starting-page']}--{paper['ending-page']}, {paper['year']}.")
-	# elif 'page' in paper:
-	# 	reference.append(f"pp. {paper['page']}, {paper['year']}.")
-	# elif 'no-forthcoming' in paper:
-	# 	reference.append(f"{paper['year']}.")
-	# else:
-	# 	reference.append(f"{paper['year']}. Forthcoming.")
 
 	reference.append(f"{paper['year']}.")
 	if 'special' in paper:

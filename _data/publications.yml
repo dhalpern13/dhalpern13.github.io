@@ -1,3 +1,8 @@
+- title: 'Robust AI Evaluation through Maximal Lotteries'
+  citation: '*ICML 2026*'
+  authors: '[Hadi Khalaf](https://hadikhalaf.com), [Serena Wang](https://serenalwang.com), Daniel Halpern, [Itai Shapira](https://seas.harvard.edu/person/itai-shapira), [Falvio P. Calmon](https://people.seas.harvard.edu/~flavio/), and [Ariel D. Procaccia](http://procaccia.info)'
+  link: 'robust-maximal-lotteries.pdf'
+
 - title: 'Pairwise Calibrated Rewards for Pluralistic Alignment'
   citation: '*NeurIPS 2025*'
   authors: 'Daniel Halpern, [Evi Micha](https://evi-micha.github.io), [Itai Shapira](https://seas.harvard.edu/person/itai-shapira), and [Ariel D. Procaccia](http://procaccia.info)'

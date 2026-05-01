@@ -234,6 +234,9 @@ working:
       - 'paritosh'
     link: 'fair-division-inaccurate'
     alphabetical: True
+  
+
+conference:
   - title: 'Robust AI Evaluation through Maximal Lotteries'
     authors:
       - 'hadi'
@@ -243,8 +246,9 @@ working:
       - 'flavio'
       - 'ariel'
     link: 'robust-maximal-lotteries'
-
-conference:
+    conference: 'ICML'
+    year: '2026'
+    citation: '43rd International Conference on Machine Learning'
   - title: 'Pairwise Calibrated Rewards for Pluralistic Alignment'
     authors:
       - 'me'
