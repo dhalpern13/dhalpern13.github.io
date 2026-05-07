@@ -1,3 +1,7 @@
+- title: 'Proportionality in Ranking Compression'
+  authors: 'Daniel Halpern, [Xinyu Liu](), [Evi Micha](https://evi-micha.github.io), [Yu Peng Ng](), and [Warut Suksompong](https://www.comp.nus.edu.sg/~warut/)'
+  link: 'proportional-compression.pdf'
+
 - title: 'Linear Social Choice with Few Queries: A Moment-Based Approach'
   authors: '[Luise Ge](https://luisegehaijing.github.io), Daniel Halpern, [Gregory Kehne](https://gregorykehne.com), and [Yevgeniy Vorobeychik](http://vorobeychik.com)'
   link: 'linear-social-choice-queries.pdf'

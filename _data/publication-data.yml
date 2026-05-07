@@ -163,6 +163,14 @@ coauthors:
     short: 'H. Khalaf'
     long: 'Hadi Khalaf'
     website: 'https://hadikhalaf.com'
+  xinyu:
+    short: 'X. Liu'
+    long: 'Xinyu Liu'
+    website: ''
+  yupeng:
+    short: 'Y. P. Ng'
+    long: 'Yu Peng Ng'
+    website: ''
 
   
 
@@ -209,6 +217,15 @@ journal:
 # journal_submission:
 
 working:
+  - title: 'Proportionality in Ranking Compression'
+    authors:
+      - 'me'
+      - 'xinyu'
+      - 'evi'
+      - 'yupeng'
+      - 'warut'
+    link: 'proportional-compression'
+    alphabetical: True
   - title: 'Linear Social Choice with Few Queries: A Moment-Based Approach'
     authors:
       - 'luise'
