@@ -234,13 +234,6 @@ working:
       - 'eugene'
     link: 'linear-social-choice-queries'
     alphabetical: True
-  - title: 'Truthful Fair Division under Stochastic Valuations'
-    authors:
-      - 'me'
-      - 'alex'
-      - 'shirley'
-    link: 'ic-fair-division'
-    alphabetical: True
   - title: 'Fair Division Under Inaccurate Preferences'
     authors:
       - 'trung'
@@ -254,6 +247,17 @@ working:
   
 
 conference:
+  - title: 'Truthful Fair Division under Stochastic Valuations'
+    authors:
+      - 'me'
+      - 'alex'
+      - 'shirley'
+    link: 'ic-fair-division'
+    alphabetical: True
+    conference: 'EC'
+    year: '2026'
+    citation: '26th ACM Conference on Economics and Computation'
+    
   - title: 'Robust AI Evaluation through Maximal Lotteries'
     authors:
       - 'hadi'
