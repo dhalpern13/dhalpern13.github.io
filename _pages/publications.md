@@ -2,52 +2,31 @@
 layout: archive
 title: "Research"
 permalink: /research/
-author_profile: true
+author_profile: false
+hide_title: true
 ---
-
-{% if author.googlescholar %}
-  You can also find my articles on <u><a href="{{author.googlescholar}}">my Google Scholar profile</a>.</u>
-{% endif %}
 
 {% include base_path %}
 
----
-
-## Working Papers
+<h3 class="publication-year">Working Papers</h3>
 <ul>
 {% for post in site.data.working-papers %}
   {% include archive-single-publication.html %}
 {% endfor %}
 </ul>
 
-## Journal Articles
-<!-- **Under Submission** -->
-<!-- <ul>
-{% for post in site.data.journal-submissions %}
-  {% include archive-single-publication.html %}
-{% endfor %}
+{% assign current_year = "" %}
+{% for post in site.data.papers %}
+  {% if post.year != current_year %}
+    {% if current_year != "" %}
 </ul>
- -->
-<!-- **Published** -->
+    {% endif %}
+    {% assign current_year = post.year %}
+<h3 class="publication-year">{{ current_year }}</h3>
 <ul>
-{% for post in site.data.journal %}
+  {% endif %}
   {% include archive-single-publication.html %}
 {% endfor %}
+{% if current_year != "" %}
 </ul>
-
-
-
-## Conference Publications
-<ul>
-{% for post in site.data.publications %}
-  {% include archive-single-publication.html %}
-{% endfor %}
-</ul>
-
-## Unpublished Manuscripts
-
-<ul>
-{% for post in site.data.unpublished %}
-  {% include archive-single-publication.html %}
-{% endfor %}
-</ul>
+{% endif %}

@@ -49,14 +49,23 @@
 }
 
 .page__content {
+  max-width: 70ch;
 
   h2 {
-    padding-bottom: 0.5em;
+    margin-top: 1.8em;
+    margin-bottom: 0.6em;
+    padding-bottom: 0.4em;
     border-bottom: 1px solid $border-color;
+
+    &:first-of-type,
+    hr + & {
+      margin-top: 0.5em;
+    }
   }
 
   p, li, dl {
     font-size: 1em;
+    line-height: 1.6;
   }
 
   /* paragraph indents */
@@ -73,10 +82,14 @@
   }
 
   a {
-    text-decoration: underline;
+    text-decoration: none;
+    border-bottom: 1px solid rgba($link-color, 0.3);
+    transition: border-color 0.2s ease, color 0.2s ease;
 
     &:hover {
-      text-decoration: underline;
+      color: $link-color-hover;
+      border-bottom-color: $link-color-hover;
+      text-decoration: none;
 
       img {
         box-shadow: 0 0 10px rgba(#000, 0.25);

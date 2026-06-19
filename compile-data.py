@@ -13,6 +13,7 @@ CONFERENCE_PAPER_FILE = DATA_DIR / 'publications.yml'
 WORKING_PAPER_FILE = DATA_DIR / 'working-papers.yml'
 UNPUBLISHED_PAPER_FILE = DATA_DIR / 'unpublished.yml'
 JOURNAL_PAPER_FILE = DATA_DIR / 'journal.yml'
+COMBINED_PAPER_FILE = DATA_DIR / 'papers.yml'
 JOURNAL_SUBMISSIONS_FILE = DATA_DIR / 'journal-submissions.yml'
 
 RESUME_PUBLICATIONS_FILE = TEX_DIR / 'publications.tex'
@@ -85,45 +86,103 @@ def resume_citation(paper):
 def journal_citation(paper):
 	beginning_citation = f"In \\textit{{{paper['journal']} (\\textbf{{{paper['journal-short']}}})}}"
 	if 'pub-data' in paper:
-		pass
+		return f"{beginning_citation}, {paper['year']}."
 	else:
 		return f"{beginning_citation}. Forthcoming."
 
 
 
 with open(CONFERENCE_PAPER_FILE, 'w') as f:
-	for paper in conference:
+	for i, paper in enumerate(conference):
 		f.write(f"- title: '{paper['title']}'\n"
 			  	f"  citation: '{website_citation(paper)}'\n"
 			  	f"  authors: '{author_list(paper['authors'], convert_website_author)}'\n"
-			  	f"  link: '{paper['link']}.pdf'\n")
+			  	f"  link: '{paper['link']}.pdf'\n"
+			  	f"  paper_id: 'C{len(conference) - i}'\n")
 		if 'special' in paper:
 			f.write(f"  special: '**★ {paper['special']}**'\n")
 		f.write("\n")
 
 
 with open(UNPUBLISHED_PAPER_FILE, 'w') as f:
-	for paper in unpublished:
+	for i, paper in enumerate(unpublished):
 		f.write(f"- title: '{paper['title']}'\n"
 	  			f"  authors: '{author_list(paper['authors'], convert_website_author)}'\n"
-	  			f"  link: '{paper['link']}.pdf'\n\n")
+	  			f"  link: '{paper['link']}.pdf'\n"
+	  			f"  paper_id: 'U{len(unpublished) - i}'\n\n")
 
 with open(WORKING_PAPER_FILE, 'w') as f:
-	for paper in working:
+	for i, paper in enumerate(working):
 		if 'note' in paper:
 			added_line = f"  citation: '{paper['note']}'\n\n"
 		else:
 			added_line = "\n"
 		f.write(f"- title: '{paper['title']}'\n"
 	  			f"  authors: '{author_list(paper['authors'], convert_website_author)}'\n"
-	  			f"  link: '{paper['link']}.pdf'\n" + added_line)
+	  			f"  link: '{paper['link']}.pdf'\n"
+	  			f"  paper_id: 'W{len(working) - i}'\n" + added_line)
 
 with open(JOURNAL_PAPER_FILE, 'w') as f:
-	for paper in journal:
+	for i, paper in enumerate(journal):
 		f.write(f"- title: '{paper['title']}'\n"
 				f"  authors: '{author_list(paper['authors'], convert_website_author)}'\n"
 				f"  citation: '{website_journal_citation(paper)}'\n"
-				f"  link: '{paper['link']}.pdf'\n\n")
+				f"  link: '{paper['link']}.pdf'\n"
+				f"  paper_id: 'J{len(journal) - i}'\n\n")
+
+combined = []
+for i, paper in enumerate(journal):
+	entry = {
+		'title': paper['title'],
+		'authors': author_list(paper['authors'], convert_website_author),
+		'citation': website_journal_citation(paper),
+		'link': f"{paper['link']}.pdf",
+		'year': paper.get('year', '') or 'Forthcoming',
+		'paper_id': f"J{len(journal) - i}",
+	}
+	if 'special' in paper:
+		entry['special'] = f"**★ {paper['special']}**"
+	combined.append(entry)
+
+for i, paper in enumerate(conference):
+	entry = {
+		'title': paper['title'],
+		'authors': author_list(paper['authors'], convert_website_author),
+		'citation': website_citation(paper),
+		'link': f"{paper['link']}.pdf",
+		'year': paper.get('year', '') or 'Forthcoming',
+		'paper_id': f"C{len(conference) - i}",
+	}
+	if 'special' in paper:
+		entry['special'] = f"**★ {paper['special']}**"
+	combined.append(entry)
+
+for i, paper in enumerate(unpublished):
+	entry = {
+		'title': paper['title'],
+		'authors': author_list(paper['authors'], convert_website_author),
+		'citation': 'Unpublished manuscript',
+		'link': f"{paper['link']}.pdf",
+		'year': paper.get('year', '') or '2021',
+		'paper_id': f"U{len(unpublished) - i}",
+	}
+	if 'special' in paper:
+		entry['special'] = f"**★ {paper['special']}**"
+	combined.append(entry)
+
+combined.sort(key=lambda x: (1, '') if x['year'] == 'Forthcoming' else (0, x['year']), reverse=True)
+
+with open(COMBINED_PAPER_FILE, 'w') as f:
+	for entry in combined:
+		f.write(f"- title: '{entry['title']}'\n"
+				f"  authors: '{entry['authors']}'\n"
+				f"  citation: '{entry['citation']}'\n"
+				f"  link: '{entry['link']}'\n"
+				f"  year: '{entry['year']}'\n"
+				f"  paper_id: '{entry['paper_id']}'\n")
+		if 'special' in entry:
+			f.write(f"  special: '{entry['special']}'\n")
+		f.write("\n")
 
 # with open(JOURNAL_SUBMISSIONS_FILE, 'w') as f:
 # 	for paper in journal_submission:

@@ -6,3 +6,14 @@ files/Academic-Resume/resume.aux
 files/Academic-Resume/resume.log
 files/Academic-Resume/resume.out
 files/Academic-Resume/resume.syntex.gz
+
+# Python virtual environment and cache
+.venv/
+__pycache__/
+*.pyc
+
+# Backups
+images/daniel-old.JPG
+
+# Node dependencies
+node_modules/

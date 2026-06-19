@@ -1,23 +1,30 @@
 {% include base_path %}
 
-{% if post.header.teaser %}
-  {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
-{% else %}
-  {% assign teaser = site.teaser %}
-{% endif %}
-
 {% if post.id %}
   {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
 {% else %}
   {% assign title = post.title %}
 {% endif %}
 
-<div class="{{ include.type | default: "list" }}__item" style="margin-bottom: 3em">
-    <h3>{{ title }} <a href="/files/{{ post.link }}" rel="permalink"><i style="font-size:1.2em; margin-left:.25em" class="fa">&#xf1c1;</i></a></h3>
-
-    <p class="archive__item-excerpt" style="margin-top:-.9em">  {{post.authors | markdownify}} </p>
-    <p class="archive__item-excerpt" style="margin-top:-.9em"> {{ post.citation | markdownify }}</p>
-    <p class="archive__item-excerpt" style="margin-top:-.9em"> {{ post.special | markdownify }}</p>
-    <p class="archive__item-excerpt" style="margin-top:-.75em"> </p>
-</div>
-
+<li class="publication-item">
+  {% if post.paper_id %}
+    <div class="publication-id">{{ post.paper_id }}</div>
+  {% endif %}
+  <div class="publication-content">
+    <div class="publication-title">
+      {{ title }}
+      {% if post.link %}
+        <a href="/files/{{ post.link }}" class="pdf-link-badge" target="_blank">PDF</a>
+      {% endif %}
+    </div>
+    <div class="publication-authors">
+      {{ post.authors | markdownify | remove: "<p>" | remove: "</p>" }}
+    </div>
+    <div class="publication-citation">
+      {{ post.citation | markdownify | remove: "<p>" | remove: "</p>" }}
+      {% if post.special %}
+        <span class="publication-special">{{ post.special | markdownify | remove: "<p>" | remove: "</p>" | remove: "<strong>" | remove: "</strong>" }}</span>
+      {% endif %}
+    </div>
+  </div>
+</li>

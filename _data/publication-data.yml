@@ -204,7 +204,7 @@ journal:
     link: 'representation-journal'
     journal: 'Theory and Decision'
     journal-short: 'Theory Decis'
-    year: '2025'
+    year: '2026'
     alphabetical: True
 
   - title: 'Dynamic Fair Division with Partial Information'
@@ -215,6 +215,8 @@ journal:
     journal: 'Operations Research'
     journal-short: 'OR'
     link: 'dynamic-fair-division-or'
+    year: '2025'
+    pub-data: '73(4):1876-1896'
     alphabetical: True
     
   - title: 'Tracking Truth with Liquid Democracy'
@@ -229,6 +231,8 @@ journal:
     link: 'ld-journal'
     journal: 'Management Science'
     journal-short: 'MS'
+    year: '2025'
+    pub-data: '71(9):7821-7839'
     alphabetical: True
 
   
@@ -603,3 +607,4 @@ unpublished:
       - 'me'
       - 'ariel'
     link: 'unbiased-information'
+    year: '2021'
