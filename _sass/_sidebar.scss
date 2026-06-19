@@ -86,11 +86,6 @@
     max-width: 200px;
     border-radius: 50%;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s ease;
-
-    &:hover {
-      transform: scale(1.02);
-    }
 
     @include breakpoint($large) {
       padding: 0;
