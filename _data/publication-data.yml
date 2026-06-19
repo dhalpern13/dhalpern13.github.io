@@ -171,10 +171,29 @@ coauthors:
     short: 'Y. P. Ng'
     long: 'Yu Peng Ng'
     website: ''
+  ben:
+    short: 'B. Schiffer'
+    long: 'Benjamin Schiffer'
+    website: 'https://bschiffer1.github.io/'
 
   
 
 journal:
+  - title: 'AI Alignment from Social Choice Perspectives'
+    authors:
+      - 'me'
+      - 'evi'
+      - 'ariel'
+      - 'ben'
+      - 'itai'
+      - 'shirley'
+    link: 'sc4ai'
+    journal: 'SIGecom Exchanges'
+    journal-short: 'SE'
+    year: '2026'
+    alphabetical: True
+
+
   - title: 'Representation with Incomplete Votes'
     authors: 
       - 'me'
