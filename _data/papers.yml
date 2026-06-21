@@ -20,7 +20,7 @@
   paper_id: 'C25'
 
 - title: 'Robust AI Evaluation through Maximal Lotteries'
-  authors: '[Hadi Khalaf](https://hadikhalaf.com), [Serena Wang](https://serenalwang.com), Daniel Halpern, [Itai Shapira](https://seas.harvard.edu/person/itai-shapira), [Falvio P. Calmon](https://people.seas.harvard.edu/~flavio/), and [Ariel D. Procaccia](http://procaccia.info)'
+  authors: '[Hadi Khalaf](https://hadikhalaf.com), [Serena Wang](https://serenalwang.com), Daniel Halpern, [Itai Shapira](https://seas.harvard.edu/person/itai-shapira), [Flavio P. Calmon](https://people.seas.harvard.edu/~flavio/), and [Ariel D. Procaccia](http://procaccia.info)'
   citation: '*ICML 2026*'
   link: 'robust-maximal-lotteries.pdf'
   year: '2026'
@@ -62,7 +62,7 @@
   paper_id: 'C21'
 
 - title: 'Federated Assemblies'
-  authors: 'Daniel Halpern, [Ariel D. Procaccia](http://procaccia.info), [Ehud Shaprio](https://www.weizmann.ac.il/math/shapiro/home), and [Nimrod Talmon](https://sites.google.com/view/zutot/)'
+  authors: 'Daniel Halpern, [Ariel D. Procaccia](http://procaccia.info), [Ehud Shapiro](https://www.weizmann.ac.il/math/shapiro/home), and [Nimrod Talmon](https://sites.google.com/view/zutot/)'
   citation: '*AAAI 2025*'
   link: 'federated-assemblies.pdf'
   year: '2025'

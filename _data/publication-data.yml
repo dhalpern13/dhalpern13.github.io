@@ -125,7 +125,7 @@ coauthors:
     website: 'https://jlwu002.github.io'
   udi:
     short: 'E. Shapiro'
-    long: 'Ehud Shaprio'
+    long: 'Ehud Shapiro'
     website: 'https://www.weizmann.ac.il/math/shapiro/home'
   nimrod:
     short: 'N. Talmon'
@@ -157,7 +157,7 @@ coauthors:
     website: 'https://serenalwang.com'
   flavio:
     short: 'F. P. Calmon'
-    long: 'Falvio P. Calmon'
+    long: 'Flavio P. Calmon'
     website: 'https://people.seas.harvard.edu/~flavio/'
   hadi:
     short: 'H. Khalaf'
@@ -189,7 +189,6 @@ journal:
       - 'shirley'
     link: 'sc4ai'
     journal: 'SIGecom Exchanges'
-    journal-short: 'SE'
     year: '2026'
     alphabetical: True
 
@@ -203,7 +202,6 @@ journal:
       - 'manuel'
     link: 'representation-journal'
     journal: 'Theory and Decision'
-    journal-short: 'Theory Decis'
     year: '2026'
     alphabetical: True
 
@@ -213,10 +211,8 @@ journal:
       - 'me'
       - 'alex'
     journal: 'Operations Research'
-    journal-short: 'OR'
     link: 'dynamic-fair-division-or'
     year: '2025'
-    pub-data: '73(4):1876-1896'
     alphabetical: True
     
   - title: 'Tracking Truth with Liquid Democracy'
@@ -230,9 +226,7 @@ journal:
       - 'manon'
     link: 'ld-journal'
     journal: 'Management Science'
-    journal-short: 'MS'
     year: '2025'
-    pub-data: '71(9):7821-7839'
     alphabetical: True
 
   
@@ -392,8 +386,6 @@ conference:
     citation: '33rd International Joint Conference on Artificial Intelligence'
     year: '2024'
     alphabetical: True
-    starting-page: '2791'
-    ending-page: '2798'
 
 
   - title: 'Optimal Engagement-Diversity Tradeoffs in Social Media'
@@ -409,8 +401,6 @@ conference:
     citation: '33rd ACM Web Conference'
     year: '2024'
     alphabetical: True
-    starting-page: '288'
-    ending-page: '299'
 
   - title: 'Strategyproof Voting under Correlated Beliefs'
     authors:
@@ -420,8 +410,6 @@ conference:
     link: 'strategy-proof-beliefs'
     conference: 'NeurIPS'
     citation: '37th Conference on Neural Information Processing Systems'
-    starting-page: '39744'
-    ending-page: '39754'
     year: '2023'
     alphabetical: True
   -
@@ -435,8 +423,6 @@ conference:
     conference: 'WINE'
     year: '2023'
     alphabetical: True
-    starting-page: '290'
-    ending-page: '309'
   -
     title: 'In Defense of Liquid Democracy'
     authors: 
@@ -451,7 +437,6 @@ conference:
     conference: 'EC'
     year: '2023'
     alphabetical: True
-    page: '852'
   -
     title: 'Representation with Incomplete Votes'
     authors: 
@@ -465,8 +450,6 @@ conference:
     conference: 'AAAI'
     year: '2023'
     alphabetical: True
-    starting-page: '5657'
-    ending-page: '5664'
   -
     title: 'Dynamic Fair Division with Partial Information'
     authors: 
@@ -478,8 +461,6 @@ conference:
     citation: '36th Conference on Neural Information Processing Systems'
     year: '2022'
     alphabetical: True
-    starting-page: '3703'
-    ending-page: '3715'
   -
     title: 'Liquid Democracy in Practice: An Empirical Analysis of its Epistemic Performance'
     authors: 
@@ -491,7 +472,6 @@ conference:
     conference: 'EAAMO'
     citation: '2nd ACM conference on Equity and Access in Algorithms, Mechanisms, Optimization'
     year: '2022'
-    no-forthcoming: True
   -
     title: 'Distortion in Voting with Top-t Preferences'
     authors: 
@@ -504,8 +484,6 @@ conference:
     citation: '31st International Joint Conference on Artificial Intelligence'
     year: '2022'
     alphabetical: True
-    starting-page: '116'
-    ending-page: '122'
   -
     title: 'Can Buyers Reveal for a Better Deal?'
     authors: 
@@ -517,8 +495,6 @@ conference:
     citation: '31st International Joint Conference on Artificial Intelligence'
     year: '2022'
     alphabetical: True
-    starting-page: '314'
-    ending-page: '320' 
   -
     title: 'How Many Representatives Do We Need? The Optimal Size of an Epistemic Congress'
     authors: 
@@ -530,8 +506,6 @@ conference:
     citation: '36th AAAI Conference on Artificial Intelligence'
     year: '2022'
     random: True
-    starting-page: '9431'
-    ending-page: '9438' 
   -
     title: 'Fair and Efficient Resource Allocation with Partial Information'
     authors: 
@@ -542,8 +516,6 @@ conference:
     citation: '30th International Joint Conference on Artificial Intelligence'
     year: '2021'
     alphabetical: True
-    starting-page: '224'
-    ending-page: '230' 
   -
     title: 'Aggregating Binary Judgments Ranked By Accuracy'
     authors: 
@@ -558,8 +530,6 @@ conference:
     citation: '35th AAAI Conference on Artificial Intelligence'
     year: '2021'
     alphabetical: True
-    starting-page: '5456'
-    ending-page: '5463' 
   -
     title: 'Fair Division with Binary Valuations: One Rule to Rule Them All'
     authors: 
@@ -572,8 +542,6 @@ conference:
     citation: '16th Conference on Web and Internet Economics'
     year: '2020'
     alphabetical: True
-    starting-page: '370'
-    ending-page: '383'
   -
     title: 'Resolving the Optimal Metric Distortion Conjecture'
     authors: 
@@ -585,8 +553,6 @@ conference:
     citation: '61st Annual IEEE Symposium on Foundations of Computer Science'
     year: '2020'
     alphabetical: True
-    starting-page: '1427'
-    ending-page: '1438'
     special: 'Invited to the EC 2021 plenary session: Highlights Beyond EC'
   -
     title: 'Fair Division with Subsidy'
@@ -598,8 +564,6 @@ conference:
     citation: '12th International Symposium on Algorithmic Game Theory'
     year: '2019'
     alphabetical: True
-    starting-page: '374'
-    ending-page: '389'
 
 unpublished:
   - title: 'Unbiased Information Packets'

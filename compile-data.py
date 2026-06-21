@@ -1,12 +1,13 @@
 import yaml
 import os
 import sys
+import shutil
 from pathlib import Path
 
 ROOT_DIR = Path(__file__).parent.absolute()
 
 DATA_DIR = ROOT_DIR / '_data'
-TEX_DIR = ROOT_DIR / 'files' / 'Academic-Resume'
+TEX_DIR = ROOT_DIR / '_resume'
 
 DATA_FILE = DATA_DIR / 'publication-data.yml'
 CONFERENCE_PAPER_FILE = DATA_DIR / 'publications.yml'
@@ -14,13 +15,11 @@ WORKING_PAPER_FILE = DATA_DIR / 'working-papers.yml'
 UNPUBLISHED_PAPER_FILE = DATA_DIR / 'unpublished.yml'
 JOURNAL_PAPER_FILE = DATA_DIR / 'journal.yml'
 COMBINED_PAPER_FILE = DATA_DIR / 'papers.yml'
-JOURNAL_SUBMISSIONS_FILE = DATA_DIR / 'journal-submissions.yml'
 
 RESUME_PUBLICATIONS_FILE = TEX_DIR / 'publications.tex'
 RESUME_WORKING_FILE = TEX_DIR / 'working.tex'
 RESUME_JOURNAL_FILE = TEX_DIR / 'journal.tex'
 RESUME_TEX_FILE = TEX_DIR / 'resume.tex'
-RESUME_JOURNAL_SUBMISSION_FILE = TEX_DIR / 'journal-submission.tex'
 
 
 with open(DATA_FILE, 'r') as f:
@@ -31,7 +30,6 @@ conference = all_data['conference']
 working = all_data['working']
 unpublished = all_data['unpublished']
 journal = all_data['journal']
-# journal_submission = all_data['journal_submission']
 
 def convert_website_author(author_string):
 	if author_string == 'me':
@@ -84,8 +82,8 @@ def resume_citation(paper):
 
 
 def journal_citation(paper):
-	beginning_citation = f"In \\textit{{{paper['journal']} (\\textbf{{{paper['journal-short']}}})}}"
-	if 'pub-data' in paper:
+	beginning_citation = f"In \\textit{{{paper['journal']}}}"
+	if 'year' in paper:
 		return f"{beginning_citation}, {paper['year']}."
 	else:
 		return f"{beginning_citation}. Forthcoming."
@@ -184,12 +182,7 @@ with open(COMBINED_PAPER_FILE, 'w') as f:
 			f.write(f"  special: '{entry['special']}'\n")
 		f.write("\n")
 
-# with open(JOURNAL_SUBMISSIONS_FILE, 'w') as f:
-# 	for paper in journal_submission:
-# 		f.write(f"- title: '{paper['title']}'\n"
-# 				f"  authors: '{author_list(paper['authors'], convert_website_author)}'\n"
-# 				f"  citation: '{paper['status']} *{paper['journal']}*'\n"
-# 				f"  link: '{paper['link']}.pdf'\n\n")
+
 
 
 with open(RESUME_PUBLICATIONS_FILE, 'w') as f:
@@ -209,9 +202,7 @@ with open(RESUME_JOURNAL_FILE, 'w') as f:
 	for paper in journal:
 		f.write(f"\\item \\websitelink{{{paper['link']}}}{{{paper['title']}}}.\\\\{order_prefix(paper)}{author_list(paper['authors'], convert_resume_author)}.\\\\{journal_citation(paper)}\n\n")
 
-# with open(RESUME_JOURNAL_SUBMISSION_FILE, 'w') as f:
-# 	for paper in journal_submission:
-# 		f.write(f"\\item \\websitelink{{{paper['link']}}}{{{paper['title']}}}.\\\\{order_prefix(paper)}{author_list(paper['authors'], convert_resume_author)}.\\\\{paper['status']} \\textit{{{paper['journal']}}} (\\textbf{{{paper['journal-short']}}}).\n\n")
+
 
 
 
@@ -220,3 +211,5 @@ if len(sys.argv) == 1:
 	os.system(f'pdflatex {RESUME_TEX_FILE}')
 	os.system(f'pdflatex {RESUME_TEX_FILE}')
 	os.system(f'pdflatex {RESUME_TEX_FILE}')
+	# Copy compiled PDF to public files directory
+	shutil.copy2(TEX_DIR / 'resume.pdf', ROOT_DIR / 'files' / 'resume.pdf')

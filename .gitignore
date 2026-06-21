@@ -2,10 +2,21 @@ _site/
 
 *.DS_Store
 
-files/Academic-Resume/resume.aux
-files/Academic-Resume/resume.log
-files/Academic-Resume/resume.out
-files/Academic-Resume/resume.syntex.gz
+# LaTeX intermediate files
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.blg
+*.bbl
+*.toc
+*.lof
+*.lot
+*.nav
+*.snm
+*.vrb
 
 # Python virtual environment and cache
 .venv/

@@ -79,6 +79,9 @@ exclude:
   - package.json
   - tmp
   - vendor
+  - compile-data.py
+  - .agents
+  - "*.py"
 keep_files:
   - .git
   - .svn
