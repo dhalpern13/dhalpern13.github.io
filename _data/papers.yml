@@ -1,213 +1,216 @@
-- title: 'AI Alignment from Social Choice Perspectives'
-  authors: 'Daniel Halpern, [Evi Micha](https://evi-micha.github.io), [Ariel D. Procaccia](http://procaccia.info), [Benjamin Schiffer](https://bschiffer1.github.io/), [Itai Shapira](https://seas.harvard.edu/person/itai-shapira), and [Shirley Zhang](https://shirleykzhang.github.io)'
+- title: AI Alignment from Social Choice Perspectives
+  authors: Daniel Halpern, [Evi Micha](https://evi-micha.github.io), [Ariel D. Procaccia](http://procaccia.info),
+    [Benjamin Schiffer](https://bschiffer1.github.io/), [Itai Shapira](https://seas.harvard.edu/person/itai-shapira),
+    and [Shirley Zhang](https://shirleykzhang.github.io)
   citation: '*SIGecom Exchanges*'
-  link: 'sc4ai.pdf'
+  link: sc4ai.pdf
   year: '2026'
-  paper_id: 'J4'
-
-- title: 'Representation with Incomplete Votes'
-  authors: 'Daniel Halpern, [Gregory Kehne](https://gregorykehne.com), [Ariel D. Procaccia](http://procaccia.info), [Jamie Tucker-Foltz](http://www.jamie.tuckerfoltz.com), and [Manuel Wüthrich](https://scholar.google.de/citations?user=7EWrVYIAAAAJ&hl=en)'
+  paper_id: J4
+- title: Representation with Incomplete Votes
+  authors: Daniel Halpern, [Gregory Kehne](https://gregorykehne.com), [Ariel D. Procaccia](http://procaccia.info),
+    [Jamie Tucker-Foltz](http://www.jamie.tuckerfoltz.com), and [Manuel Wüthrich](https://scholar.google.de/citations?user=7EWrVYIAAAAJ&hl=en)
   citation: '*Theory and Decision*'
-  link: 'representation-journal.pdf'
+  link: representation-journal.pdf
   year: '2026'
-  paper_id: 'J3'
-
-- title: 'Truthful Fair Division under Stochastic Valuations'
-  authors: 'Daniel Halpern, [Alexandros Psomas](https://www.alexpsomas.com), and [Shirley Zhang](https://shirleykzhang.github.io)'
+  paper_id: J3
+- title: Truthful Fair Division under Stochastic Valuations
+  authors: Daniel Halpern, [Alexandros Psomas](https://www.alexpsomas.com), and [Shirley
+    Zhang](https://shirleykzhang.github.io)
   citation: '*EC 2026*'
-  link: 'ic-fair-division.pdf'
+  link: ic-fair-division.pdf
   year: '2026'
-  paper_id: 'C25'
-
-- title: 'Robust AI Evaluation through Maximal Lotteries'
-  authors: '[Hadi Khalaf](https://hadikhalaf.com), [Serena Wang](https://serenalwang.com), Daniel Halpern, [Itai Shapira](https://seas.harvard.edu/person/itai-shapira), [Flavio P. Calmon](https://people.seas.harvard.edu/~flavio/), and [Ariel D. Procaccia](http://procaccia.info)'
+  paper_id: C25
+- title: Robust AI Evaluation through Maximal Lotteries
+  authors: '[Hadi Khalaf](https://hadikhalaf.com), [Serena Wang](https://serenalwang.com),
+    Daniel Halpern, [Itai Shapira](https://seas.harvard.edu/person/itai-shapira),
+    [Flavio P. Calmon](https://people.seas.harvard.edu/~flavio/), and [Ariel D. Procaccia](http://procaccia.info)'
   citation: '*ICML 2026*'
-  link: 'robust-maximal-lotteries.pdf'
+  link: robust-maximal-lotteries.pdf
   year: '2026'
-  paper_id: 'C24'
-
-- title: 'Dynamic Fair Division with Partial Information'
-  authors: '[Gerdus Benadè](http://www.gerdusbenade.com), Daniel Halpern, and [Alexandros Psomas](https://www.alexpsomas.com)'
+  paper_id: C24
+- title: Dynamic Fair Division with Partial Information
+  authors: '[Gerdus Benadè](http://www.gerdusbenade.com), Daniel Halpern, and [Alexandros
+    Psomas](https://www.alexpsomas.com)'
   citation: '*Operations Research*'
-  link: 'dynamic-fair-division-or.pdf'
+  link: dynamic-fair-division-or.pdf
   year: '2025'
-  paper_id: 'J2'
-
-- title: 'Tracking Truth with Liquid Democracy'
-  authors: '[Adam Berinsky](https://polisci.mit.edu/people/adam-berinsky), Daniel Halpern, [Joseph Y. Halpern](https://www.cs.cornell.edu/home/halpern/), [Ali Jadbabaie](https://jadbabaie.mit.edu), [Elchanan Mossel](https://math.mit.edu/~elmos/), [Ariel D. Procaccia](http://procaccia.info), and [Manon Revel](https://manrev.github.io/manon/)'
+  paper_id: J2
+- title: Tracking Truth with Liquid Democracy
+  authors: '[Adam Berinsky](https://polisci.mit.edu/people/adam-berinsky), Daniel
+    Halpern, [Joseph Y. Halpern](https://www.cs.cornell.edu/home/halpern/), [Ali Jadbabaie](https://jadbabaie.mit.edu),
+    [Elchanan Mossel](https://math.mit.edu/~elmos/), [Ariel D. Procaccia](http://procaccia.info),
+    and [Manon Revel](https://manrev.github.io/manon/)'
   citation: '*Management Science*'
-  link: 'ld-journal.pdf'
+  link: ld-journal.pdf
   year: '2025'
-  paper_id: 'J1'
-
-- title: 'Pairwise Calibrated Rewards for Pluralistic Alignment'
-  authors: 'Daniel Halpern, [Evi Micha](https://evi-micha.github.io), [Itai Shapira](https://seas.harvard.edu/person/itai-shapira), and [Ariel D. Procaccia](http://procaccia.info)'
+  paper_id: J1
+- title: Pairwise Calibrated Rewards for Pluralistic Alignment
+  authors: Daniel Halpern, [Evi Micha](https://evi-micha.github.io), [Itai Shapira](https://seas.harvard.edu/person/itai-shapira),
+    and [Ariel D. Procaccia](http://procaccia.info)
   citation: '*NeurIPS 2025*'
-  link: 'pairwise-calibration.pdf'
+  link: pairwise-calibration.pdf
   year: '2025'
-  paper_id: 'C23'
-
+  paper_id: C23
 - title: 'Online Envy Minimization and Multicolor Discrepancy: Equivalences and Separations'
-  authors: 'Daniel Halpern, [Alexandros Psomas](https://www.alexpsomas.com), [Paritosh Verma](https://sites.google.com/view/paritoshverma/), and [Daniel Xie](https://www.linkedin.com/in/danielyxie/)'
+  authors: Daniel Halpern, [Alexandros Psomas](https://www.alexpsomas.com), [Paritosh
+    Verma](https://sites.google.com/view/paritoshverma/), and [Daniel Xie](https://www.linkedin.com/in/danielyxie/)
   citation: '*EC 2025*'
-  link: 'discrepancy-and-envy.pdf'
+  link: discrepancy-and-envy.pdf
   year: '2025'
-  paper_id: 'C22'
-
-- title: 'The Proportional Veto Principle for Approval Ballots'
-  authors: 'Daniel Halpern, [Ariel D. Procaccia](http://procaccia.info), and [Warut Suksompong](https://www.comp.nus.edu.sg/~warut/)'
+  paper_id: C22
+- title: The Proportional Veto Principle for Approval Ballots
+  authors: Daniel Halpern, [Ariel D. Procaccia](http://procaccia.info), and [Warut
+    Suksompong](https://www.comp.nus.edu.sg/~warut/)
   citation: '*IJCAI 2025*'
-  link: 'flexible-voters.pdf'
+  link: flexible-voters.pdf
   year: '2025'
-  paper_id: 'C21'
-
-- title: 'Federated Assemblies'
-  authors: 'Daniel Halpern, [Ariel D. Procaccia](http://procaccia.info), [Ehud Shapiro](https://www.weizmann.ac.il/math/shapiro/home), and [Nimrod Talmon](https://sites.google.com/view/zutot/)'
+  paper_id: C21
+- title: Federated Assemblies
+  authors: Daniel Halpern, [Ariel D. Procaccia](http://procaccia.info), [Ehud Shapiro](https://www.weizmann.ac.il/math/shapiro/home),
+    and [Nimrod Talmon](https://sites.google.com/view/zutot/)
   citation: '*AAAI 2025*'
-  link: 'federated-assemblies.pdf'
+  link: federated-assemblies.pdf
   year: '2025'
-  paper_id: 'C20'
+  paper_id: C20
   special: '**★ Oral presentation (4.6% of submissions)**'
-
-- title: 'Axioms for AI Alignment from Human Feedback'
-  authors: '[Luise Ge](https://luisegehaijing.github.io), Daniel Halpern, [Evi Micha](https://evi-micha.github.io), [Ariel D. Procaccia](http://procaccia.info), [Itai Shapira](https://seas.harvard.edu/person/itai-shapira), [Yevgeniy Vorobeychik](http://vorobeychik.com), and [Junlin Wu](https://jlwu002.github.io)'
+- title: Axioms for AI Alignment from Human Feedback
+  authors: '[Luise Ge](https://luisegehaijing.github.io), Daniel Halpern, [Evi Micha](https://evi-micha.github.io),
+    [Ariel D. Procaccia](http://procaccia.info), [Itai Shapira](https://seas.harvard.edu/person/itai-shapira),
+    [Yevgeniy Vorobeychik](http://vorobeychik.com), and [Junlin Wu](https://jlwu002.github.io)'
   citation: '*NeurIPS 2024*'
-  link: 'rlhf-social-choice.pdf'
+  link: rlhf-social-choice.pdf
   year: '2024'
-  paper_id: 'C19'
+  paper_id: C19
   special: '**★ Spotlight presentation (2.1% of submissions)**'
-
-- title: 'Computing Voting Rules with Elicited Incomplete Votes'
-  authors: 'Daniel Halpern, [Safwan Hossain](https://safwanhossain.github.io), and [Jamie Tucker-Foltz](http://www.jamie.tuckerfoltz.com)'
+- title: Computing Voting Rules with Elicited Incomplete Votes
+  authors: Daniel Halpern, [Safwan Hossain](https://safwanhossain.github.io), and
+    [Jamie Tucker-Foltz](http://www.jamie.tuckerfoltz.com)
   citation: '*EC 2024*'
-  link: 'social-choice-queries.pdf'
+  link: social-choice-queries.pdf
   year: '2024'
-  paper_id: 'C18'
-
-- title: 'On the Existence of Envy-Free Allocations Beyond Additive Valuations'
-  authors: '[Gerdus Benadè](http://www.gerdusbenade.com), Daniel Halpern, [Alexandros Psomas](https://www.alexpsomas.com), and [Paritosh Verma](https://sites.google.com/view/paritoshverma/)'
+  paper_id: C18
+- title: On the Existence of Envy-Free Allocations Beyond Additive Valuations
+  authors: '[Gerdus Benadè](http://www.gerdusbenade.com), Daniel Halpern, [Alexandros
+    Psomas](https://www.alexpsomas.com), and [Paritosh Verma](https://sites.google.com/view/paritoshverma/)'
   citation: '*EC 2024*'
-  link: 'ef-beyond-additive.pdf'
+  link: ef-beyond-additive.pdf
   year: '2024'
-  paper_id: 'C17'
-
-- title: 'Metric Distortion with Elicited Pairwise Comparisons'
+  paper_id: C17
+- title: Metric Distortion with Elicited Pairwise Comparisons
   authors: '[Soroush Ebadian](https://ebadian.org), Daniel Halpern, and [Evi Micha](https://evi-micha.github.io)'
   citation: '*IJCAI 2024*'
-  link: 'metric-distortion-with-queries.pdf'
+  link: metric-distortion-with-queries.pdf
   year: '2024'
-  paper_id: 'C16'
-
-- title: 'Optimal Engagement-Diversity Tradeoffs in Social Media'
-  authors: '[Fabian Baumann](https://www.mpib-berlin.mpg.de/staff/fabian-baumann), Daniel Halpern, [Iyad Rahwan](https://www.rahwan.me), [Itai Shapira](https://seas.harvard.edu/person/itai-shapira), [Ariel D. Procaccia](http://procaccia.info), and [Manuel Wüthrich](https://scholar.google.de/citations?user=7EWrVYIAAAAJ&hl=en)'
+  paper_id: C16
+- title: Optimal Engagement-Diversity Tradeoffs in Social Media
+  authors: '[Fabian Baumann](https://www.mpib-berlin.mpg.de/staff/fabian-baumann),
+    Daniel Halpern, [Iyad Rahwan](https://www.rahwan.me), [Itai Shapira](https://seas.harvard.edu/person/itai-shapira),
+    [Ariel D. Procaccia](http://procaccia.info), and [Manuel Wüthrich](https://scholar.google.de/citations?user=7EWrVYIAAAAJ&hl=en)'
   citation: '*WWW 2024*'
-  link: 'twitter.pdf'
+  link: twitter.pdf
   year: '2024'
-  paper_id: 'C15'
-
-- title: 'Strategyproof Voting under Correlated Beliefs'
-  authors: 'Daniel Halpern, [Rachel Li](https://www.linkedin.com/in/rachelxli/), and [Ariel D. Procaccia](http://procaccia.info)'
+  paper_id: C15
+- title: Strategyproof Voting under Correlated Beliefs
+  authors: Daniel Halpern, [Rachel Li](https://www.linkedin.com/in/rachelxli/), and
+    [Ariel D. Procaccia](http://procaccia.info)
   citation: '*NeurIPS 2023*'
-  link: 'strategy-proof-beliefs.pdf'
+  link: strategy-proof-beliefs.pdf
   year: '2023'
-  paper_id: 'C14'
-
-- title: 'Smoothed Analysis of Social Choice Revisited'
-  authors: '[Bailey Flanigan](https://sites.google.com/andrew.cmu.edu/baileyflanigan/home), Daniel Halpern, and [Alexandros Psomas](https://www.alexpsomas.com)'
+  paper_id: C14
+- title: Smoothed Analysis of Social Choice Revisited
+  authors: '[Bailey Flanigan](https://sites.google.com/andrew.cmu.edu/baileyflanigan/home),
+    Daniel Halpern, and [Alexandros Psomas](https://www.alexpsomas.com)'
   citation: '*WINE 2023*'
-  link: 'smoothed-analysis.pdf'
+  link: smoothed-analysis.pdf
   year: '2023'
-  paper_id: 'C13'
-
-- title: 'In Defense of Liquid Democracy'
-  authors: 'Daniel Halpern, [Joseph Y. Halpern](https://www.cs.cornell.edu/home/halpern/), [Ali Jadbabaie](https://jadbabaie.mit.edu), [Elchanan Mossel](https://math.mit.edu/~elmos/), [Ariel D. Procaccia](http://procaccia.info), and [Manon Revel](https://manrev.github.io/manon/)'
+  paper_id: C13
+- title: In Defense of Liquid Democracy
+  authors: Daniel Halpern, [Joseph Y. Halpern](https://www.cs.cornell.edu/home/halpern/),
+    [Ali Jadbabaie](https://jadbabaie.mit.edu), [Elchanan Mossel](https://math.mit.edu/~elmos/),
+    [Ariel D. Procaccia](http://procaccia.info), and [Manon Revel](https://manrev.github.io/manon/)
   citation: '*EC 2023*'
-  link: 'liquid-defense.pdf'
+  link: liquid-defense.pdf
   year: '2023'
-  paper_id: 'C12'
-
-- title: 'Representation with Incomplete Votes'
-  authors: 'Daniel Halpern, [Gregory Kehne](https://gregorykehne.com), [Ariel D. Procaccia](http://procaccia.info), [Jamie Tucker-Foltz](http://www.jamie.tuckerfoltz.com), and [Manuel Wüthrich](https://scholar.google.de/citations?user=7EWrVYIAAAAJ&hl=en)'
+  paper_id: C12
+- title: Representation with Incomplete Votes
+  authors: Daniel Halpern, [Gregory Kehne](https://gregorykehne.com), [Ariel D. Procaccia](http://procaccia.info),
+    [Jamie Tucker-Foltz](http://www.jamie.tuckerfoltz.com), and [Manuel Wüthrich](https://scholar.google.de/citations?user=7EWrVYIAAAAJ&hl=en)
   citation: '*AAAI 2023*'
-  link: 'representation-incomplete.pdf'
+  link: representation-incomplete.pdf
   year: '2023'
-  paper_id: 'C11'
-
-- title: 'Dynamic Fair Division with Partial Information'
-  authors: '[Gerdus Benadè](http://www.gerdusbenade.com), Daniel Halpern, and [Alexandros Psomas](https://www.alexpsomas.com)'
+  paper_id: C11
+- title: Dynamic Fair Division with Partial Information
+  authors: '[Gerdus Benadè](http://www.gerdusbenade.com), Daniel Halpern, and [Alexandros
+    Psomas](https://www.alexpsomas.com)'
   citation: '*NeurIPS 2022*'
-  link: 'dynamic-fair-division.pdf'
+  link: dynamic-fair-division.pdf
   year: '2022'
-  paper_id: 'C10'
-
+  paper_id: C10
 - title: 'Liquid Democracy in Practice: An Empirical Analysis of its Epistemic Performance'
-  authors: '[Manon Revel](https://manrev.github.io/manon/), Daniel Halpern, [Adam Berinsky](https://polisci.mit.edu/people/adam-berinsky), and [Ali Jadbabaie](https://jadbabaie.mit.edu)'
+  authors: '[Manon Revel](https://manrev.github.io/manon/), Daniel Halpern, [Adam
+    Berinsky](https://polisci.mit.edu/people/adam-berinsky), and [Ali Jadbabaie](https://jadbabaie.mit.edu)'
   citation: '*EAAMO 2022*'
-  link: 'liquid-in-practice.pdf'
+  link: liquid-in-practice.pdf
   year: '2022'
-  paper_id: 'C9'
-
-- title: 'Distortion in Voting with Top-t Preferences'
-  authors: '[Allan Borodin](https://www.cs.toronto.edu/~bor/), Daniel Halpern, [Mohamad Latifian](https://www.cs.toronto.edu/~latifian/), and [Nisarg Shah](https://www.cs.toronto.edu/~nisarg)'
+  paper_id: C9
+- title: Distortion in Voting with Top-t Preferences
+  authors: '[Allan Borodin](https://www.cs.toronto.edu/~bor/), Daniel Halpern, [Mohamad
+    Latifian](https://www.cs.toronto.edu/~latifian/), and [Nisarg Shah](https://www.cs.toronto.edu/~nisarg)'
   citation: '*IJCAI 2022*'
-  link: 'distortion-top-t.pdf'
+  link: distortion-top-t.pdf
   year: '2022'
-  paper_id: 'C8'
-
-- title: 'Can Buyers Reveal for a Better Deal?'
-  authors: 'Daniel Halpern, [Gregory Kehne](https://gregorykehne.com), and [Jamie Tucker-Foltz](http://www.jamie.tuckerfoltz.com)'
+  paper_id: C8
+- title: Can Buyers Reveal for a Better Deal?
+  authors: Daniel Halpern, [Gregory Kehne](https://gregorykehne.com), and [Jamie Tucker-Foltz](http://www.jamie.tuckerfoltz.com)
   citation: '*IJCAI 2022*'
-  link: 'buyers-reveal.pdf'
+  link: buyers-reveal.pdf
   year: '2022'
-  paper_id: 'C7'
-
-- title: 'How Many Representatives Do We Need? The Optimal Size of an Epistemic Congress'
-  authors: '[Manon Revel](https://manrev.github.io/manon/), [Tao Lin](https://tao-l.github.io), and Daniel Halpern'
+  paper_id: C7
+- title: How Many Representatives Do We Need? The Optimal Size of an Epistemic Congress
+  authors: '[Manon Revel](https://manrev.github.io/manon/), [Tao Lin](https://tao-l.github.io),
+    and Daniel Halpern'
   citation: '*AAAI 2022*'
-  link: 'optimal-congress.pdf'
+  link: optimal-congress.pdf
   year: '2022'
-  paper_id: 'C6'
-
-- title: 'Fair and Efficient Resource Allocation with Partial Information'
-  authors: 'Daniel Halpern and [Nisarg Shah](https://www.cs.toronto.edu/~nisarg)'
+  paper_id: C6
+- title: Fair and Efficient Resource Allocation with Partial Information
+  authors: Daniel Halpern and [Nisarg Shah](https://www.cs.toronto.edu/~nisarg)
   citation: '*IJCAI 2021*'
-  link: 'distortion-fair-division.pdf'
+  link: distortion-fair-division.pdf
   year: '2021'
-  paper_id: 'C5'
-
-- title: 'Aggregating Binary Judgments Ranked By Accuracy'
-  authors: 'Daniel Halpern, [Gregory Kehne](https://gregorykehne.com), [Dominik Peters](https://dominik-peters.de), [Ariel D. Procaccia](http://procaccia.info), [Nisarg Shah](https://www.cs.toronto.edu/~nisarg), and [Piotr Skowron](https://duch.mimuw.edu.pl/~ps219737/)'
+  paper_id: C5
+- title: Aggregating Binary Judgments Ranked By Accuracy
+  authors: Daniel Halpern, [Gregory Kehne](https://gregorykehne.com), [Dominik Peters](https://dominik-peters.de),
+    [Ariel D. Procaccia](http://procaccia.info), [Nisarg Shah](https://www.cs.toronto.edu/~nisarg),
+    and [Piotr Skowron](https://duch.mimuw.edu.pl/~ps219737/)
   citation: '*AAAI 2021*'
-  link: 'ranked-binary-judgments.pdf'
+  link: ranked-binary-judgments.pdf
   year: '2021'
-  paper_id: 'C4'
-
-- title: 'Unbiased Information Packets'
-  authors: 'Daniel Halpern and [Ariel D. Procaccia](http://procaccia.info)'
-  citation: 'Unpublished manuscript'
-  link: 'unbiased-information.pdf'
+  paper_id: C4
+- title: Unbiased Information Packets
+  authors: Daniel Halpern and [Ariel D. Procaccia](http://procaccia.info)
+  citation: Unpublished manuscript
+  link: unbiased-information.pdf
   year: '2021'
-  paper_id: 'U1'
-
+  paper_id: U1
 - title: 'Fair Division with Binary Valuations: One Rule to Rule Them All'
-  authors: 'Daniel Halpern, [Ariel D. Procaccia](http://procaccia.info), [Alexandros Psomas](https://www.alexpsomas.com), and [Nisarg Shah](https://www.cs.toronto.edu/~nisarg)'
+  authors: Daniel Halpern, [Ariel D. Procaccia](http://procaccia.info), [Alexandros
+    Psomas](https://www.alexpsomas.com), and [Nisarg Shah](https://www.cs.toronto.edu/~nisarg)
   citation: '*WINE 2020*'
-  link: 'binary-mnw.pdf'
+  link: binary-mnw.pdf
   year: '2020'
-  paper_id: 'C3'
-
-- title: 'Resolving the Optimal Metric Distortion Conjecture'
-  authors: '[Vasilis Gkatzelis](https://www.cs.drexel.edu/~gkatz/), Daniel Halpern, and [Nisarg Shah](https://www.cs.toronto.edu/~nisarg)'
+  paper_id: C3
+- title: Resolving the Optimal Metric Distortion Conjecture
+  authors: '[Vasilis Gkatzelis](https://www.cs.drexel.edu/~gkatz/), Daniel Halpern,
+    and [Nisarg Shah](https://www.cs.toronto.edu/~nisarg)'
   citation: '*FOCS 2020*'
-  link: 'optimal-metric-distortion.pdf'
+  link: optimal-metric-distortion.pdf
   year: '2020'
-  paper_id: 'C2'
+  paper_id: C2
   special: '**★ Invited to the EC 2021 plenary session: Highlights Beyond EC**'
-
-- title: 'Fair Division with Subsidy'
-  authors: 'Daniel Halpern and [Nisarg Shah](https://www.cs.toronto.edu/~nisarg)'
+- title: Fair Division with Subsidy
+  authors: Daniel Halpern and [Nisarg Shah](https://www.cs.toronto.edu/~nisarg)
   citation: '*SAGT 2019*'
-  link: 'fair-division-subsidy-full.pdf'
+  link: fair-division-subsidy-full.pdf
   year: '2019'
-  paper_id: 'C1'
-
+  paper_id: C1

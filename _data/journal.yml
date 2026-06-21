@@ -1,24 +1,27 @@
-- title: 'AI Alignment from Social Choice Perspectives'
-  authors: 'Daniel Halpern, [Evi Micha](https://evi-micha.github.io), [Ariel D. Procaccia](http://procaccia.info), [Benjamin Schiffer](https://bschiffer1.github.io/), [Itai Shapira](https://seas.harvard.edu/person/itai-shapira), and [Shirley Zhang](https://shirleykzhang.github.io)'
+- title: AI Alignment from Social Choice Perspectives
+  authors: Daniel Halpern, [Evi Micha](https://evi-micha.github.io), [Ariel D. Procaccia](http://procaccia.info),
+    [Benjamin Schiffer](https://bschiffer1.github.io/), [Itai Shapira](https://seas.harvard.edu/person/itai-shapira),
+    and [Shirley Zhang](https://shirleykzhang.github.io)
   citation: '*SIGecom Exchanges*'
-  link: 'sc4ai.pdf'
-  paper_id: 'J4'
-
-- title: 'Representation with Incomplete Votes'
-  authors: 'Daniel Halpern, [Gregory Kehne](https://gregorykehne.com), [Ariel D. Procaccia](http://procaccia.info), [Jamie Tucker-Foltz](http://www.jamie.tuckerfoltz.com), and [Manuel Wüthrich](https://scholar.google.de/citations?user=7EWrVYIAAAAJ&hl=en)'
+  link: sc4ai.pdf
+  paper_id: J4
+- title: Representation with Incomplete Votes
+  authors: Daniel Halpern, [Gregory Kehne](https://gregorykehne.com), [Ariel D. Procaccia](http://procaccia.info),
+    [Jamie Tucker-Foltz](http://www.jamie.tuckerfoltz.com), and [Manuel Wüthrich](https://scholar.google.de/citations?user=7EWrVYIAAAAJ&hl=en)
   citation: '*Theory and Decision*'
-  link: 'representation-journal.pdf'
-  paper_id: 'J3'
-
-- title: 'Dynamic Fair Division with Partial Information'
-  authors: '[Gerdus Benadè](http://www.gerdusbenade.com), Daniel Halpern, and [Alexandros Psomas](https://www.alexpsomas.com)'
+  link: representation-journal.pdf
+  paper_id: J3
+- title: Dynamic Fair Division with Partial Information
+  authors: '[Gerdus Benadè](http://www.gerdusbenade.com), Daniel Halpern, and [Alexandros
+    Psomas](https://www.alexpsomas.com)'
   citation: '*Operations Research*'
-  link: 'dynamic-fair-division-or.pdf'
-  paper_id: 'J2'
-
-- title: 'Tracking Truth with Liquid Democracy'
-  authors: '[Adam Berinsky](https://polisci.mit.edu/people/adam-berinsky), Daniel Halpern, [Joseph Y. Halpern](https://www.cs.cornell.edu/home/halpern/), [Ali Jadbabaie](https://jadbabaie.mit.edu), [Elchanan Mossel](https://math.mit.edu/~elmos/), [Ariel D. Procaccia](http://procaccia.info), and [Manon Revel](https://manrev.github.io/manon/)'
+  link: dynamic-fair-division-or.pdf
+  paper_id: J2
+- title: Tracking Truth with Liquid Democracy
+  authors: '[Adam Berinsky](https://polisci.mit.edu/people/adam-berinsky), Daniel
+    Halpern, [Joseph Y. Halpern](https://www.cs.cornell.edu/home/halpern/), [Ali Jadbabaie](https://jadbabaie.mit.edu),
+    [Elchanan Mossel](https://math.mit.edu/~elmos/), [Ariel D. Procaccia](http://procaccia.info),
+    and [Manon Revel](https://manrev.github.io/manon/)'
   citation: '*Management Science*'
-  link: 'ld-journal.pdf'
-  paper_id: 'J1'
-
+  link: ld-journal.pdf
+  paper_id: J1

@@ -90,43 +90,58 @@ def journal_citation(paper):
 
 
 
-with open(CONFERENCE_PAPER_FILE, 'w') as f:
-	for i, paper in enumerate(conference):
-		f.write(f"- title: '{paper['title']}'\n"
-			  	f"  citation: '{website_citation(paper)}'\n"
-			  	f"  authors: '{author_list(paper['authors'], convert_website_author)}'\n"
-			  	f"  link: '{paper['link']}.pdf'\n"
-			  	f"  paper_id: 'C{len(conference) - i}'\n")
-		if 'special' in paper:
-			f.write(f"  special: '**★ {paper['special']}**'\n")
-		f.write("\n")
+def write_yaml(filepath, data):
+	with open(filepath, 'w') as f:
+		yaml.dump(data, f, sort_keys=False, allow_unicode=True)
+
+conference_out = []
+for i, paper in enumerate(conference):
+	entry = {
+		'title': paper['title'],
+		'citation': website_citation(paper),
+		'authors': author_list(paper['authors'], convert_website_author),
+		'link': f"{paper['link']}.pdf",
+		'paper_id': f"C{len(conference) - i}",
+	}
+	if 'special' in paper:
+		entry['special'] = f"**★ {paper['special']}**"
+	conference_out.append(entry)
+write_yaml(CONFERENCE_PAPER_FILE, conference_out)
 
 
-with open(UNPUBLISHED_PAPER_FILE, 'w') as f:
-	for i, paper in enumerate(unpublished):
-		f.write(f"- title: '{paper['title']}'\n"
-	  			f"  authors: '{author_list(paper['authors'], convert_website_author)}'\n"
-	  			f"  link: '{paper['link']}.pdf'\n"
-	  			f"  paper_id: 'U{len(unpublished) - i}'\n\n")
+unpublished_out = []
+for i, paper in enumerate(unpublished):
+	unpublished_out.append({
+		'title': paper['title'],
+		'authors': author_list(paper['authors'], convert_website_author),
+		'link': f"{paper['link']}.pdf",
+		'paper_id': f"U{len(unpublished) - i}",
+	})
+write_yaml(UNPUBLISHED_PAPER_FILE, unpublished_out)
 
-with open(WORKING_PAPER_FILE, 'w') as f:
-	for i, paper in enumerate(working):
-		if 'note' in paper:
-			added_line = f"  citation: '{paper['note']}'\n\n"
-		else:
-			added_line = "\n"
-		f.write(f"- title: '{paper['title']}'\n"
-	  			f"  authors: '{author_list(paper['authors'], convert_website_author)}'\n"
-	  			f"  link: '{paper['link']}.pdf'\n"
-	  			f"  paper_id: 'W{len(working) - i}'\n" + added_line)
+working_out = []
+for i, paper in enumerate(working):
+	entry = {
+		'title': paper['title'],
+		'authors': author_list(paper['authors'], convert_website_author),
+		'link': f"{paper['link']}.pdf",
+		'paper_id': f"W{len(working) - i}",
+	}
+	if 'note' in paper:
+		entry['citation'] = paper['note']
+	working_out.append(entry)
+write_yaml(WORKING_PAPER_FILE, working_out)
 
-with open(JOURNAL_PAPER_FILE, 'w') as f:
-	for i, paper in enumerate(journal):
-		f.write(f"- title: '{paper['title']}'\n"
-				f"  authors: '{author_list(paper['authors'], convert_website_author)}'\n"
-				f"  citation: '{website_journal_citation(paper)}'\n"
-				f"  link: '{paper['link']}.pdf'\n"
-				f"  paper_id: 'J{len(journal) - i}'\n\n")
+journal_out = []
+for i, paper in enumerate(journal):
+	journal_out.append({
+		'title': paper['title'],
+		'authors': author_list(paper['authors'], convert_website_author),
+		'citation': website_journal_citation(paper),
+		'link': f"{paper['link']}.pdf",
+		'paper_id': f"J{len(journal) - i}",
+	})
+write_yaml(JOURNAL_PAPER_FILE, journal_out)
 
 combined = []
 for i, paper in enumerate(journal):
@@ -169,18 +184,7 @@ for i, paper in enumerate(unpublished):
 	combined.append(entry)
 
 combined.sort(key=lambda x: (1, '') if x['year'] == 'Forthcoming' else (0, x['year']), reverse=True)
-
-with open(COMBINED_PAPER_FILE, 'w') as f:
-	for entry in combined:
-		f.write(f"- title: '{entry['title']}'\n"
-				f"  authors: '{entry['authors']}'\n"
-				f"  citation: '{entry['citation']}'\n"
-				f"  link: '{entry['link']}'\n"
-				f"  year: '{entry['year']}'\n"
-				f"  paper_id: '{entry['paper_id']}'\n")
-		if 'special' in entry:
-			f.write(f"  special: '{entry['special']}'\n")
-		f.write("\n")
+write_yaml(COMBINED_PAPER_FILE, combined)
 
 
 
