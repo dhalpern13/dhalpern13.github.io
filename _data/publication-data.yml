@@ -175,6 +175,10 @@ coauthors:
     short: 'B. Schiffer'
     long: 'Benjamin Schiffer'
     website: 'https://bschiffer1.github.io/'
+  abhiram:
+    short: 'A. Manohara'
+    long: 'Abhiram Manohara'
+    website: 'https://www.cs.purdue.edu/people/graduate-students/manohar6.html'
 
   
 
@@ -234,6 +238,13 @@ journal:
 # journal_submission:
 
 working:
+  - title: 'Prophet Inequalities Beyond Utilitarian Social Welfare'
+    authors:
+      - 'me'
+      - 'abhiram'
+      - 'alex'
+    link: 'prophet-p-mean'
+    alphabetical: True
   - title: 'Proportionality in Ranking Compression'
     authors:
       - 'me'
