@@ -28,3 +28,6 @@ images/daniel-old.JPG
 
 # Node dependencies
 node_modules/
+
+# Local publication editor backups
+_publication_admin/backups/

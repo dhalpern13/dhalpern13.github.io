@@ -37,14 +37,14 @@ def convert_website_author(author_string):
 		return 'Daniel Halpern'
 	else:
 		author = coauthors[author_string]
-		return f'[{author["long"]}]({author["website"]})'
+		return f'[{author["long"]}]({author["website"]})' if author.get('website') else author['long']
 
 def convert_resume_author(author_string):
 	if author_string == 'me':
 		return '\\link{https://daniel-halpern.com}{D. Halpern}'
 	else:
 		author = coauthors[author_string]
-		return f'\\link{{{author["website"]}}}{{{author["short"]}}}'
+		return f'\\link{{{author["website"]}}}{{{author["short"]}}}' if author.get('website') else author['short']
 
 def author_list(author_list, convert_func):
 	website_authors = [convert_func(author) for author in author_list]
@@ -104,7 +104,7 @@ for i, paper in enumerate(conference):
 		'citation': website_citation(paper),
 		'authors': author_list(paper['authors'], convert_website_author),
 		'link': f"{paper['link']}.pdf",
-		'paper_id': f"C{len(conference) - i}",
+		'paper_id': paper.get('paper_id', f"C{len(conference) - i}"),
 	}
 	if 'special' in paper:
 		entry['special'] = f"**★ {paper['special']}**"
@@ -118,7 +118,7 @@ for i, paper in enumerate(unpublished):
 		'title': paper['title'],
 		'authors': author_list(paper['authors'], convert_website_author),
 		'link': f"{paper['link']}.pdf",
-		'paper_id': f"U{len(unpublished) - i}",
+		'paper_id': paper.get('paper_id', f"U{len(unpublished) - i}"),
 	})
 write_yaml(UNPUBLISHED_PAPER_FILE, unpublished_out)
 
@@ -128,7 +128,7 @@ for i, paper in enumerate(working):
 		'title': paper['title'],
 		'authors': author_list(paper['authors'], convert_website_author),
 		'link': f"{paper['link']}.pdf",
-		'paper_id': f"W{len(working) - i}",
+		'paper_id': paper.get('paper_id', f"W{len(working) - i}"),
 	}
 	if 'note' in paper:
 		entry['citation'] = paper['note']
@@ -142,7 +142,7 @@ for i, paper in enumerate(journal):
 		'authors': author_list(paper['authors'], convert_website_author),
 		'citation': website_journal_citation(paper),
 		'link': f"{paper['link']}.pdf",
-		'paper_id': f"J{len(journal) - i}",
+		'paper_id': paper.get('paper_id', f"J{len(journal) - i}"),
 	})
 write_yaml(JOURNAL_PAPER_FILE, journal_out)
 
@@ -154,7 +154,7 @@ for i, paper in enumerate(journal):
 		'citation': website_journal_citation(paper),
 		'link': f"{paper['link']}.pdf",
 		'year': paper.get('year', '') or 'Forthcoming',
-		'paper_id': f"J{len(journal) - i}",
+		'paper_id': paper.get('paper_id', f"J{len(journal) - i}"),
 	}
 	if 'special' in paper:
 		entry['special'] = f"**★ {paper['special']}**"
@@ -167,7 +167,7 @@ for i, paper in enumerate(conference):
 		'citation': website_citation(paper),
 		'link': f"{paper['link']}.pdf",
 		'year': paper.get('year', '') or 'Forthcoming',
-		'paper_id': f"C{len(conference) - i}",
+		'paper_id': paper.get('paper_id', f"C{len(conference) - i}"),
 	}
 	if 'special' in paper:
 		entry['special'] = f"**★ {paper['special']}**"
@@ -180,7 +180,7 @@ for i, paper in enumerate(unpublished):
 		'citation': 'Unpublished manuscript',
 		'link': f"{paper['link']}.pdf",
 		'year': paper.get('year', '') or '2021',
-		'paper_id': f"U{len(unpublished) - i}",
+		'paper_id': paper.get('paper_id', f"U{len(unpublished) - i}"),
 	}
 	if 'special' in paper:
 		entry['special'] = f"**★ {paper['special']}**"
@@ -193,7 +193,7 @@ for i, paper in enumerate(theses):
 		'citation': f"*PhD thesis, {paper['institution']}*",
 		'link': f"{paper['link']}.pdf",
 		'year': paper['year'],
-		'paper_id': f"T{len(theses) - i}",
+		'paper_id': paper.get('paper_id', f"T{len(theses) - i}"),
 	})
 
 combined.sort(key=lambda x: (1, '') if x['year'] == 'Forthcoming' else (0, x['year']), reverse=True)

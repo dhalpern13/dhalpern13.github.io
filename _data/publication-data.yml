@@ -283,306 +283,307 @@ working:
   
 
 conference:
-  - title: 'Truthful Fair Division under Stochastic Valuations'
-    authors:
-      - 'me'
-      - 'alex'
-      - 'shirley'
-    link: 'ic-fair-division'
-    alphabetical: True
-    conference: 'EC'
-    year: '2026'
-    citation: '26th ACM Conference on Economics and Computation'
-    
-  - title: 'Robust AI Evaluation through Maximal Lotteries'
-    authors:
-      - 'hadi'
-      - 'serena'
-      - 'me'
-      - 'itai'
-      - 'flavio'
-      - 'ariel'
-    link: 'robust-maximal-lotteries'
-    conference: 'ICML'
-    year: '2026'
-    citation: '43rd International Conference on Machine Learning'
-  - title: 'Pairwise Calibrated Rewards for Pluralistic Alignment'
-    authors:
-      - 'me'
-      - 'evi'
-      - 'itai'
-      - 'ariel'
-    link: 'pairwise-calibration'
-    conference: 'NeurIPS'
-    year: '2025'
-    alphabetical: True
-    citation: '39th Conference on Neural Information Processing Systems'
-
-  - title: 'Online Envy Minimization and Multicolor Discrepancy: Equivalences and Separations'
-    authors:
-      - 'me'
-      - 'alex'
-      - 'paritosh'
-      - 'danielxie'
-    link: 'discrepancy-and-envy'
-    conference: 'EC'
-    year: '2025'
-    alphabetical: True
-    citation: '26th ACM Conference on Economics and Computation'
-
-  - title: 'The Proportional Veto Principle for Approval Ballots'
-    authors:
-      - 'me'
-      - 'ariel'
-      - 'warut'
-    link: 'flexible-voters'
-    conference: 'IJCAI'
-    year: '2025'
-    alphabetical: True
-    citation: '34th International Joint Conference on Artificial Intelligence'
-
-  - title: 'Federated Assemblies'
-    authors:
-      - 'me'
-      - 'ariel'
-      - 'udi'
-      - 'nimrod'
-    link: 'federated-assemblies'
-    conference: 'AAAI'
-    year: '2025'
-    alphabetical: True
-    citation: '39th AAAI Conference on Artificial Intelligence'
-    special-latex: 'Oral presentation (4.6\% of submissions)'
-    special: 'Oral presentation (4.6% of submissions)'
-    
-  - title: 'Axioms for AI Alignment from Human Feedback'
-    authors:
-      - 'luise'
-      - 'me'
-      - 'evi'
-      - 'ariel'
-      - 'itai'
-      - 'eugene'
-      - 'junlin'
-    link: 'rlhf-social-choice'
-    conference: 'NeurIPS'
-    citation: '38th Conference on Neural Information Processing Systems'
-    year: '2024'
-    alphabetical: True
-    special-latex: 'Spotlight presentation (2.1\% of submissions)'
-    special: 'Spotlight presentation (2.1% of submissions)'
-
-  - title: 'Computing Voting Rules with Elicited Incomplete Votes'
-    authors:
-      - 'me'
-      - 'safwan'
-      - 'jamie'
-    link: 'social-choice-queries'
-    conference: 'EC'
-    citation: '25th ACM Conference on Economics and Computation'
-    year: '2024'
-    alphabetical: True
-
-  - title: 'On the Existence of Envy-Free Allocations Beyond Additive Valuations'
-    authors:
-      - 'gerdus'
-      - 'me'
-      - 'alex'
-      - 'paritosh'
-    link: 'ef-beyond-additive'
-    conference: 'EC'
-    citation: '25th ACM Conference on Economics and Computation'
-    year: '2024'
-    alphabetical: True
-
-  - title: 'Metric Distortion with Elicited Pairwise Comparisons'
-    authors:
-      - 'soroush'
-      - 'me'
-      - 'evi'
-    link: 'metric-distortion-with-queries'
-    conference: 'IJCAI'
-    citation: '33rd International Joint Conference on Artificial Intelligence'
-    year: '2024'
-    alphabetical: True
-
-
-  - title: 'Optimal Engagement-Diversity Tradeoffs in Social Media'
-    authors:
-      - 'fabian'
-      - 'me'
-      - 'iyad'
-      - 'itai'
-      - 'ariel'
-      - 'manuel'
-    link: 'twitter'
-    conference: 'WWW'
-    citation: '33rd ACM Web Conference'
-    year: '2024'
-    alphabetical: True
-
-  - title: 'Strategyproof Voting under Correlated Beliefs'
-    authors:
-      - 'me'
-      - 'rachel'
-      - 'ariel'
-    link: 'strategy-proof-beliefs'
-    conference: 'NeurIPS'
-    citation: '37th Conference on Neural Information Processing Systems'
-    year: '2023'
-    alphabetical: True
-  -
-    title: 'Smoothed Analysis of Social Choice Revisited'
-    authors: 
-      - 'bailey'
-      - 'me'
-      - 'alex'
-    link: 'smoothed-analysis'
-    citation: '19th Conference on Web and Internet Economics'
-    conference: 'WINE'
-    year: '2023'
-    alphabetical: True
-  -
-    title: 'In Defense of Liquid Democracy'
-    authors: 
-      - 'me'
-      - 'dad'
-      - 'ali'
-      - 'elchanan'
-      - 'ariel'
-      - 'manon'
-    link: 'liquid-defense'
-    citation: '24th ACM Conference on Economics and Computation'
-    conference: 'EC'
-    year: '2023'
-    alphabetical: True
-  -
-    title: 'Representation with Incomplete Votes'
-    authors: 
-      - 'me'
-      - 'greg'
-      - 'ariel'
-      - 'jamie'
-      - 'manuel'
-    link: 'representation-incomplete'
-    citation: '37th AAAI Conference on Artificial Intelligence'
-    conference: 'AAAI'
-    year: '2023'
-    alphabetical: True
-  -
-    title: 'Dynamic Fair Division with Partial Information'
-    authors: 
-      - 'gerdus'
-      - 'me'
-      - 'alex'
-    link: 'dynamic-fair-division'
-    conference: 'NeurIPS'
-    citation: '36th Conference on Neural Information Processing Systems'
-    year: '2022'
-    alphabetical: True
-  -
-    title: 'Liquid Democracy in Practice: An Empirical Analysis of its Epistemic Performance'
-    authors: 
-      - 'manon'
-      - 'me'
-      - 'adam'
-      - 'ali'
-    link: 'liquid-in-practice'
-    conference: 'EAAMO'
-    citation: '2nd ACM conference on Equity and Access in Algorithms, Mechanisms, Optimization'
-    year: '2022'
-  -
-    title: 'Distortion in Voting with Top-t Preferences'
-    authors: 
-      - 'allan'
-      - 'me'
-      - 'mohamad'
-      - 'nisarg'
-    link: 'distortion-top-t'
-    conference: 'IJCAI'
-    citation: '31st International Joint Conference on Artificial Intelligence'
-    year: '2022'
-    alphabetical: True
-  -
-    title: 'Can Buyers Reveal for a Better Deal?'
-    authors: 
-      - 'me'
-      - 'greg'
-      - 'jamie'
-    link: 'buyers-reveal'
-    conference: 'IJCAI'
-    citation: '31st International Joint Conference on Artificial Intelligence'
-    year: '2022'
-    alphabetical: True
-  -
-    title: 'How Many Representatives Do We Need? The Optimal Size of an Epistemic Congress'
-    authors: 
-      - 'manon'
-      - 'tao'
-      - 'me'
-    link: 'optimal-congress'
-    conference: 'AAAI'
-    citation: '36th AAAI Conference on Artificial Intelligence'
-    year: '2022'
-    random: True
-  -
-    title: 'Fair and Efficient Resource Allocation with Partial Information'
-    authors: 
-      - 'me'
-      - 'nisarg'
-    link: 'distortion-fair-division'
-    conference: 'IJCAI'
-    citation: '30th International Joint Conference on Artificial Intelligence'
-    year: '2021'
-    alphabetical: True
-  -
-    title: 'Aggregating Binary Judgments Ranked By Accuracy'
-    authors: 
-      - 'me'
-      - 'greg'
-      - 'dominik'
-      - 'ariel'
-      - 'nisarg'
-      - 'piotr'
-    link: 'ranked-binary-judgments'
-    conference: 'AAAI'
-    citation: '35th AAAI Conference on Artificial Intelligence'
-    year: '2021'
-    alphabetical: True
-  -
-    title: 'Fair Division with Binary Valuations: One Rule to Rule Them All'
-    authors: 
-      - 'me'
-      - 'ariel'
-      - 'alex'
-      - 'nisarg'
-    link: 'binary-mnw'
-    conference: 'WINE'
-    citation: '16th Conference on Web and Internet Economics'
-    year: '2020'
-    alphabetical: True
-  -
-    title: 'Resolving the Optimal Metric Distortion Conjecture'
-    authors: 
-      - 'vasilis'
-      - 'me'
-      - 'nisarg'
-    link: 'optimal-metric-distortion'
-    conference: 'FOCS'
-    citation: '61st Annual IEEE Symposium on Foundations of Computer Science'
-    year: '2020'
-    alphabetical: True
-    special: 'Invited to the EC 2021 plenary session: Highlights Beyond EC'
-  -
-    title: 'Fair Division with Subsidy'
-    authors: 
-      - 'me'
-      - 'nisarg'
-    link: 'fair-division-subsidy-full'
-    conference: 'SAGT'
-    citation: '12th International Symposium on Algorithmic Game Theory'
-    year: '2019'
-    alphabetical: True
+- title: Truthful Fair Division under Stochastic Valuations
+  authors:
+  - me
+  - alex
+  - shirley
+  link: ic-fair-division
+  alphabetical: true
+  conference: EC
+  year: '2026'
+  citation: 27th ACM Conference on Economics and Computation
+  paper_id: C25
+- title: Robust AI Evaluation through Maximal Lotteries
+  authors:
+  - hadi
+  - serena
+  - me
+  - itai
+  - flavio
+  - ariel
+  link: robust-maximal-lotteries
+  conference: ICML
+  year: '2026'
+  citation: 43rd International Conference on Machine Learning
+  paper_id: C24
+- title: Pairwise Calibrated Rewards for Pluralistic Alignment
+  authors:
+  - me
+  - evi
+  - itai
+  - ariel
+  link: pairwise-calibration
+  conference: NeurIPS
+  year: '2025'
+  alphabetical: true
+  citation: 39th Conference on Neural Information Processing Systems
+  paper_id: C23
+- title: 'Online Envy Minimization and Multicolor Discrepancy: Equivalences and Separations'
+  authors:
+  - me
+  - alex
+  - paritosh
+  - danielxie
+  link: discrepancy-and-envy
+  conference: EC
+  year: '2025'
+  alphabetical: true
+  citation: 26th ACM Conference on Economics and Computation
+  paper_id: C22
+- title: The Proportional Veto Principle for Approval Ballots
+  authors:
+  - me
+  - ariel
+  - warut
+  link: flexible-voters
+  conference: IJCAI
+  year: '2025'
+  alphabetical: true
+  citation: 34th International Joint Conference on Artificial Intelligence
+  paper_id: C21
+- title: Federated Assemblies
+  authors:
+  - me
+  - ariel
+  - udi
+  - nimrod
+  link: federated-assemblies
+  conference: AAAI
+  year: '2025'
+  alphabetical: true
+  citation: 39th AAAI Conference on Artificial Intelligence
+  special-latex: Oral presentation (4.6\% of submissions)
+  special: Oral presentation (4.6% of submissions)
+  paper_id: C20
+- title: Axioms for AI Alignment from Human Feedback
+  authors:
+  - luise
+  - me
+  - evi
+  - ariel
+  - itai
+  - eugene
+  - junlin
+  link: rlhf-social-choice
+  conference: NeurIPS
+  citation: 38th Conference on Neural Information Processing Systems
+  year: '2024'
+  alphabetical: true
+  special-latex: Spotlight presentation (2.1\% of submissions)
+  special: Spotlight presentation (2.1% of submissions)
+  paper_id: C19
+- title: Computing Voting Rules with Elicited Incomplete Votes
+  authors:
+  - me
+  - safwan
+  - jamie
+  link: social-choice-queries
+  conference: EC
+  citation: 25th ACM Conference on Economics and Computation
+  year: '2024'
+  alphabetical: true
+  paper_id: C18
+- title: On the Existence of Envy-Free Allocations Beyond Additive Valuations
+  authors:
+  - gerdus
+  - me
+  - alex
+  - paritosh
+  link: ef-beyond-additive
+  conference: EC
+  citation: 25th ACM Conference on Economics and Computation
+  year: '2024'
+  alphabetical: true
+  paper_id: C17
+- title: Metric Distortion with Elicited Pairwise Comparisons
+  authors:
+  - soroush
+  - me
+  - evi
+  link: metric-distortion-with-queries
+  conference: IJCAI
+  citation: 33rd International Joint Conference on Artificial Intelligence
+  year: '2024'
+  alphabetical: true
+  paper_id: C16
+- title: Optimal Engagement-Diversity Tradeoffs in Social Media
+  authors:
+  - fabian
+  - me
+  - iyad
+  - itai
+  - ariel
+  - manuel
+  link: twitter
+  conference: WWW
+  citation: 33rd ACM Web Conference
+  year: '2024'
+  alphabetical: true
+  paper_id: C15
+- title: Strategyproof Voting under Correlated Beliefs
+  authors:
+  - me
+  - rachel
+  - ariel
+  link: strategy-proof-beliefs
+  conference: NeurIPS
+  citation: 37th Conference on Neural Information Processing Systems
+  year: '2023'
+  alphabetical: true
+  paper_id: C14
+- title: Smoothed Analysis of Social Choice Revisited
+  authors:
+  - bailey
+  - me
+  - alex
+  link: smoothed-analysis
+  citation: 19th Conference on Web and Internet Economics
+  conference: WINE
+  year: '2023'
+  alphabetical: true
+  paper_id: C13
+- title: In Defense of Liquid Democracy
+  authors:
+  - me
+  - dad
+  - ali
+  - elchanan
+  - ariel
+  - manon
+  link: liquid-defense
+  citation: 24th ACM Conference on Economics and Computation
+  conference: EC
+  year: '2023'
+  alphabetical: true
+  paper_id: C12
+- title: Representation with Incomplete Votes
+  authors:
+  - me
+  - greg
+  - ariel
+  - jamie
+  - manuel
+  link: representation-incomplete
+  citation: 37th AAAI Conference on Artificial Intelligence
+  conference: AAAI
+  year: '2023'
+  alphabetical: true
+  paper_id: C11
+- title: Dynamic Fair Division with Partial Information
+  authors:
+  - gerdus
+  - me
+  - alex
+  link: dynamic-fair-division
+  conference: NeurIPS
+  citation: 36th Conference on Neural Information Processing Systems
+  year: '2022'
+  alphabetical: true
+  paper_id: C10
+- title: 'Liquid Democracy in Practice: An Empirical Analysis of its Epistemic Performance'
+  authors:
+  - manon
+  - me
+  - adam
+  - ali
+  link: liquid-in-practice
+  conference: EAAMO
+  citation: 2nd ACM conference on Equity and Access in Algorithms, Mechanisms, Optimization
+  year: '2022'
+  paper_id: C9
+- title: Distortion in Voting with Top-t Preferences
+  authors:
+  - allan
+  - me
+  - mohamad
+  - nisarg
+  link: distortion-top-t
+  conference: IJCAI
+  citation: 31st International Joint Conference on Artificial Intelligence
+  year: '2022'
+  alphabetical: true
+  paper_id: C8
+- title: Can Buyers Reveal for a Better Deal?
+  authors:
+  - me
+  - greg
+  - jamie
+  link: buyers-reveal
+  conference: IJCAI
+  citation: 31st International Joint Conference on Artificial Intelligence
+  year: '2022'
+  alphabetical: true
+  paper_id: C7
+- title: How Many Representatives Do We Need? The Optimal Size of an Epistemic Congress
+  authors:
+  - manon
+  - tao
+  - me
+  link: optimal-congress
+  conference: AAAI
+  citation: 36th AAAI Conference on Artificial Intelligence
+  year: '2022'
+  random: true
+  paper_id: C6
+- title: Fair and Efficient Resource Allocation with Partial Information
+  authors:
+  - me
+  - nisarg
+  link: distortion-fair-division
+  conference: IJCAI
+  citation: 30th International Joint Conference on Artificial Intelligence
+  year: '2021'
+  alphabetical: true
+  paper_id: C5
+- title: Aggregating Binary Judgments Ranked By Accuracy
+  authors:
+  - me
+  - greg
+  - dominik
+  - ariel
+  - nisarg
+  - piotr
+  link: ranked-binary-judgments
+  conference: AAAI
+  citation: 35th AAAI Conference on Artificial Intelligence
+  year: '2021'
+  alphabetical: true
+  paper_id: C4
+- title: 'Fair Division with Binary Valuations: One Rule to Rule Them All'
+  authors:
+  - me
+  - ariel
+  - alex
+  - nisarg
+  link: binary-mnw
+  conference: WINE
+  citation: 16th Conference on Web and Internet Economics
+  year: '2020'
+  alphabetical: true
+  paper_id: C3
+- title: Resolving the Optimal Metric Distortion Conjecture
+  authors:
+  - vasilis
+  - me
+  - nisarg
+  link: optimal-metric-distortion
+  conference: FOCS
+  citation: 61st Annual IEEE Symposium on Foundations of Computer Science
+  year: '2020'
+  alphabetical: true
+  special: 'Invited to the EC 2021 plenary session: Highlights Beyond EC'
+  paper_id: C2
+- title: Fair Division with Subsidy
+  authors:
+  - me
+  - nisarg
+  link: fair-division-subsidy-full
+  conference: SAGT
+  citation: 12th International Symposium on Algorithmic Game Theory
+  year: '2019'
+  alphabetical: true
+  paper_id: C1
 
 unpublished:
   - title: 'Unbiased Information Packets'
@@ -591,3 +592,7 @@ unpublished:
       - 'ariel'
     link: 'unbiased-information'
     year: '2021'
+
+label_counters:
+  conference: 25
+

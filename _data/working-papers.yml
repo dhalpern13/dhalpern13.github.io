@@ -4,8 +4,8 @@
   link: prophet-p-mean.pdf
   paper_id: W4
 - title: Proportionality in Ranking Compression
-  authors: Daniel Halpern, [Xinyu Liu](), [Evi Micha](https://evi-micha.github.io),
-    [Yu Peng Ng](), and [Warut Suksompong](https://www.comp.nus.edu.sg/~warut/)
+  authors: Daniel Halpern, Xinyu Liu, [Evi Micha](https://evi-micha.github.io), Yu
+    Peng Ng, and [Warut Suksompong](https://www.comp.nus.edu.sg/~warut/)
   link: proportional-compression.pdf
   paper_id: W3
 - title: 'Linear Social Choice with Few Queries: A Moment-Based Approach'

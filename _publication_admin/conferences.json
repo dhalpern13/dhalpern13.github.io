@@ -1,0 +1,82 @@
+{
+  "EC": {
+    "name": "ACM Conference on Economics and Computation",
+    "year": 2026,
+    "edition": 27,
+    "source": "https://ec26.sigecom.org/",
+    "aliases": ["ACM EC"],
+    "checked": "2026-09-19"
+  },
+  "ICML": {
+    "name": "International Conference on Machine Learning",
+    "year": 2026,
+    "edition": 43,
+    "source": "https://icml.cc/Conferences/2026",
+    "aliases": [],
+    "checked": "2026-09-19"
+  },
+  "NeurIPS": {
+    "name": "Conference on Neural Information Processing Systems",
+    "year": 2026,
+    "edition": 40,
+    "source": "https://nips.cc/Conferences/2026/CallForPapers",
+    "aliases": ["NIPS"],
+    "checked": "2026-09-19"
+  },
+  "AAAI": {
+    "name": "AAAI Conference on Artificial Intelligence",
+    "year": 2026,
+    "edition": 40,
+    "source": "https://aaai.org/conference/aaai/aaai-26/",
+    "aliases": [],
+    "checked": "2026-09-19"
+  },
+  "IJCAI": {
+    "name": "International Joint Conference on Artificial Intelligence",
+    "year": 2026,
+    "edition": 35,
+    "source": "https://www.ijcai.org/sites/default/files/Call%20for%20Proposals%20to%20Host%20IJCAI-2026.pdf",
+    "aliases": [],
+    "checked": "2026-09-19"
+  },
+  "WINE": {
+    "name": "Conference on Web and Internet Economics",
+    "year": 2026,
+    "edition": 22,
+    "source": "https://wine2026conf.github.io/",
+    "aliases": [],
+    "checked": "2026-09-19"
+  },
+  "FOCS": {
+    "name": "Annual IEEE Symposium on Foundations of Computer Science",
+    "year": 2026,
+    "edition": 67,
+    "source": "https://focs.computer.org/2026/",
+    "aliases": [],
+    "checked": "2026-09-19"
+  },
+  "SAGT": {
+    "name": "International Symposium on Algorithmic Game Theory",
+    "year": 2026,
+    "edition": 19,
+    "source": "https://www.uni-augsburg.de/de/fakultaet/fai/conferences/sagt-2026/",
+    "aliases": [],
+    "checked": "2026-09-19"
+  },
+  "WWW": {
+    "name": "ACM Web Conference",
+    "year": 2025,
+    "edition": 34,
+    "source": "https://archives.iw3c2.org/www2025/www2025-proceedings.pdf",
+    "aliases": ["The Web Conference", "TheWebConf"],
+    "checked": "2026-09-19"
+  },
+  "EAAMO": {
+    "name": "ACM Conference on Equity and Access in Algorithms, Mechanisms, and Optimization",
+    "year": 2026,
+    "edition": 6,
+    "source": "https://conference.eaamo.org/cfp/",
+    "aliases": ["ACM EAAMO"],
+    "checked": "2026-09-19"
+  }
+}

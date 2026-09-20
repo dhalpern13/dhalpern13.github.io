@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Publications · Daniel Halpern</title>
+  <link rel="stylesheet" href="/style.css"><script src="/conference-lookup.js" defer></script><script src="/app.js" defer></script>
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="/">DH<span>Research workspace</span></a><div class="top-actions"><span class="local"><i></i> Local editor</span><a class="button subtle" href="http://127.0.0.1:4000/research/" target="_blank" rel="noopener">Website preview ↗</a></div></header>
+  <main>
+    <div class="page-heading"><div><p class="eyebrow">YOUR RESEARCH</p><h1>Publications</h1><p class="muted">Keep your papers, people, and places in order.</p></div><button class="primary" id="new-paper">＋ New publication</button></div>
+    <div id="notice" role="status" aria-live="polite" hidden></div>
+    <div class="workspace">
+      <aside class="library"><div class="library-tools"><label class="sr-only" for="search">Search publications</label><input id="search" type="search" placeholder="Search titles, authors, venues…"><div class="filter-row"><label class="sr-only" for="filter">Publication type</label><select id="filter"><option value="all">All publications</option><option value="working">Working papers</option><option value="conference">Conference papers</option><option value="journal">Journal articles</option><option value="theses">Theses</option><option value="unpublished">Unpublished</option></select><span id="count"></span></div></div><div id="paper-list" aria-label="Publications"></div><div class="library-footer"><button id="reload" class="text-button">↻ Reload data &amp; PDFs</button></div></aside>
+      <section class="editor" aria-label="Publication editor">
+        <div id="empty" class="empty"><div class="empty-icon">¶</div><h2>A home for your research.</h2><p>Select a publication to edit its details,<br>or add your next paper.</p></div>
+        <form id="paper-form" hidden>
+          <div class="editor-heading"><div><p class="eyebrow" id="editor-label">NEW PUBLICATION</p><h2 id="editor-title">Add to your research</h2></div><span id="edit-status">Unsaved</span></div>
+          <div class="form-body">
+            <div class="row"><label>Publication type<select id="category"><option value="conference">Conference paper</option><option value="working">Working paper</option><option value="journal">Journal article</option><option value="theses">Thesis</option><option value="unpublished">Unpublished manuscript</option></select></label><label id="year-label">Year<input id="year" inputmode="numeric" pattern="[0-9]{4}" placeholder="2026"><small id="year-help" hidden>Leave blank for forthcoming.</small></label></div>
+            <label>Title<textarea id="title" rows="2" required placeholder="The title of your paper"></textarea></label>
+            <div class="section-heading"><h3>Paper file</h3><a id="pdf-preview" target="_blank" rel="noopener" hidden>Open PDF ↗</a></div>
+            <label class="sr-only" for="pdf">PDF file</label><input id="pdf" list="pdf-options" placeholder="Search PDFs in your files folder…" autocomplete="off" required><datalist id="pdf-options"></datalist><p class="hint">Add new PDFs to <code>files/</code>, then use “Reload data &amp; PDFs.”</p>
+            <div id="venue-fields"><div class="section-heading"><h3 id="venue-heading">Conference</h3></div><label class="sr-only" for="venue">Venue</label><input id="venue" list="venue-options" placeholder="Choose or type a conference…" autocomplete="off"><datalist id="venue-options"></datalist><p class="hint" id="venue-hint">Choose an existing venue, or type a new one.</p><label id="citation-label">Full conference name<input id="citation" placeholder="e.g. 27th ACM Conference on Economics and Computation"><small>Used in your résumé source. You can edit the suggested name.</small></label><div id="conference-reference" class="conference-reference" hidden><p id="conference-explanation"></p><a id="conference-source" target="_blank" rel="noopener" hidden>Official reference ↗</a><button id="use-conference-suggestion" type="button" class="text-button" hidden>Use suggested name</button></div></div>
+            <div class="section-heading"><h3>Authors</h3><button id="new-author" type="button" class="text-button">＋ New collaborator</button></div>
+            <div id="authors" aria-label="Authors in publication order"></div>
+            <div class="author-picker"><label class="sr-only" for="author-search">Search collaborators</label><input id="author-search" list="author-options" placeholder="Search collaborators by name…" autocomplete="off"><datalist id="author-options"></datalist><button id="add-author" type="button" class="secondary">Add</button></div>
+            <label class="order-label">Author-order convention<select id="author-order"><option value="custom">As listed above</option><option value="alphabetical">Alphabetical (α)</option><option value="random">Random (r)</option></select><small>Use the arrows to arrange names. This setting adds the résumé notation.</small></label>
+            <label id="note-label" hidden>Note<input id="note" placeholder="Optional status or short note"></label>
+            <details id="extra-fields"><summary>Recognition &amp; additional details</summary><label>Recognition or award<input id="special" placeholder="e.g. Spotlight presentation (2.1% of submissions)"></label><label>LaTeX version of recognition<input id="special-latex" placeholder="Optional LaTeX formatting for the résumé"></label></details>
+            <div class="entry-preview"><p class="eyebrow">AT A GLANCE</p><strong id="preview-title"></strong><p id="preview-authors"></p><p id="preview-venue"></p></div>
+          </div>
+          <footer class="editor-footer"><div class="save-note">Saves locally and refreshes website data.<br><span>Résumé PDF stays unchanged. Publish through Git.</span></div><div class="editor-buttons"><button type="button" id="delete-paper" class="danger">Delete</button><button type="button" id="discard" class="secondary">Discard</button><button type="submit" id="save" class="primary">Save changes</button></div></footer>
+        </form>
+      </section>
+    </div>
+    <p class="bottom-note">Daniel Halpern <span>·</span> Publication manager <span>·</span> Backups are saved automatically before each change.</p>
+  </main>
+  <dialog id="author-dialog"><form id="author-form"><p class="eyebrow">PEOPLE</p><h2>Add a collaborator</h2><p class="muted">They’ll be available for this and future papers.</p><label>Full name<input id="author-long" required placeholder="Alex Smith"></label><div class="row"><label>Short name for résumé<input id="author-short" required placeholder="A. Smith"></label><label>Unique ID<input id="author-key" required pattern="[a-z][a-z0-9_-]*" placeholder="alexsmith"></label></div><label>Website <span class="muted">(optional)</span><input type="url" id="author-website" placeholder="https://…"></label><p id="author-error" role="alert"></p><div class="dialog-actions"><button type="button" id="cancel-author" class="secondary">Cancel</button><button class="primary" id="save-author" type="submit">Add collaborator</button></div></form></dialog>
+  <dialog id="confirm-dialog"><h2 id="confirm-title"></h2><p id="confirm-body"></p><div class="dialog-actions"><button id="confirm-cancel" class="secondary">Cancel</button><button id="confirm-ok" class="primary">Continue</button></div></dialog>
+</body>
+</html>
