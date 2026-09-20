@@ -30,6 +30,7 @@ conference = all_data['conference']
 working = all_data['working']
 unpublished = all_data['unpublished']
 journal = all_data['journal']
+theses = all_data.get('theses', [])
 
 def convert_website_author(author_string):
 	if author_string == 'me':
@@ -47,7 +48,9 @@ def convert_resume_author(author_string):
 
 def author_list(author_list, convert_func):
 	website_authors = [convert_func(author) for author in author_list]
-	if len(website_authors) == 2:
+	if len(website_authors) == 1:
+		return website_authors[0]
+	elif len(website_authors) == 2:
 		return f'{website_authors[0]} and {website_authors[1]}'
 	else:
 		return ', '.join(website_authors[:-1]) + ', and ' + website_authors[-1]
@@ -182,6 +185,16 @@ for i, paper in enumerate(unpublished):
 	if 'special' in paper:
 		entry['special'] = f"**★ {paper['special']}**"
 	combined.append(entry)
+
+for i, paper in enumerate(theses):
+	combined.append({
+		'title': paper['title'],
+		'authors': author_list(paper['authors'], convert_website_author),
+		'citation': f"*PhD thesis, {paper['institution']}*",
+		'link': f"{paper['link']}.pdf",
+		'year': paper['year'],
+		'paper_id': f"T{len(theses) - i}",
+	})
 
 combined.sort(key=lambda x: (1, '') if x['year'] == 'Forthcoming' else (0, x['year']), reverse=True)
 write_yaml(COMBINED_PAPER_FILE, combined)

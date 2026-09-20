@@ -182,6 +182,14 @@ coauthors:
 
   
 
+theses:
+  - title: 'New Paradigms in Social Choice'
+    authors:
+      - 'me'
+    link: 'thesis'
+    institution: 'Harvard University'
+    year: '2025'
+
 journal:
   - title: 'AI Alignment from Social Choice Perspectives'
     authors:

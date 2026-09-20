@@ -73,6 +73,12 @@
   year: '2025'
   paper_id: C20
   special: '**★ Oral presentation (4.6% of submissions)**'
+- title: New Paradigms in Social Choice
+  authors: Daniel Halpern
+  citation: '*PhD thesis, Harvard University*'
+  link: thesis.pdf
+  year: '2025'
+  paper_id: T1
 - title: Axioms for AI Alignment from Human Feedback
   authors: '[Luise Ge](https://luisegehaijing.github.io), Daniel Halpern, [Evi Micha](https://evi-micha.github.io),
     [Ariel D. Procaccia](http://procaccia.info), [Itai Shapira](https://seas.harvard.edu/person/itai-shapira),
