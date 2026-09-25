@@ -246,43 +246,49 @@ journal:
 # journal_submission:
 
 working:
-  - title: 'Prophet Inequalities Beyond Utilitarian Social Welfare'
-    authors:
-      - 'me'
-      - 'abhiram'
-      - 'alex'
-    link: 'prophet-p-mean'
-    alphabetical: True
-  - title: 'Proportionality in Ranking Compression'
-    authors:
-      - 'me'
-      - 'xinyu'
-      - 'evi'
-      - 'yupeng'
-      - 'warut'
-    link: 'proportional-compression'
-    alphabetical: True
-  - title: 'Linear Social Choice with Few Queries: A Moment-Based Approach'
-    authors:
-      - 'luise'
-      - 'me'
-      - 'greg'
-      - 'eugene'
-    link: 'linear-social-choice-queries'
-    alphabetical: True
-  - title: 'Fair Division Under Inaccurate Preferences'
-    authors:
-      - 'trung'
-      - 'me'
-      - 'anuran'
-      - 'alex'
-      - 'japneet'
-      - 'paritosh'
-    link: 'fair-division-inaccurate'
-    alphabetical: True
-  
+- title: Prophet Inequalities Beyond Utilitarian Social Welfare
+  authors:
+  - me
+  - abhiram
+  - alex
+  link: prophet-p-mean
+  alphabetical: true
+  paper_id: W4
+- title: 'Linear Social Choice with Few Queries: A Moment-Based Approach'
+  authors:
+  - luise
+  - me
+  - greg
+  - eugene
+  link: linear-social-choice-queries
+  alphabetical: true
+  paper_id: W2
+- title: Fair Division Under Inaccurate Preferences
+  authors:
+  - trung
+  - me
+  - anuran
+  - alex
+  - japneet
+  - paritosh
+  link: fair-division-inaccurate
+  alphabetical: true
+  paper_id: W1
 
 conference:
+- title: Proportionality in Ranking Compression
+  authors:
+  - me
+  - xinyu
+  - evi
+  - yupeng
+  - warut
+  link: proportional-compression
+  alphabetical: true
+  paper_id: C26
+  year: '2026'
+  conference: NeurIPS
+  citation: 40th Conference on Neural Information Processing Systems
 - title: Truthful Fair Division under Stochastic Valuations
   authors:
   - me
@@ -594,5 +600,6 @@ unpublished:
     year: '2021'
 
 label_counters:
-  conference: 25
+  conference: 26
+  working: 4
 

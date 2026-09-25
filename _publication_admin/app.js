@@ -10,7 +10,7 @@ function element(tag, className, text) {
   return node;
 }
 function authorName(key) { return key === 'me' ? 'Daniel Halpern' : state.data.coauthors[key]?.long || key; }
-function paperId(category, paper, index) { return paper.paper_id || `${prefixes[category]}${state.data[category].length - index}`; }
+function paperId(category, paper, index) { return (category !== 'working' && paper.paper_id) || `${prefixes[category]}${state.data[category].length - index}`; }
 function notice(message, error = false) {
   $('notice').textContent = message;
   $('notice').classList.toggle('error', error);
@@ -205,6 +205,32 @@ function paperFromForm() {
   return paper;
 }
 $('paper-form').addEventListener('input', changed);
+$('rebuild-resume').onclick = async () => {
+  if (busy) return;
+  if (isDirty()) {
+    notice('Save or discard your publication edits before rebuilding the résumé.', true);
+    return;
+  }
+  setBusy(true);
+  $('rebuild-resume').textContent = 'Building résumé…';
+  $('resume-result').hidden = true;
+  notice('Compiling the résumé from your saved publications…');
+  try {
+    const response = await fetch('/api/rebuild-resume', {
+      method: 'POST', headers: {'Content-Type': 'application/json', 'X-Editor-Token': state.token},
+      body: JSON.stringify({revision: state.revision})
+    });
+    const result = await response.json();
+    if (!response.ok) throw new Error(result.error);
+    $('resume-result').href = result.pdf + '?v=' + Date.now();
+    $('resume-result').hidden = false;
+    notice('Résumé PDF rebuilt successfully. Use “Open résumé” to view it. Publish through Git when ready.');
+  } catch (error) { notice(error.message, true); }
+  finally {
+    setBusy(false); updateCategory();
+    $('rebuild-resume').textContent = 'Rebuild résumé';
+  }
+};
 $('category').onchange = () => {
   $('venue').value = ''; $('citation').value = ''; suggestedCitation = '';
   updateCategory();
@@ -284,7 +310,7 @@ $('paper-form').onsubmit = async event => {
 $('delete-paper').onclick = async () => {
   if (busy || selection?.index == null) return;
   const paper = state.data[selection.category][selection.index];
-  if (!await confirmAction('Delete this publication?', `“${paper.title}” will be removed from the publication list. Its PDF will stay in files/. Other publication labels will stay the same.`, 'Delete publication')) return;
+  if (!await confirmAction('Delete this publication?', `“${paper.title}” will be removed from the publication list. Its PDF will stay in files/. Working-paper labels will be renumbered consecutively.`, 'Delete publication')) return;
   setBusy(true);
   try {
     await mutate({action: 'delete', category: selection.category, index: selection.index});

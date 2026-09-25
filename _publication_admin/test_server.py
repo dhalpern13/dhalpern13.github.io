@@ -30,6 +30,26 @@ class StoreTests(unittest.TestCase):
     def change(self, **request):
         return self.store.change({'revision': self.store.state()['revision'], **request})
 
+    @unittest.skipUnless(shutil.which('pdflatex') or Path('/Library/TeX/texbin/pdflatex').exists(), 'TeX installation required')
+    def test_rebuild_resume_and_failed_build_preserves_pdf(self):
+        source = self.store.source.read_bytes()
+        revision = self.store.state()['revision']
+        result = self.store.rebuild_resume({'revision': revision})
+        self.assertEqual(result['pdf'], '/pdf/resume.pdf')
+        pdf = (self.root / 'files/resume.pdf').read_bytes()
+        self.assertTrue(pdf.startswith(b'%PDF-'))
+        self.assertEqual(pdf, (self.root / '_resume/resume.pdf').read_bytes())
+        self.assertEqual(source, self.store.source.read_bytes())
+        (self.root / '_resume/resume.tex').write_text(r'\documentclass{article}\begin{document}\undefinedTestCommand\end{document}')
+        with self.assertRaisesRegex(ValueError, 'previous PDF is unchanged'):
+            self.store.rebuild_resume({'revision': revision})
+        self.assertEqual(pdf, (self.root / 'files/resume.pdf').read_bytes())
+        self.assertEqual(source, self.store.source.read_bytes())
+
+    def test_resume_rebuild_rejects_stale_data(self):
+        with self.assertRaises(Conflict):
+            self.store.rebuild_resume({'revision': 'outdated'})
+
     def assert_rendered_labels_unique(self):
         papers = yaml.safe_load((self.root / '_data/papers.yml').read_text())
         ids = [p['paper_id'] for p in papers]
@@ -53,7 +73,9 @@ class StoreTests(unittest.TestCase):
         self.assertTrue(list((self.root / '_publication_admin/backups').iterdir()))
 
     def test_edit_retains_unknown_metadata_and_other_sections(self):
-        source = self.store.source.read_text().replace("link: 'prophet-p-mean'", "link: 'prophet-p-mean'\n    custom-note: 'Keep me'")
+        fixture = yaml.safe_load(self.store.source.read_text())
+        fixture['working'][0]['custom-note'] = 'Keep me'
+        source = yaml.safe_dump(fixture, sort_keys=False)
         self.store.source.write_text(source)
         original = self.store.state()['data']
         paper = copy.deepcopy(original['working'][0])
@@ -73,6 +95,16 @@ class StoreTests(unittest.TestCase):
         self.assertEqual(result['data']['conference'][0]['title'], paper['title'])
         self.assertEqual(result['data']['working'][0]['paper_id'], f'W{len(data["working"])-1}')
         self.assert_rendered_labels_unique()
+
+    def test_move_middle_working_paper_closes_label_gap(self):
+        data = self.store.state()['data']
+        paper = copy.deepcopy(data['working'][1])
+        paper.update(conference='EC', citation='ACM Conference on Economics and Computation', year='2027')
+        result = self.change(action='save', category='conference', originalCategory='working', index=1, paper=paper)
+        expected = [f'W{i}' for i in range(len(data['working']) - 1, 0, -1)]
+        self.assertEqual([p['paper_id'] for p in result['data']['working']], expected)
+        rendered = yaml.safe_load((self.root / '_data/working-papers.yml').read_text())
+        self.assertEqual([p['paper_id'] for p in rendered], expected)
 
     def test_single_author_thesis_and_new_collaborator(self):
         before = (self.root / '_resume/publications.tex').read_bytes()

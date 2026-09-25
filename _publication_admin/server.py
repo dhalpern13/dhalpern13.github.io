@@ -160,6 +160,10 @@ class PublicationStore:
                     old = previous.get(group, [])
                     highest = max([int(p.get("paper_id", f"{CATEGORIES[group]}{len(old) - i}")[1:]) for i, p in enumerate(old)] + [0])
                     counters[group] = max(int(counters.get(group, 0)), highest)
+                    if group == "working":
+                        for i, entry in enumerate(data[group]):
+                            entry["paper_id"] = f"W{len(data[group]) - i}"
+                        counters[group] = len(data[group])
                     source = replace_section(source, group, data[group])
                 source = replace_section(source, "label_counters", counters)
             else:
@@ -167,24 +171,46 @@ class PublicationStore:
             self.persist(source.encode(), raw)
             return {**self.state(), "selected": selected}
 
-    def persist(self, source, original):
+    def rebuild_resume(self, request):
+        with self.lock:
+            raw, _, revision = self.read()
+            if request.get("revision") != revision:
+                raise Conflict("The publication data changed. Reload the dashboard before rebuilding the résumé.")
+            self.persist(raw, raw, compile_resume=True)
+            return {"message": "Résumé rebuilt from saved publications.", "pdf": "/pdf/resume.pdf"}
+
+    def persist(self, source, original, compile_resume=False):
         # Generate in isolation first: a compiler failure never damages real data.
         with tempfile.TemporaryDirectory(prefix="publication-build-") as tmp:
             stage = Path(tmp)
             (stage / "_data").mkdir()
             (stage / "_resume").mkdir()
+            if compile_resume:
+                shutil.copytree(self.root / "_resume", stage / "_resume", dirs_exist_ok=True)
+                (stage / "_resume/resume.pdf").unlink(missing_ok=True)
+                (stage / "files").mkdir()
             (stage / "_data/publication-data.yml").write_bytes(source)
             shutil.copy2(self.root / "compile-data.py", stage / "compile-data.py")
+            environment = os.environ.copy()
+            environment["PATH"] = environment.get("PATH", "") + os.pathsep + "/Library/TeX/texbin"
             result = subprocess.run(
                 ["uv", "run", "--offline", "--no-project", "--python", sys.executable,
-                 "python", str(stage / "compile-data.py"), "--no-latex"],
-                cwd=self.root, capture_output=True, text=True, timeout=30)
+                 "python", str(stage / "compile-data.py")] + ([] if compile_resume else ["--no-latex"]),
+                cwd=self.root, env=environment, capture_output=True, text=True, timeout=210 if compile_resume else 30)
             if result.returncode:
+                if compile_resume:
+                    raise ValueError("Could not rebuild the résumé. The previous PDF is unchanged.\n" + (result.stdout + result.stderr)[-2500:])
                 raise ValueError("Could not regenerate publication files. Nothing was saved.\n" + result.stderr[-1500:])
             if self.source.read_bytes() != original:
                 raise Conflict("The source file changed while saving. Reload the dashboard.")
             changes = {"_data/publication-data.yml": source}
             changes.update({name: (stage / name).read_bytes() for name in OUTPUTS})
+            if compile_resume:
+                for name in ("_resume/resume.pdf", "files/resume.pdf"):
+                    pdf = (stage / name).read_bytes()
+                    if not pdf.startswith(b"%PDF-"):
+                        raise ValueError("The build did not produce a PDF. The previous résumé is unchanged.")
+                    changes[name] = pdf
             changes = {name: content for name, content in changes.items()
                        if not (self.root / name).exists() or (self.root / name).read_bytes() != content}
             backup = self.root / "_publication_admin/backups" / (datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S%fZ"))
@@ -251,7 +277,7 @@ def make_handler(store, token, port):
             origin = self.headers.get("Origin")
             if origin and origin not in {f"http://127.0.0.1:{port}", f"http://localhost:{port}"}:
                 return self.reply(403, {"error": "This editor accepts local requests only."})
-            if self.path != "/api/change":
+            if self.path not in ("/api/change", "/api/rebuild-resume"):
                 return self.reply(404, {"error": "Not found."})
             try:
                 length = int(self.headers.get("Content-Length", 0))
@@ -260,7 +286,7 @@ def make_handler(store, token, port):
                 request = json.loads(self.rfile.read(length))
                 if not isinstance(request, dict):
                     raise ValueError("Invalid request.")
-                return self.reply(200, store.change(request))
+                return self.reply(200, store.rebuild_resume(request) if self.path == "/api/rebuild-resume" else store.change(request))
             except Conflict as exc:
                 return self.reply(409, {"error": str(exc)})
             except (ValueError, KeyError, TypeError) as exc:

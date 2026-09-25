@@ -19,7 +19,9 @@ Open <http://127.0.0.1:4001/>. The dashboard uses the existing Python environmen
 
 Saving updates `_data/publication-data.yml`, regenerates website YAML and résumé `.tex` files, and leaves the résumé PDF unchanged. A running Jekyll preview automatically picks up the generated data. The thesis category remains website-only.
 
-The editor does **not** commit or push changes. Review and publish through Git as usual. Deleting an entry keeps its PDF. Existing labels are retained when adding, moving, or deleting entries; counters reserve deleted labels. On first edit, the affected category gets explicit labels matching the current website. Other top-level YAML sections retain their formatting.
+Click **Rebuild résumé** to compile the PDF from saved data, then **Open résumé** to view it. Save or discard any draft first. This uses `compile-data.py` and your installed TeX distribution, builds in a temporary directory, and backs up the old files before replacing them. Failed builds leave the previous PDF intact. Rebuilding does not commit or push.
+
+The editor does **not** commit or push changes. Review and publish through Git as usual. Deleting an entry keeps its PDF. Working-paper labels are renumbered consecutively when adding, moving, or deleting entries. Other categories retain existing labels; counters reserve their deleted labels. On first edit, the affected category gets explicit labels matching the current website. Other top-level YAML sections retain their formatting.
 
 Each save first runs the generator in a temporary directory, then backs up changed files under `_publication_admin/backups/<timestamp>/`. Backups are ignored by Git. To recover a change, stop the editor and copy the desired files from a backup to their matching repository paths. You can also use Git to review or undo tracked changes.
 

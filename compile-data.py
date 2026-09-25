@@ -2,6 +2,7 @@ import yaml
 import os
 import sys
 import shutil
+import subprocess
 from pathlib import Path
 
 ROOT_DIR = Path(__file__).parent.absolute()
@@ -128,7 +129,7 @@ for i, paper in enumerate(working):
 		'title': paper['title'],
 		'authors': author_list(paper['authors'], convert_website_author),
 		'link': f"{paper['link']}.pdf",
-		'paper_id': paper.get('paper_id', f"W{len(working) - i}"),
+		'paper_id': f"W{len(working) - i}",
 	}
 	if 'note' in paper:
 		entry['citation'] = paper['note']
@@ -225,8 +226,7 @@ with open(RESUME_JOURNAL_FILE, 'w') as f:
 
 if len(sys.argv) == 1:
 	os.chdir(TEX_DIR)
-	os.system(f'pdflatex {RESUME_TEX_FILE}')
-	os.system(f'pdflatex {RESUME_TEX_FILE}')
-	os.system(f'pdflatex {RESUME_TEX_FILE}')
+	for _ in range(3):
+		subprocess.run(['pdflatex', '-interaction=nonstopmode', '-halt-on-error', str(RESUME_TEX_FILE)], check=True, timeout=60)
 	# Copy compiled PDF to public files directory
 	shutil.copy2(TEX_DIR / 'resume.pdf', ROOT_DIR / 'files' / 'resume.pdf')

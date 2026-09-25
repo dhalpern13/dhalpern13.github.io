@@ -1,3 +1,9 @@
+- title: Proportionality in Ranking Compression
+  citation: '*NeurIPS 2026*'
+  authors: Daniel Halpern, Xinyu Liu, [Evi Micha](https://evi-micha.github.io), Yu
+    Peng Ng, and [Warut Suksompong](https://www.comp.nus.edu.sg/~warut/)
+  link: proportional-compression.pdf
+  paper_id: C26
 - title: Truthful Fair Division under Stochastic Valuations
   citation: '*EC 2026*'
   authors: Daniel Halpern, [Alexandros Psomas](https://www.alexpsomas.com), and [Shirley
