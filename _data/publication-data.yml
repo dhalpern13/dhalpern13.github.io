@@ -253,15 +253,6 @@ working:
   - alex
   link: prophet-p-mean
   alphabetical: true
-  paper_id: W4
-- title: 'Linear Social Choice with Few Queries: A Moment-Based Approach'
-  authors:
-  - luise
-  - me
-  - greg
-  - eugene
-  link: linear-social-choice-queries
-  alphabetical: true
   paper_id: W2
 - title: Fair Division Under Inaccurate Preferences
   authors:
@@ -276,6 +267,18 @@ working:
   paper_id: W1
 
 conference:
+- title: 'Linear Social Choice with Few Queries: A Moment-Based Approach'
+  authors:
+  - luise
+  - me
+  - greg
+  - eugene
+  link: linear-social-choice-queries
+  alphabetical: true
+  paper_id: C27
+  year: '2027'
+  conference: SODA
+  citation: 38th Annual ACM-SIAM Symposium on Discrete Algorithms
 - title: Proportionality in Ranking Compression
   authors:
   - me
@@ -600,6 +603,6 @@ unpublished:
     year: '2021'
 
 label_counters:
-  conference: 26
-  working: 4
+  conference: 27
+  working: 2
 

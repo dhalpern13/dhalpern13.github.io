@@ -71,6 +71,14 @@
     "aliases": ["The Web Conference", "TheWebConf"],
     "checked": "2026-09-19"
   },
+  "SODA": {
+    "name": "Annual ACM-SIAM Symposium on Discrete Algorithms",
+    "year": 2025,
+    "edition": 36,
+    "source": "https://epubs.siam.org/doi/pdf/10.1137/1.9781611978322.fm?download=true",
+    "aliases": ["ACM-SIAM SODA"],
+    "checked": "2026-09-28"
+  },
   "EAAMO": {
     "name": "ACM Conference on Equity and Access in Algorithms, Mechanisms, and Optimization",
     "year": 2026,

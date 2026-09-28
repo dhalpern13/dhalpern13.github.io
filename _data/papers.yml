@@ -1,3 +1,10 @@
+- title: 'Linear Social Choice with Few Queries: A Moment-Based Approach'
+  authors: '[Luise Ge](https://luisegehaijing.github.io), Daniel Halpern, [Gregory
+    Kehne](https://gregorykehne.com), and [Yevgeniy Vorobeychik](http://vorobeychik.com)'
+  citation: '*SODA 2027*'
+  link: linear-social-choice-queries.pdf
+  year: '2027'
+  paper_id: C27
 - title: AI Alignment from Social Choice Perspectives
   authors: Daniel Halpern, [Evi Micha](https://evi-micha.github.io), [Ariel D. Procaccia](http://procaccia.info),
     [Benjamin Schiffer](https://bschiffer1.github.io/), [Itai Shapira](https://seas.harvard.edu/person/itai-shapira),

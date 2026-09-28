@@ -1,3 +1,9 @@
+- title: 'Linear Social Choice with Few Queries: A Moment-Based Approach'
+  citation: '*SODA 2027*'
+  authors: '[Luise Ge](https://luisegehaijing.github.io), Daniel Halpern, [Gregory
+    Kehne](https://gregorykehne.com), and [Yevgeniy Vorobeychik](http://vorobeychik.com)'
+  link: linear-social-choice-queries.pdf
+  paper_id: C27
 - title: Proportionality in Ranking Compression
   citation: '*NeurIPS 2026*'
   authors: Daniel Halpern, Xinyu Liu, [Evi Micha](https://evi-micha.github.io), Yu
